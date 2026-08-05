@@ -1,0 +1,15 @@
+fastapi>=0.115
+uvicorn[standard]>=0.32
+pydantic>=2.9
+pydantic-settings>=2.6
+python-multipart>=0.0.12
+redis>=5.1
+sentence-transformers>=3.2
+langgraph>=0.2.40
+groq>=0.11
+pypdf>=5.1
+numpy>=1.26
+pytest>=8.3
+httpx>=0.27
+tenacity>=9.0
+langfuse>=3.0
