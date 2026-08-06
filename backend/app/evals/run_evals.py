@@ -16,10 +16,15 @@ def _format_context(reranked: list[dict]) -> str:
 def run() -> None:
     pipeline = get_pipeline()
     results = []
+    # Unique per run: an intentional batch eval shouldn't share (and exhaust)
+    # the same per-session daily token budget across repeated runs - that
+    # cap exists to stop one interactive user from hogging quota, not to
+    # throttle a deliberate admin job. The global daily budget still applies.
+    run_session_id = f"eval-runner-{int(time.time())}"
 
     for i, case in enumerate(EVAL_DATASET, start=1):
         print(f"[{i}/{len(EVAL_DATASET)}] {case.question}")
-        state = pipeline.invoke({"question": case.question, "session_id": "eval-runner", "priority": 1})
+        state = pipeline.invoke({"question": case.question, "session_id": run_session_id, "priority": 1})
 
         answer = state["answer"]
         reranked = state.get("reranked", [])
