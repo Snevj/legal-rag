@@ -20,6 +20,7 @@ from tenacity import Retrying, retry_if_exception_type, stop_after_attempt, wait
 
 from app.config import get_settings
 from app.embeddings.embedder import get_embedder
+import os
 
 _JUDGE_SYSTEM_PROMPT = (
     "You are a strict evaluation assistant. Respond with ONLY a single valid "
@@ -35,6 +36,19 @@ _RETRYABLE_ERRORS = (RateLimitError, APIConnectionError, APITimeoutError, Intern
 
 
 def _ask_judge(prompt: str) -> dict:
+    # Dry-run shortcut for CI / local testing without a Groq API key
+    if os.environ.get("EVAL_DRY_RUN", "0") == "1":
+        # Simple heuristics to return plausible JSON without calling Groq
+        if "Generate exactly 3 short questions" in prompt:
+            # Try to extract a short answer snippet to form questions
+            m = re.search(r"ANSWER:\n(.+)", prompt, re.DOTALL)
+            answer_snip = (m.group(1).strip().split(".")[0]) if m else "the answer"
+            return {"questions": [f"What is {answer_snip}?", f"Explain {answer_snip}.", f"Describe {answer_snip}."]}
+        if "Is the following CHUNK relevant" in prompt:
+            return {"relevant": True}
+        # Default numeric scorer
+        return {"score": 1.0}
+
     settings = get_settings()
     client = Groq(api_key=settings.groq_api_key)
 

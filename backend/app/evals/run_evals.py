@@ -1,4 +1,6 @@
+import argparse
 import json
+import os
 import time
 from pathlib import Path
 
@@ -14,6 +16,31 @@ def _format_context(reranked: list[dict]) -> str:
 
 
 def run() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true", help="Run evaluator without calling external LLMs")
+    args, _ = parser.parse_known_args()
+
+    dry_run = args.dry_run or os.environ.get("EVAL_DRY_RUN", "0") == "1"
+
+    if dry_run:
+        # Ensure required settings validate even though we won't call external APIs.
+        os.environ.setdefault("GROQ_API_KEY", "dry-run")
+        os.environ.setdefault("GROQ_API_URL", "https://example.invalid")
+        # Patch the LLM gateway to deterministic fake responses to avoid external calls.
+        from app.llm import gateway as llm_gateway
+
+        def fake_generate(question, context, session_id, preferred_model=None, history="", priority=5):
+            return llm_gateway.GatewayResult(
+                answer=f"(dry-run) Simulated answer for: {question}",
+                model_used="dry-run-model",
+                prompt_tokens=1,
+                completion_tokens=1,
+                cost_usd=0.0,
+                latency_ms=0.0,
+            )
+
+        llm_gateway.generate = fake_generate
+
     pipeline = get_pipeline()
     results = []
     # Unique per run: an intentional batch eval shouldn't share (and exhaust)

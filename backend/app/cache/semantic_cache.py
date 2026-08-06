@@ -80,6 +80,18 @@ class SemanticCache:
         )
         self._client.expire(key, self._ttl)
 
+    def clear_all(self) -> None:
+        """Delete all cache entries with the configured prefix. Useful for tests."""
+        cursor = "0"
+        pattern = f"{CACHE_KEY_PREFIX}*"
+        # Use SCAN to avoid blocking Redis
+        while True:
+            cursor, keys = self._client.scan(cursor=cursor, match=pattern, count=1000)
+            if keys:
+                self._client.delete(*keys)
+            if cursor == "0":
+                break
+
 
 @lru_cache
 def get_semantic_cache() -> SemanticCache:
@@ -92,3 +104,8 @@ def get_semantic_cache() -> SemanticCache:
         settings.semantic_cache_similarity_threshold,
         settings.semantic_cache_ttl_seconds,
     )
+
+
+def clear_semantic_cache() -> None:
+    """Convenience helper to clear all semantic cache keys (for tests)."""
+    get_semantic_cache().clear_all()
