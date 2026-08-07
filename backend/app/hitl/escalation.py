@@ -66,3 +66,4 @@ def get_escalation_queue() -> EscalationQueue:
     settings = get_settings()
     client = redis.from_url(settings.redis_url, decode_responses=True)
     return EscalationQueue(client)
+

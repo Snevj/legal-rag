@@ -59,6 +59,9 @@ class Settings(BaseSettings):
     langfuse_public_key: str | None = None
     langfuse_secret_key: str | None = None
     langfuse_host: str = "https://cloud.langfuse.com"
+    # Simple API key for protecting sensitive endpoints (escalations, usage)
+    # Create a key and place it in .env as ADMIN_API_KEY=yourkey
+    admin_api_key: str | None = None
 
 
 @lru_cache

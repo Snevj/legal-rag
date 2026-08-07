@@ -6,7 +6,6 @@ from pathlib import Path
 
 from app.evals.dataset import EVAL_DATASET
 from app.evals.metrics import answer_relevancy, context_precision, context_recall, faithfulness
-from app.graph.pipeline import get_pipeline
 
 REPORT_DIR = Path("eval_reports")
 
@@ -40,6 +39,9 @@ def run() -> None:
             )
 
         llm_gateway.generate = fake_generate
+
+    # Import the pipeline lazily after dry-run envs and patches are applied
+    from app.graph.pipeline import get_pipeline
 
     pipeline = get_pipeline()
     results = []

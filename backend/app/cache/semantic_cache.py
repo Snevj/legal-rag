@@ -79,6 +79,7 @@ class SemanticCache:
             mapping={"question": question, "response_json": json.dumps(payload), "embedding": vector_bytes},
         )
         self._client.expire(key, self._ttl)
+        return key
 
     def clear_all(self) -> None:
         """Delete all cache entries with the configured prefix. Useful for tests."""
