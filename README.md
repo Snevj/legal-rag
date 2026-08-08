@@ -1,12 +1,14 @@
-# Legal RAG Assistant — Phase 2
+# Legal RAG Assistant — Phase 3
 
 A RAG pipeline for legal Q&A: upload case law / legal documents, ask questions, get
 answers grounded in and cited to the retrieved source text.
 
 **Phase 1** shipped a working `retrieve → rerank → generate` pipeline. **Phase 2**
-(current) adds production hardening on top: guardrails, cost/rate governance,
-semantic caching, conversation memory, human-in-the-loop escalation, tracing, and
-evals. No frontend or cloud deployment yet — those are Phase 3/4.
+added production hardening: guardrails, cost/rate governance, semantic caching,
+conversation memory, human-in-the-loop escalation, tracing, and evals. **Phase 3**
+(current) adds a Next.js frontend — a chat-style research UI with a live technical
+panel exposing routing, cost, latency, and guardrail telemetry for every answer,
+plus admin views for `/usage` and `/escalations`. Cloud deployment is Phase 4.
 
 ## Stack
 
@@ -31,6 +33,10 @@ evals. No frontend or cloud deployment yet — those are Phase 3/4.
   (`backend/app/evals/`)
 - **Red-teaming**: see [`RED_TEAMING.md`](RED_TEAMING.md) for adversarial scenarios,
   mitigations, and known gaps
+- **Frontend**: Next.js (App Router) + Tailwind v4 + shadcn/ui, dark-only theme
+  adapted from the [Mercury](https://mercury.com) design system
+  ([`frontend/DESIGN.md`](frontend/DESIGN.md)) — chat-style Q&A with a live
+  technical/debug panel, plus `/usage` and `/escalations` admin pages
 
 ## Setup
 
@@ -84,6 +90,21 @@ evals. No frontend or cloud deployment yet — those are Phase 3/4.
    If `ADMIN_API_KEY` is set, pass it as `-H "X-API-Key: ..."` on both `/escalations`
    and `/usage`.
 
+9. Run the frontend:
+
+   ```bash
+   cd frontend
+   cp .env.example .env.local   # NEXT_PUBLIC_API_BASE_URL, defaults to localhost:8000
+   npm install
+   npm run dev
+   ```
+
+   Open [localhost:3000](http://localhost:3000) — ask questions, upload documents
+   (paperclip icon), and click any answer bubble to inspect its full technical
+   detail (routing, cost, latency, guardrail flags, sources) in the side panel.
+   `/usage` and `/escalations` mirror the backend admin endpoints, with an
+   optional `ADMIN_API_KEY` field if the backend requires one.
+
 ## Running tests
 
 ```bash
@@ -118,8 +139,11 @@ EVAL_DRY_RUN=1 python -m app.evals.run_evals   # deterministic, no API calls (us
   per-session budgets/throttling are only as strong as the client's honesty about
   `session_id`, and `/escalations`/`/usage` are unauthenticated unless
   `ADMIN_API_KEY` is set).
-- **Phase 3**: Next.js + Tailwind + shadcn/ui frontend.
-- **Phase 4**: Docker Compose hardening + AWS free-tier deployment (EC2 + S3).
+- **Phase 3** (done): Next.js + Tailwind + shadcn/ui frontend — chat UI, technical
+  telemetry panel, `/usage` and `/escalations` admin views.
+- **Phase 4**: Docker Compose hardening + AWS free-tier deployment (EC2 + S3) —
+  the frontend isn't containerized yet, this lands with the rest of the
+  deployment hardening.
 
 ## Disclaimer
 

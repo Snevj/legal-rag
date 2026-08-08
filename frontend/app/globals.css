@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mercury-mono);
+  --font-heading: var(--font-sans);
+  --color-onyx: #171721;
+  --color-graphite: #1e1e2a;
+  --color-obsidian: #272735;
+  --color-slate-border: #70707d;
+  --color-mist: #e2e3ed;
+  --color-ash: #c3c3cc;
+  --color-ivory: #ededf3;
+  --color-cobalt: #5266eb;
+  --color-cobalt-hover: #6577ee;
+  --color-status-good: #4ade80;
+  --color-status-good-dim: #1c3226;
+  --color-status-warn: #fbbf24;
+  --color-status-warn-dim: #332a12;
+  --color-status-bad: #f87171;
+  --color-status-bad-dim: #331919;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Mercury design system, applied directly at :root - this app is dark-only,
+     no light/dark toggle, so we don't use a .dark class variant. */
+  --background: #171721;
+  --foreground: #ededf3;
+  --card: #1e1e2a;
+  --card-foreground: #ededf3;
+  --popover: #1e1e2a;
+  --popover-foreground: #ededf3;
+  --primary: #5266eb;
+  --primary-foreground: #ffffff;
+  --secondary: #272735;
+  --secondary-foreground: #ededf3;
+  --muted: #272735;
+  --muted-foreground: #c3c3cc;
+  --accent: #272735;
+  --accent-foreground: #ededf3;
+  --destructive: #f87171;
+  --border: rgba(226, 227, 237, 0.12);
+  --input: rgba(226, 227, 237, 0.16);
+  --ring: rgba(82, 102, 235, 0.5);
+  --chart-1: #5266eb;
+  --chart-2: #4ade80;
+  --chart-3: #fbbf24;
+  --chart-4: #f87171;
+  --chart-5: #c3c3cc;
+  --radius: 0.75rem;
+  --sidebar: #1e1e2a;
+  --sidebar-foreground: #ededf3;
+  --sidebar-primary: #5266eb;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #272735;
+  --sidebar-accent-foreground: #ededf3;
+  --sidebar-border: rgba(226, 227, 237, 0.12);
+  --sidebar-ring: rgba(82, 102, 235, 0.5);
+  --font-mercury-mono: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
