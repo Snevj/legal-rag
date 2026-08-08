@@ -11,7 +11,14 @@ def extract_text(filename: str, content: bytes) -> str:
 
     if suffix == ".pdf":
         reader = PdfReader(io.BytesIO(content))
-        pages = [page.extract_text() or "" for page in reader.pages]
+        # "layout" mode uses each glyph's real position to reconstruct
+        # spacing/columns; the default "plain" mode concatenates the raw
+        # text-show operators in order, which silently drops word-boundary
+        # spaces on multi-column/dense layouts (e.g. two-column resumes) -
+        # "onLlama-3-8BusingUnsloth" instead of "on Llama-3-8B using Unsloth".
+        pages = [
+            page.extract_text(extraction_mode="layout") or "" for page in reader.pages
+        ]
         text = "\n\n".join(pages)
     elif suffix in (".txt", ".md"):
         text = content.decode("utf-8", errors="replace")

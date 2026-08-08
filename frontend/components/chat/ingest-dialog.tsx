@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Loader2, UploadCloud } from "lucide-react";
+import { CheckCircle2, Loader2, TriangleAlert, UploadCloud, X } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -11,8 +11,28 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { postIngest } from "@/lib/api";
-import type { IngestResponse } from "@/lib/types";
+
+type FileStatus = "queued" | "uploading" | "done" | "error";
+
+interface QueuedFile {
+  id: string;
+  file: File;
+  status: FileStatus;
+  numChunks?: number;
+  error?: string;
+}
+
+function StatusIcon({ status }: { status: FileStatus }) {
+  if (status === "uploading")
+    return <Loader2 className="size-4 animate-spin text-ash" />;
+  if (status === "done")
+    return <CheckCircle2 className="size-4 text-status-good" />;
+  if (status === "error")
+    return <TriangleAlert className="size-4 text-status-bad" />;
+  return <span className="size-4" />;
+}
 
 export function IngestDialog({
   open,
@@ -22,31 +42,62 @@ export function IngestDialog({
   onOpenChange: (open: boolean) => void;
 }) {
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const [file, setFile] = useState<File | null>(null);
-  const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
-  const [error, setError] = useState<string | null>(null);
-  const [result, setResult] = useState<IngestResponse | null>(null);
+  const [queue, setQueue] = useState<QueuedFile[]>([]);
+  const [uploading, setUploading] = useState(false);
 
-  async function handleUpload() {
-    if (!file) return;
-    setStatus("loading");
-    setError(null);
-    try {
-      const res = await postIngest(file);
-      setResult(res);
-      setStatus("idle");
-    } catch (err) {
-      setStatus("error");
-      setError(err instanceof Error ? err.message : "Upload failed");
+  function addFiles(files: FileList | null) {
+    if (!files) return;
+    const next: QueuedFile[] = Array.from(files).map((file) => ({
+      id: crypto.randomUUID(),
+      file,
+      status: "queued",
+    }));
+    setQueue((prev) => [...prev, ...next]);
+  }
+
+  function removeFile(id: string) {
+    setQueue((prev) => prev.filter((q) => q.id !== id));
+  }
+
+  async function handleUploadAll() {
+    setUploading(true);
+    for (const item of queue) {
+      if (item.status === "done") continue;
+      setQueue((prev) =>
+        prev.map((q) => (q.id === item.id ? { ...q, status: "uploading" } : q))
+      );
+      try {
+        const res = await postIngest(item.file);
+        setQueue((prev) =>
+          prev.map((q) =>
+            q.id === item.id
+              ? { ...q, status: "done", numChunks: res.num_chunks }
+              : q
+          )
+        );
+      } catch (err) {
+        setQueue((prev) =>
+          prev.map((q) =>
+            q.id === item.id
+              ? {
+                  ...q,
+                  status: "error",
+                  error: err instanceof Error ? err.message : "Upload failed",
+                }
+              : q
+          )
+        );
+      }
     }
+    setUploading(false);
   }
 
   function reset() {
-    setFile(null);
-    setResult(null);
-    setError(null);
-    setStatus("idle");
+    setQueue([]);
+    setUploading(false);
   }
+
+  const hasPending = queue.some((q) => q.status !== "done");
 
   return (
     <Dialog
@@ -58,10 +109,11 @@ export function IngestDialog({
     >
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Upload a document</DialogTitle>
+          <DialogTitle>Upload documents</DialogTitle>
           <DialogDescription>
-            PDF or plain text. It&apos;s chunked, embedded, and indexed into
-            the vector store so questions can be answered against it.
+            PDF or plain text, one or many at once. Each is chunked, embedded,
+            and indexed into the vector store so questions can be answered
+            against it.
           </DialogDescription>
         </DialogHeader>
 
@@ -72,27 +124,62 @@ export function IngestDialog({
         >
           <UploadCloud className="size-6 text-muted-foreground" />
           <span className="text-sm text-ivory">
-            {file ? file.name : "Click to choose a file"}
+            Click to choose files
           </span>
-          <span className="text-xs text-muted-foreground">.pdf or .txt</span>
+          <span className="text-xs text-muted-foreground">
+            .pdf or .txt · multiple allowed
+          </span>
         </button>
         <input
           ref={fileInputRef}
           type="file"
+          multiple
           accept=".pdf,.txt,text/plain,application/pdf"
           className="hidden"
           onChange={(e) => {
-            setResult(null);
-            setError(null);
-            setFile(e.target.files?.[0] ?? null);
+            addFiles(e.target.files);
+            e.target.value = "";
           }}
         />
 
-        {error && <p className="text-sm text-status-bad">{error}</p>}
-        {result && (
-          <div className="rounded-lg border border-status-good/30 bg-status-good-dim px-3 py-2 font-mono text-xs text-status-good">
-            Ingested &quot;{result.source_title}&quot; — {result.num_chunks}{" "}
-            chunks (doc_id {result.doc_id.slice(0, 8)}…)
+        {queue.length > 0 && (
+          <div className="max-h-56 space-y-1.5 overflow-y-auto">
+            {queue.map((item) => (
+              <div
+                key={item.id}
+                className={cn(
+                  "flex items-center gap-2 rounded-lg border px-2.5 py-2 text-xs",
+                  item.status === "error"
+                    ? "border-status-bad/30 bg-status-bad-dim"
+                    : item.status === "done"
+                      ? "border-status-good/30 bg-status-good-dim"
+                      : "border-border bg-obsidian/50"
+                )}
+              >
+                <StatusIcon status={item.status} />
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-ivory">{item.file.name}</p>
+                  {item.status === "done" && (
+                    <p className="font-mono text-[10px] text-status-good">
+                      {item.numChunks} chunks ingested
+                    </p>
+                  )}
+                  {item.status === "error" && (
+                    <p className="text-[10px] text-status-bad">{item.error}</p>
+                  )}
+                </div>
+                {item.status !== "uploading" && item.status !== "done" && (
+                  <button
+                    type="button"
+                    onClick={() => removeFile(item.id)}
+                    className="shrink-0 text-ash hover:text-ivory"
+                    aria-label={`Remove ${item.file.name}`}
+                  >
+                    <X className="size-3.5" />
+                  </button>
+                )}
+              </div>
+            ))}
           </div>
         )}
 
@@ -101,13 +188,13 @@ export function IngestDialog({
             Close
           </Button>
           <Button
-            onClick={handleUpload}
-            disabled={!file || status === "loading"}
+            onClick={handleUploadAll}
+            disabled={queue.length === 0 || uploading || !hasPending}
           >
-            {status === "loading" ? (
+            {uploading ? (
               <Loader2 className="size-4 animate-spin" />
             ) : (
-              "Ingest"
+              `Ingest ${queue.filter((q) => q.status !== "done").length || ""}`.trim()
             )}
           </Button>
         </DialogFooter>

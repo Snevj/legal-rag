@@ -1,20 +1,28 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { Scale } from "lucide-react";
 import { NavBar } from "@/components/nav-bar";
 import { Composer } from "@/components/chat/composer";
 import { MessageBubble } from "@/components/chat/message-bubble";
-import { TechnicalPanel } from "@/components/chat/technical-panel";
+import { TechnicalDrawer } from "@/components/chat/technical-drawer";
 import { IngestDialog } from "@/components/chat/ingest-dialog";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Button } from "@/components/ui/button";
 import { ApiError, postQuery } from "@/lib/api";
 import { getOrCreateSessionId } from "@/lib/session";
 import type { ChatTurn } from "@/lib/types";
 
+const SUGGESTIONS = [
+  "What did the Court hold in Gideon v. Wainwright about the right to counsel?",
+  "Summarize the holding in Brown v. Board of Education.",
+  "What was at issue in Marbury v. Madison?",
+];
+
 export default function Home() {
   const [sessionId, setSessionId] = useState("");
   const [turns, setTurns] = useState<ChatTurn[]>([]);
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [detailsId, setDetailsId] = useState<string | null>(null);
+  const [detailsOpen, setDetailsOpen] = useState(false);
   const [ingestOpen, setIngestOpen] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -46,7 +54,7 @@ export default function Home() {
       askedAt: Date.now(),
     };
     setTurns((prev) => [...prev, turn]);
-    setSelectedId(id);
+    setDetailsId(id);
 
     try {
       const response = await postQuery({
@@ -71,91 +79,85 @@ export default function Home() {
     }
   }
 
-  const selectedTurn =
-    turns.find((t) => t.id === selectedId) ?? turns.at(-1) ?? null;
+  const detailsTurn = turns.find((t) => t.id === detailsId) ?? null;
 
   return (
-    <div className="flex min-h-screen flex-col bg-onyx">
+    <div className="relative flex min-h-screen flex-col bg-onyx">
+      <div
+        aria-hidden
+        className="pointer-events-none fixed inset-x-0 top-0 -z-10 h-[480px] bg-[radial-gradient(ellipse_60%_50%_at_50%_-10%,rgba(82,102,235,0.16),transparent)]"
+      />
       <NavBar />
-      <div className="flex min-h-0 flex-1 flex-col lg:flex-row">
-        {/* Chat column */}
-        <div className="flex min-h-0 flex-1 flex-col">
-          <div
-            ref={scrollRef}
-            className="flex-1 overflow-y-auto px-4 py-6 sm:px-6"
-          >
-            {turns.length === 0 ? (
-              <EmptyState />
-            ) : (
-              <div className="mx-auto flex max-w-3xl flex-col gap-6">
-                {turns.map((turn) => (
-                  <MessageBubble
-                    key={turn.id}
-                    turn={turn}
-                    selected={turn.id === selectedTurn?.id}
-                    onSelect={() => setSelectedId(turn.id)}
-                  />
-                ))}
-              </div>
-            )}
-          </div>
-          <div className="mx-auto w-full max-w-3xl">
-            <Composer
-              onSubmit={handleSubmit}
-              onIngestClick={() => setIngestOpen(true)}
-              disabled={pending}
-            />
-          </div>
-        </div>
 
-        {/* Technical panel - desktop: fixed side column. mobile: tab below. */}
-        <div className="hidden w-[380px] shrink-0 border-l border-border bg-graphite/40 lg:block">
-          <PanelHeader />
-          <div className="h-[calc(100vh-3.5rem-2.5rem)]">
-            <TechnicalPanel turn={selectedTurn} />
-          </div>
+      <div className="flex min-h-0 flex-1 flex-col">
+        <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
+          {turns.length === 0 ? (
+            <EmptyState onPick={handleSubmit} />
+          ) : (
+            <div className="mx-auto flex max-w-3xl flex-col gap-6">
+              {turns.map((turn) => (
+                <MessageBubble
+                  key={turn.id}
+                  turn={turn}
+                  onOpenDetails={() => {
+                    setDetailsId(turn.id);
+                    setDetailsOpen(true);
+                  }}
+                />
+              ))}
+            </div>
+          )}
         </div>
-
-        <div className="border-t border-border bg-graphite/40 lg:hidden">
-          <Tabs defaultValue="technical" className="gap-0">
-            <TabsList className="w-full rounded-none border-b border-border bg-transparent">
-              <TabsTrigger value="technical" className="flex-1">
-                Technical details
-              </TabsTrigger>
-            </TabsList>
-            <TabsContent value="technical" className="h-80">
-              <TechnicalPanel turn={selectedTurn} />
-            </TabsContent>
-          </Tabs>
+        <div className="mx-auto w-full max-w-3xl">
+          <Composer
+            onSubmit={handleSubmit}
+            onIngestClick={() => setIngestOpen(true)}
+            disabled={pending}
+          />
         </div>
       </div>
 
+      <TechnicalDrawer
+        open={detailsOpen}
+        onOpenChange={setDetailsOpen}
+        turn={detailsTurn}
+      />
       <IngestDialog open={ingestOpen} onOpenChange={setIngestOpen} />
     </div>
   );
 }
 
-function PanelHeader() {
+function EmptyState({
+  onPick,
+}: {
+  onPick: (question: string) => void;
+}) {
   return (
-    <div className="flex h-14 shrink-0 items-center border-b border-border px-5">
-      <span className="font-mono text-xs uppercase tracking-widest text-ash">
-        Technical detail
-      </span>
-    </div>
-  );
-}
-
-function EmptyState() {
-  return (
-    <div className="mx-auto flex max-w-lg flex-1 flex-col items-center justify-center gap-3 py-24 text-center">
-      <h1 className="font-heading text-2xl font-semibold text-ivory">
-        Ask about the ingested case law
-      </h1>
-      <p className="text-sm text-muted-foreground">
-        Answers are retrieved and reranked from indexed opinions, then
-        grounded and cited. Try: &quot;What did the Court hold in Gideon v.
-        Wainwright about the right to counsel?&quot;
-      </p>
+    <div className="mx-auto flex max-w-lg flex-1 flex-col items-center justify-center gap-5 py-20 text-center">
+      <div className="flex size-12 items-center justify-center rounded-full border border-border bg-graphite">
+        <Scale className="size-5 text-cobalt" />
+      </div>
+      <div className="space-y-2">
+        <h1 className="text-2xl font-semibold tracking-tight text-ivory">
+          Ask about the ingested case law
+        </h1>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          Answers are retrieved and reranked from indexed opinions, then
+          grounded and cited against the source text.
+        </p>
+      </div>
+      <div className="flex w-full flex-col gap-2">
+        {SUGGESTIONS.map((s) => (
+          <Button
+            key={s}
+            variant="outline"
+            onClick={() => onPick(s)}
+            className="h-auto justify-start whitespace-normal rounded-2xl px-4 py-2.5 text-left text-sm font-normal text-muted-foreground hover:border-cobalt/40 hover:text-ivory"
+          >
+            {s}
+          </Button>
+        ))}
+      </div>
     </div>
   );
 }
