@@ -117,12 +117,42 @@ def rerank_node(state: RagState) -> dict:
     candidates = [(item["text"], item) for item in state["retrieved"]]
     top = reranker.rerank(state["question"], candidates, top_k=settings.top_k_rerank)
 
-    reranked = [{**metadata, "score": score} for _, metadata, score in top]
+    # KNN vector search always returns its top_k nearest neighbors even when
+    # nothing in the index is actually relevant to the question - dropping
+    # sub-threshold chunks here (rather than after generation) keeps them out
+    # of both the LLM context and the API response's `sources`, so the model
+    # can't cite an irrelevant case just because it happened to be nearby in
+    # embedding space.
+    reranked = [
+        {**metadata, "score": score}
+        for _, metadata, score in top
+        if score >= settings.min_rerank_score
+    ]
     return {"reranked": reranked}
+
+
+_NO_CONTEXT_ANSWER = (
+    "No indexed document appears relevant to this question. Try rephrasing, "
+    "or upload a document that covers this topic.\n\n"
+    "This is legal research assistance, not legal advice. Verify against "
+    "primary sources and consult a licensed attorney for advice on your "
+    "specific situation."
+)
 
 
 def generate_node(state: RagState) -> dict:
     settings = get_settings()
+
+    if not state["reranked"]:
+        return {
+            "answer": _NO_CONTEXT_ANSWER,
+            "model_used": "none",
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "cost_usd": 0.0,
+            "latency_ms": 0.0,
+        }
+
     context = "\n\n---\n\n".join(
         f"[{item['source_title']}, chunk {item['chunk_index']}]\n{item['text']}"
         for item in state["reranked"]

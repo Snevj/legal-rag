@@ -41,6 +41,13 @@ class Settings(BaseSettings):
 
     top_k_retrieve: int = 10
     top_k_rerank: int = 4
+    # bge-reranker-base cross-encoder scores (post-sigmoid, 0-1) for this
+    # corpus: genuinely relevant chunks score ~0.9+, unrelated ones ~0.0001-
+    # 0.002 - there's no gradual middle, so a low threshold cleanly separates
+    # them. Below this, a chunk is dropped rather than stuffed into context
+    # (KNN vector search always returns *something* even when nothing in the
+    # index is actually relevant to the question).
+    min_rerank_score: float = 0.1
 
     chunk_size_tokens: int = 600
     chunk_overlap_tokens: int = 90
