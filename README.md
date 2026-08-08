@@ -53,11 +53,30 @@ plus admin views for `/usage` and `/escalations`. Cloud deployment is Phase 4.
    First build downloads the embedding/reranker models — expect it to take a
    few minutes.
 
-4. Seed the vector store with the bundled public-domain case law:
+4. Seed the vector store with the bundled public-domain case law (5 famous
+   SCOTUS opinions, used by the tests/evals):
 
    ```bash
    docker compose exec backend python -m app.ingestion.seed_corpus
    ```
+
+   Optionally, bulk-seed hundreds more real, full-text U.S. Reports opinions
+   from Harvard's [Caselaw Access Project](https://case.law) bulk data
+   (`static.case.law` — public domain, no signup/API key required, unlike
+   CourtListener's or GovInfo's full-text endpoints):
+
+   ```bash
+   docker compose exec backend python -m app.ingestion.bulk_seed_caselaw
+   # or a specific set of U.S. Reports volumes:
+   docker compose exec backend python -m app.ingestion.bulk_seed_caselaw --volumes 300,320-325
+   ```
+
+   This is what makes retrieval meaningfully different from just pasting a
+   document into a chat model — a corpus of hundreds of opinions doesn't fit
+   in any context window, so retrieval is doing real work instead of being a
+   novelty. Each U.S. Reports volume bundles hundreds of one-line
+   cert-denial orders alongside substantive opinions; `--min-words` (default
+   300) filters those out so the corpus stays useful rather than noisy.
 
 5. Ask a question:
 
