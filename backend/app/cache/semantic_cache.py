@@ -83,14 +83,16 @@ class SemanticCache:
 
     def clear_all(self) -> None:
         """Delete all cache entries with the configured prefix. Useful for tests."""
-        cursor = "0"
+        cursor = 0
         pattern = f"{CACHE_KEY_PREFIX}*"
-        # Use SCAN to avoid blocking Redis
+        # Use SCAN to avoid blocking Redis. redis-py returns cursor as an int
+        # (0 means the scan has completed a full cycle) - comparing it to the
+        # string "0" never matches, which previously made this loop forever.
         while True:
             cursor, keys = self._client.scan(cursor=cursor, match=pattern, count=1000)
             if keys:
                 self._client.delete(*keys)
-            if cursor == "0":
+            if cursor == 0:
                 break
 
 

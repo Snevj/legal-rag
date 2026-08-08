@@ -1,26 +1,43 @@
-# Legal RAG Assistant — Phase 1
+# Legal RAG Assistant — Phase 2
 
 A RAG pipeline for legal Q&A: upload case law / legal documents, ask questions, get
 answers grounded in and cited to the retrieved source text.
 
-This is **Phase 1**: a working `retrieve → rerank → generate` pipeline behind a
-FastAPI backend, using Redis Stack as the vector store, local embedding/reranking
-models (no API cost), and Groq for generation. No frontend, guardrails, evals,
-tracing, caching, or model routing yet — those land in later phases.
+**Phase 1** shipped a working `retrieve → rerank → generate` pipeline. **Phase 2**
+(current) adds production hardening on top: guardrails, cost/rate governance,
+semantic caching, conversation memory, human-in-the-loop escalation, tracing, and
+evals. No frontend or cloud deployment yet — those are Phase 3/4.
 
 ## Stack
 
 - **API**: FastAPI
-- **Orchestration**: LangGraph (`retrieve → rerank → generate` graph)
-- **Vector DB**: Redis Stack (RediSearch vector similarity)
+- **Orchestration**: LangGraph (`route → cache_lookup → memory_load → input_guardrail
+  → retrieve → rerank → generate → output_guardrail → escalation → memory_store →
+  cache_store` graph)
+- **Vector DB**: Redis Stack (RediSearch vector similarity) — also backs the
+  semantic answer cache, conversation memory, token buckets, and escalation queue
 - **Embeddings**: `BAAI/bge-small-en-v1.5` (local, via `sentence-transformers`)
 - **Reranker**: `BAAI/bge-reranker-base` (local cross-encoder)
-- **LLM**: Groq (`llama-3.3-70b-versatile`)
+- **LLM**: Groq, cheap/expensive model routing by question difficulty
+  (`llama-3.1-8b-instant` / `llama-3.3-70b-versatile`), behind a resilience gateway
+  (concurrency limiting, dual RPM/TPM token buckets, per-session throttling,
+  exponential backoff, circuit breaker, in-Groq model fallback)
+- **Guardrails**: PII detection, prompt-injection detection, citation/grounding
+  verification, not-legal-advice disclaimer enforcement
+- **Cost governance**: pre-flight token estimation + global/per-session daily
+  budgets (`backend/app/cost/budget.py`), `GET /usage`
+- **Tracing**: Langfuse (optional, no-ops if unconfigured)
+- **Evals**: Ragas-style LLM-judge metrics against the seeded corpus
+  (`backend/app/evals/`)
+- **Red-teaming**: see [`RED_TEAMING.md`](RED_TEAMING.md) for adversarial scenarios,
+  mitigations, and known gaps
 
 ## Setup
 
 1. Get a free API key at [console.groq.com](https://console.groq.com).
-2. Copy `.env.example` to `.env` and fill in `GROQ_API_KEY`.
+2. Copy `.env.example` to `.env` and fill in `GROQ_API_KEY`. Everything else has a
+   working default; `LANGFUSE_PUBLIC_KEY`/`LANGFUSE_SECRET_KEY` (tracing) and
+   `ADMIN_API_KEY` (protects `/escalations` and `/usage`) are optional.
 3. Start everything:
 
    ```bash
@@ -50,6 +67,23 @@ tracing, caching, or model routing yet — those land in later phases.
    curl -X POST localhost:8000/ingest -F "file=@/path/to/document.pdf"
    ```
 
+7. Check cumulative token/cost usage:
+
+   ```bash
+   curl localhost:8000/usage
+   ```
+
+8. Review escalated answers (flagged by a guardrail, e.g. PII, ungrounded citation,
+   prompt injection, or an explicit `request_human_review` on the query):
+
+   ```bash
+   curl localhost:8000/escalations
+   curl -X POST localhost:8000/escalations/<id>/resolve -d '{"notes": "reviewed"}'
+   ```
+
+   If `ADMIN_API_KEY` is set, pass it as `-H "X-API-Key: ..."` on both `/escalations`
+   and `/usage`.
+
 ## Running tests
 
 ```bash
@@ -58,14 +92,32 @@ pip install -r requirements.txt
 GROQ_API_KEY=... REDIS_URL=redis://localhost:6379 pytest tests/ -v
 ```
 
-(Requires Redis running — `docker compose up -d redis` — and a real Groq key,
-since Phase 1 has no mocking layer yet.)
+(Requires Redis running — `docker compose up -d redis`. Most tests fake the LLM
+gateway via `conftest.py`; `test_query_e2e.py` and the Ragas-judge tests in
+`test_ragas_red_team.py` call the real Groq API and need a real key.)
+
+Run the eval suite against the seeded corpus:
+
+```bash
+cd backend
+python -m app.evals.run_evals          # real Groq calls, needs GROQ_API_KEY
+EVAL_DRY_RUN=1 python -m app.evals.run_evals   # deterministic, no API calls (used in CI)
+```
 
 ## Roadmap
 
-- **Phase 2**: citation/grounding guardrails, PII redaction, UPL disclaimers,
-  Ragas evals, Langfuse tracing, Redis semantic caching, cheap/expensive model
-  routing, human-in-the-loop escalation, agent memory, red-teaming notes.
+- **Phase 1** (done): retrieve → rerank → generate pipeline, FastAPI, Redis Stack,
+  local embeddings/reranker, Groq generation.
+- **Phase 2** (done): citation/grounding guardrails, PII detection, UPL disclaimer
+  enforcement, prompt-injection detection, LLM resilience gateway (concurrency
+  limit, dual token buckets, per-session throttling, backoff, circuit breaker,
+  in-Groq fallback), cost/budget tracking, Redis semantic caching, conversation
+  memory, cheap/expensive model routing, human-in-the-loop escalation, Langfuse
+  tracing, Ragas-style evals, red-teaming notes (see [`RED_TEAMING.md`](RED_TEAMING.md)
+  for the known gaps carried forward, principally: no authentication yet, so
+  per-session budgets/throttling are only as strong as the client's honesty about
+  `session_id`, and `/escalations`/`/usage` are unauthenticated unless
+  `ADMIN_API_KEY` is set).
 - **Phase 3**: Next.js + Tailwind + shadcn/ui frontend.
 - **Phase 4**: Docker Compose hardening + AWS free-tier deployment (EC2 + S3).
 
