@@ -56,10 +56,16 @@ DEFAULT_QUERIES = [
 ]
 
 
+_SKIP_TAGS = {"style", "script"}
+
+
 class _DivTextExtractor(HTMLParser):
     """Extracts all text inside the first <div class="{target_class}">,
     tracking div nesting depth since Indian Kanoon's markup has no other
-    reliable end marker for where the judgment body div closes."""
+    reliable end marker for where the document body div closes. Also skips
+    <style>/<script> content - some page templates (act/statute pages) embed
+    a <style> block directly inside the content div, which otherwise ends up
+    concatenated into the extracted text as if it were part of the act."""
 
     def __init__(self, target_class: str) -> None:
         super().__init__()
@@ -67,8 +73,12 @@ class _DivTextExtractor(HTMLParser):
         self.depth: int | None = None
         self.div_depth = 0
         self.chunks: list[str] = []
+        self.skip_depth = 0
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag in _SKIP_TAGS:
+            self.skip_depth += 1
+            return
         if tag != "div":
             return
         self.div_depth += 1
@@ -76,6 +86,9 @@ class _DivTextExtractor(HTMLParser):
             self.depth = self.div_depth
 
     def handle_endtag(self, tag: str) -> None:
+        if tag in _SKIP_TAGS:
+            self.skip_depth = max(0, self.skip_depth - 1)
+            return
         if tag != "div":
             return
         if self.depth is not None and self.div_depth == self.depth:
@@ -83,14 +96,31 @@ class _DivTextExtractor(HTMLParser):
         self.div_depth -= 1
 
     def handle_data(self, data: str) -> None:
-        if self.depth is not None:
+        if self.depth is not None and self.skip_depth == 0:
             self.chunks.append(data)
 
 
 def _extract_div_text(html: str, css_class: str) -> str:
     parser = _DivTextExtractor(css_class)
     parser.feed(html)
-    return "".join(parser.chunks)
+    text = "".join(parser.chunks)
+
+    # Some page templates (notably act/statute pages) prepend a "PRISMAI"
+    # premium-upsell banner before the real document, with no markup
+    # boundary to key off - "Print it!" reliably marks the end of the
+    # doc-viewer chrome that precedes actual content on every page template.
+    print_marker = re.search(r"Print it!", text, re.IGNORECASE)
+    if print_marker:
+        text = text[print_marker.end() :]
+
+    # Some page templates append a suggestion sidebar after the real
+    # content, again with no other markup boundary to key off.
+    for trailing_marker in ("Related user Queries", "Related AI tags"):
+        match = re.search(re.escape(trailing_marker), text, re.IGNORECASE)
+        if match:
+            text = text[: match.start()]
+
+    return text
 
 
 def _fetch(url: str) -> str:
