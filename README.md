@@ -1,7 +1,8 @@
-# Legal RAG Assistant — Phase 3
+# Indian Legal RAG Assistant — Phase 3
 
-A RAG pipeline for legal Q&A: upload case law / legal documents, ask questions, get
-answers grounded in and cited to the retrieved source text.
+A RAG pipeline for Indian legal Q&A: upload case law / legal documents, ask questions,
+get answers grounded in and cited to the retrieved source text — indexed against real
+Supreme Court of India judgments.
 
 **Phase 1** shipped a working `retrieve → rerank → generate` pipeline. **Phase 2**
 added production hardening: guardrails, cost/rate governance, semantic caching,
@@ -53,37 +54,43 @@ plus admin views for `/usage` and `/escalations`. Cloud deployment is Phase 4.
    First build downloads the embedding/reranker models — expect it to take a
    few minutes.
 
-4. Seed the vector store with the bundled public-domain case law (5 famous
-   SCOTUS opinions, used by the tests/evals):
+4. Seed the vector store with the bundled public-domain case law (5 landmark
+   Supreme Court of India judgments, used by the tests/evals):
 
    ```bash
    docker compose exec backend python -m app.ingestion.seed_corpus
    ```
 
-   Optionally, bulk-seed hundreds more real, full-text U.S. Reports opinions
-   from Harvard's [Caselaw Access Project](https://case.law) bulk data
-   (`static.case.law` — public domain, no signup/API key required, unlike
-   CourtListener's or GovInfo's full-text endpoints):
+   Optionally, bulk-seed hundreds more real, full-text Indian Supreme Court
+   judgments scraped from [Indian Kanoon](https://indiankanoon.org) (no
+   bulk-download API exists — Indian Kanoon's API is a paid commercial
+   product — so this crawls the public site directly, at a deliberately
+   modest rate):
 
    ```bash
-   docker compose exec backend python -m app.ingestion.bulk_seed_caselaw
-   # or a specific set of U.S. Reports volumes:
-   docker compose exec backend python -m app.ingestion.bulk_seed_caselaw --volumes 300,320-325
+   docker compose exec backend python -m app.ingestion.bulk_seed_indiankanoon
+   # or a narrower/faster run:
+   docker compose exec backend python -m app.ingestion.bulk_seed_indiankanoon \
+     --queries "bail,contempt of court" --limit 50
    ```
 
    This is what makes retrieval meaningfully different from just pasting a
-   document into a chat model — a corpus of hundreds of opinions doesn't fit
-   in any context window, so retrieval is doing real work instead of being a
-   novelty. Each U.S. Reports volume bundles hundreds of one-line
-   cert-denial orders alongside substantive opinions; `--min-words` (default
-   300) filters those out so the corpus stays useful rather than noisy.
+   document into a chat model — a corpus of hundreds of judgments doesn't
+   fit in any context window, so retrieval is doing real work instead of
+   being a novelty. `--min-chars` (default 1500) filters out very short
+   orders so the corpus stays useful rather than noisy.
+
+   (`backend/app/ingestion/bulk_seed_caselaw.py` also still exists — it
+   bulk-seeds U.S. Reports opinions from Harvard's Caselaw Access Project,
+   left over from before this project's India-specific pivot. Not part of
+   the default setup.)
 
 5. Ask a question:
 
    ```bash
    curl -X POST localhost:8000/query \
      -H "Content-Type: application/json" \
-     -d '{"question": "What did the Court hold about the right to counsel in Miranda v. Arizona?"}'
+     -d '{"question": "What guidelines did the Court lay down in Vishaka v. State of Rajasthan?"}'
    ```
 
 6. Upload your own document:
@@ -148,7 +155,7 @@ EVAL_DRY_RUN=1 python -m app.evals.run_evals   # deterministic, no API calls (us
 
 - **Phase 1** (done): retrieve → rerank → generate pipeline, FastAPI, Redis Stack,
   local embeddings/reranker, Groq generation.
-- **Phase 2** (done): citation/grounding guardrails, PII detection, UPL disclaimer
+- **Phase 2** (done): citation/grounding guardrails, PII detection, disclaimer
   enforcement, prompt-injection detection, LLM resilience gateway (concurrency
   limit, dual token buckets, per-session throttling, backoff, circuit breaker,
   in-Groq fallback), cost/budget tracking, Redis semantic caching, conversation

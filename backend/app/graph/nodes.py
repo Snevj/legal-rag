@@ -135,7 +135,7 @@ _NO_CONTEXT_ANSWER = (
     "No indexed document appears relevant to this question. Try rephrasing, "
     "or upload a document that covers this topic.\n\n"
     "This is legal research assistance, not legal advice. Verify against "
-    "primary sources and consult a licensed attorney for advice on your "
+    "primary sources and consult a licensed advocate for advice on your "
     "specific situation."
 )
 

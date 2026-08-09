@@ -28,8 +28,8 @@ def test_pii_in_question_is_detected():
         "/query",
         json={
             "question": (
-                "My client's SSN is 123-45-6789 and email is jane@example.com - "
-                "is that relevant to a Miranda claim?"
+                "My client's Aadhaar number is 2345 6789 0123 and email is "
+                "jane@example.com - is that relevant to a bail application?"
             )
         },
     )
@@ -37,7 +37,7 @@ def test_pii_in_question_is_detected():
     data = response.json()
 
     assert data["guardrails"]["input_pii_detected"] is True
-    assert "ssn" in data["guardrails"]["input_pii_types"]
+    assert "aadhaar" in data["guardrails"]["input_pii_types"]
     assert "email" in data["guardrails"]["input_pii_types"]
 
 

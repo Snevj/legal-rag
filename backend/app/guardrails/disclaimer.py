@@ -1,6 +1,6 @@
 DISCLAIMER_TEXT = (
     "\n\nThis is legal research assistance, not legal advice. Verify against "
-    "primary sources and consult a licensed attorney for advice on your "
+    "primary sources and consult a licensed advocate for advice on your "
     "specific situation."
 )
 

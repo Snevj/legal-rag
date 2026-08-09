@@ -13,9 +13,9 @@ import { getOrCreateSessionId } from "@/lib/session";
 import type { ChatTurn } from "@/lib/types";
 
 const SUGGESTIONS = [
-  "What did the Court hold in Gideon v. Wainwright about the right to counsel?",
-  "Summarize the holding in Brown v. Board of Education.",
-  "What was at issue in Marbury v. Madison?",
+  "What doctrine did Kesavananda Bharati v. State of Kerala establish?",
+  "What guidelines did the Court lay down in Vishaka v. State of Rajasthan?",
+  "What did Maneka Gandhi v. Union of India hold about Article 21?",
 ];
 
 export default function Home() {

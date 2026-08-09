@@ -10,84 +10,83 @@ class EvalCase:
 
 EVAL_DATASET: list[EvalCase] = [
     EvalCase(
-        question="What year was Marbury v. Madison decided?",
-        reference_answer="Marbury v. Madison was decided in 1803.",
-        expected_doc_id="marbury_v_madison",
+        question="What year was Kesavananda Bharati v. State of Kerala decided?",
+        reference_answer="Kesavananda Bharati v. State of Kerala was decided in 1973.",
+        expected_doc_id="kesavananda_bharati_v_state_of_kerala",
     ),
     EvalCase(
-        question="Who delivered the opinion of the court in Marbury v. Madison?",
-        reference_answer="Chief Justice Marshall delivered the opinion of the court.",
-        expected_doc_id="marbury_v_madison",
-    ),
-    EvalCase(
-        question="What did Marbury seek from the court?",
+        question="What doctrine did Kesavananda Bharati v. State of Kerala establish?",
         reference_answer=(
-            "Marbury sought a writ of mandamus compelling the Secretary of State to "
-            "deliver his commission as a justice of the peace."
+            "The Basic Structure Doctrine: Parliament's power to amend the "
+            "Constitution under Article 368 does not extend to altering its basic "
+            "structure or essential features."
         ),
-        expected_doc_id="marbury_v_madison",
+        expected_doc_id="kesavananda_bharati_v_state_of_kerala",
     ),
     EvalCase(
-        question="What year was Brown v. Board of Education decided?",
-        reference_answer="Brown v. Board of Education was decided in 1954.",
-        expected_doc_id="brown_v_board_of_education",
-    ),
-    EvalCase(
-        question="What was the central legal question in Brown v. Board of Education?",
+        question="How large was the bench that decided Kesavananda Bharati v. State of Kerala?",
         reference_answer=(
-            "Whether racial segregation in public schools, even with substantially "
-            "equal facilities, violates the Equal Protection Clause of the Fourteenth "
-            "Amendment."
+            "A 13-judge bench, the largest in the history of the Supreme Court of "
+            "India, decided the case by a 7-6 majority."
         ),
-        expected_doc_id="brown_v_board_of_education",
+        expected_doc_id="kesavananda_bharati_v_state_of_kerala",
     ),
     EvalCase(
-        question="What did Brown v. Board of Education hold about 'separate but equal' in public education?",
+        question="What year was Maneka Gandhi v. Union of India decided?",
+        reference_answer="Maneka Gandhi v. Union of India was decided in 1978.",
+        expected_doc_id="maneka_gandhi_v_union_of_india",
+    ),
+    EvalCase(
+        question="What did Maneka Gandhi v. Union of India hold about 'procedure established by law' under Article 21?",
         reference_answer=(
-            "The Court held that separate educational facilities are inherently "
-            "unequal and therefore unconstitutional in public education."
+            "That the procedure must be fair, just, and reasonable, not arbitrary "
+            "or oppressive - expanding Article 21 and linking it with Articles 14 "
+            "and 19."
         ),
-        expected_doc_id="brown_v_board_of_education",
+        expected_doc_id="maneka_gandhi_v_union_of_india",
     ),
     EvalCase(
-        question="What year was Gideon v. Wainwright decided?",
-        reference_answer="Gideon v. Wainwright was decided in 1963.",
-        expected_doc_id="gideon_v_wainwright",
+        question="What year was Vishaka v. State of Rajasthan decided?",
+        reference_answer="Vishaka v. State of Rajasthan was decided in 1997.",
+        expected_doc_id="vishaka_v_state_of_rajasthan",
     ),
     EvalCase(
-        question="What constitutional right did Gideon v. Wainwright establish for criminal defendants?",
+        question="What did Vishaka v. State of Rajasthan establish, in the absence of specific legislation?",
         reference_answer=(
-            "The right to court-appointed counsel for indigent defendants in state "
-            "criminal trials, under the Sixth Amendment as applied to the states."
+            "Guidelines (the Vishaka Guidelines) to prevent and address sexual "
+            "harassment of women at the workplace, later codified into the "
+            "Sexual Harassment of Women at Workplace (POSH) Act, 2013."
         ),
-        expected_doc_id="gideon_v_wainwright",
+        expected_doc_id="vishaka_v_state_of_rajasthan",
     ),
     EvalCase(
-        question="What year was Miranda v. Arizona decided?",
-        reference_answer="Miranda v. Arizona was decided in 1966.",
-        expected_doc_id="miranda_v_arizona",
+        question="What year was the Puttaswamy Aadhaar judgment decided?",
+        reference_answer="Justice K.S. Puttaswamy (Retd.) v. Union of India (the Aadhaar case) was decided in 2018.",
+        expected_doc_id="puttaswamy_v_union_of_india",
     ),
     EvalCase(
-        question="What warnings must police give a suspect before custodial interrogation under Miranda v. Arizona?",
+        question="What did the Supreme Court hold about the constitutional validity of the Aadhaar Act in Puttaswamy v. Union of India?",
         reference_answer=(
-            "That the suspect has the right to remain silent, that anything said can "
-            "be used against them in court, that they have the right to an attorney, "
-            "and that an attorney will be appointed if they cannot afford one."
+            "The Court upheld the constitutional validity of the Aadhaar Act, 2016 "
+            "by a 4:1 majority, while striking down certain provisions including "
+            "Section 57, which had allowed private entities to use Aadhaar "
+            "authentication."
         ),
-        expected_doc_id="miranda_v_arizona",
+        expected_doc_id="puttaswamy_v_union_of_india",
     ),
     EvalCase(
-        question="What year was Tinker v. Des Moines decided?",
-        reference_answer="Tinker v. Des Moines was decided in 1969.",
-        expected_doc_id="tinker_v_des_moines",
+        question="What year was Shreya Singhal v. Union of India decided?",
+        reference_answer="Shreya Singhal v. Union of India was decided in 2015.",
+        expected_doc_id="shreya_singhal_v_union_of_india",
     ),
     EvalCase(
-        question="What did Tinker v. Des Moines hold about students' First Amendment rights in public schools?",
+        question="What did Shreya Singhal v. Union of India hold about Section 66A of the Information Technology Act?",
         reference_answer=(
-            "Students do not shed their constitutional rights to freedom of speech at "
-            "the schoolhouse gate, and symbolic speech like wearing armbands is "
-            "protected unless it substantially disrupts school activities."
+            "The Court struck down Section 66A of the Information Technology Act, "
+            "2000 as unconstitutional, holding it violated the freedom of speech "
+            "and expression under Article 19(1)(a) and was not saved by the "
+            "reasonable restrictions in Article 19(2)."
         ),
-        expected_doc_id="tinker_v_des_moines",
+        expected_doc_id="shreya_singhal_v_union_of_india",
     ),
 ]

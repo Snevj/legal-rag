@@ -45,19 +45,23 @@ research assistance" from "the model gave advice with a disclaimer stapled on."
 
 ## 3. PII exposure
 
-**Attack**: A question or an uploaded document contains a client's SSN, email, phone, or
-similar, which could then be echoed into logs, traces, or the escalation queue.
+**Attack**: A question or an uploaded document contains a client's Aadhaar number, PAN,
+email, phone, or similar, which could then be echoed into logs, traces, or the
+escalation queue.
 
 **Mitigation**: regex-based detection (`backend/app/guardrails/pii.py`) flags PII in
 both the question and the generated answer, surfaced in the response and used as an
-escalation trigger. **Verified live** with a fake SSN + email in a question — both were
-correctly flagged.
+escalation trigger — Aadhaar, PAN, and Indian mobile numbers, plus SSN/US phone for
+cross-border matters. **Verified live** with a fake Aadhaar number + email in a
+question — both were correctly flagged.
 
-**Known gap**: this is a lawyer's own tool handling their own (privileged) client data,
-so we deliberately do *not* redact PII from the functional answer — only flag it. That
-means flagged PII still flows into Langfuse traces and the escalation queue unredacted
-if those are enabled. The regexes also only cover US-format SSN/phone/credit-card
-patterns and will miss most international formats.
+**Known gap**: this is an advocate's own tool handling their own (privileged) client
+data, so we deliberately do *not* redact PII from the functional answer — only flag it.
+That means flagged PII still flows into Langfuse traces and the escalation queue
+unredacted if those are enabled. The Aadhaar regex is a bare 12-digit pattern (no
+Verhoeff checksum validation), so it will both over-flag unrelated 12-digit numbers and
+miss formatting variants; PAN and phone patterns will miss most non-Indian formats
+entirely.
 
 ## 4. Citation / case-name hallucination
 
@@ -70,17 +74,20 @@ grounding score and separately flags case names cited in the answer that don't m
 actually-retrieved source title. A low score or an ungrounded citation triggers
 escalation.
 
-**Known gap — found live**: asking about Tinker v. Des Moines when retrieval failed to
-surface the Tinker document, the model correctly said "no information," but its own
-answer text mentioning "Tinker v. Des Moines" was flagged as an ungrounded citation and
-escalated — which is the guardrail working, but shows the underlying issue: **retrieval
-can miss the right document entirely for short, generic-phrased questions**, and the
-grounding check is lexical, not a semantic/citation-database verification against real
-case law. It catches obvious mismatches, not subtle misstatements of a correctly-cited
-case's actual holding. The Ragas-style eval run (`app/evals/run_evals.py`) also scored
-several correct, short factual answers 0.0 on faithfulness — the single-shot LLM-judge
-prompt appears overly strict on terse answers, a limitation of the simplified judge
-rather than the pipeline (see `eval_reports/`).
+**Known gap — found live** (against the earlier US seed corpus, same class of issue
+applies to the current Indian one): asking about a case whose retrieval failed to
+surface the actual document, the model correctly said "no information," but its own
+answer text naming the case was flagged as an ungrounded citation and escalated — which
+is the guardrail working, but shows the underlying issue: **retrieval can miss the right
+document entirely for short, generic-phrased questions**, and the grounding check is
+lexical, not a semantic/citation-database verification against real case law. It catches
+obvious mismatches, not subtle misstatements of a correctly-cited case's actual holding.
+The `min_rerank_score` threshold (`backend/app/config.py`) mitigates the worse failure
+mode — irrelevant chunks getting stuffed into context at all — but doesn't make lexical
+grounding a real citation-verification system. The Ragas-style eval run
+(`app/evals/run_evals.py`) also scored several correct, short factual answers 0.0 on
+faithfulness — the single-shot LLM-judge prompt appears overly strict on terse answers, a
+limitation of the simplified judge rather than the pipeline (see `eval_reports/`).
 
 ## 5. Denial-of-wallet via repeated expensive queries
 

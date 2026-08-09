@@ -6,7 +6,7 @@ from fastapi.testclient import TestClient
 from app.main import app
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-SEED_FILE = REPO_ROOT / "data" / "sample_case_law" / "gideon_v_wainwright.txt"
+SEED_FILE = REPO_ROOT / "data" / "sample_case_law" / "vishaka_v_state_of_rajasthan.txt"
 
 
 @pytest.fixture(scope="module")
@@ -33,8 +33,8 @@ def test_query_returns_grounded_answer(client):
         "/query",
         json={
             "question": (
-                "What did the Supreme Court hold in Gideon v. Wainwright "
-                "about the right to counsel?"
+                "What guidelines did the Supreme Court lay down in Vishaka v. "
+                "State of Rajasthan regarding sexual harassment at the workplace?"
             )
         },
     )
@@ -43,4 +43,4 @@ def test_query_returns_grounded_answer(client):
 
     assert data["answer"].strip()
     assert len(data["sources"]) > 0
-    assert any("gideon" in s["source_title"].lower() for s in data["sources"])
+    assert any("vishaka" in s["source_title"].lower() for s in data["sources"])

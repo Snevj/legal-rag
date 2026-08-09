@@ -38,7 +38,7 @@ def test_hallucinated_citation_triggers_escalation(monkeypatch):
 
 
 def test_semantic_cache_hit_skips_generation(monkeypatch):
-    q = "What did the Court hold in Gideon v. Wainwright about the right to counsel?"
+    q = "What guidelines did the Court lay down in Vishaka v. State of Rajasthan?"
     sid = f"cache-test-{int(time.time())}"
     # Ensure any prior cache entries are cleared so the first call is a miss
     from app.cache.semantic_cache import clear_semantic_cache
@@ -49,8 +49,8 @@ def test_semantic_cache_hit_skips_generation(monkeypatch):
     def fake_generate(question, context, session_id, preferred_model, history="", priority=5):
         return llm_gateway.GatewayResult(
             answer=(
-                "The Supreme Court held in Gideon v. Wainwright that the right to counsel is a "
-                "fundamental right and applies to indigent defendants in felony prosecutions."
+                "The Supreme Court in Vishaka v. State of Rajasthan laid down guidelines to "
+                "prevent and address sexual harassment of women at the workplace."
             ),
             model_used="test-model",
             prompt_tokens=50,

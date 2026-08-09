@@ -1,0 +1,2882 @@
+Shreya Singhal vs U.O.I
+
+Supreme Court of India
+ Shreya Singhal vs U.O.I on 24 March, 2015
+
+Equivalent citations: AIR 2015 SUPREME COURT 1523, 2015 AIR SCW 1989 AIR 2015 SC (CRIMINAL) 834, AIR 2015 SC (CRIMINAL) 834, 2015 AIR SCW 1989, (2015) 149 ALLINDCAS 224 (SC), AIR 2015 SC( CRI) 834, (2015) 3 MAD LJ 162, (2015) 1 UC 594, (2015) 2 BOMCR(CRI) 515, (2015) 2 CRILR(RAJ) 449, 2015 CALCRILR 3 748, 2015 CRILR(SC&MP) 449, (2015) 1 GUJ LH 741, (2015) 4 SCALE 1, (2015) 2 JLJR 161, (2015) 3 DLT(CRL) 192, (2015) 2 ALLCRILR 618, (2015) 218 DLT 370, (2015) 61 OCR 20, (2015) 2 ALD(CRL) 971, (2015) 2 CURCRIR 47, 2015 (5) SCC 1, (2015) 2 PAT LJR 138, (2015) 2 RECCRIR 403, 2015 CRILR(SC MAH GUJ) 449, 2015 (2) SCC (CRI) 449, 2015 (111) ALR SOC 2 (SC), 2015 (2) KLT SN 1 (SC)
+
+Author: R.F. Nariman
+
+Bench: R.F. Nariman, J. Chelameswar
+
+ [pic]REPORTABLE
+
+ IN THE SUPREME COURT OF INDIA
+
+ CRIMINAL/CIVIL ORIGINAL JURISDICTION
+
+ WRIT PETITION (CRIMINAL) NO.167 OF 2012
+
+SHREYA SINGHAL ... PETITIONER
+
+ VERSUS
+
+UNION OF INDIA ... RESPONDENT
+
+ WITH
+
+ WRIT PETITION (CIVIL) NO.21 OF 2013
+
+ WRIT PETITION (CIVIL) NO.23 OF 2013
+
+ WRIT PETITION (CIVIL) NO. 97 OF 2013
+
+ WRIT PETITION (CRIMINAL) NO.199 OF 2013
+
+ WRIT PETITION (CIVIL) NO. 217 OF 2013
+
+ WRIT PETITION (CRIMINAL) NO.222 OF 2013
+
+ WRIT PETITION (CRIMINAL) NO.225 OF 2013
+
+ WRIT PETITION (CIVIL) NO.758 OF 2014
+
+ WRIT PETITION (CRIMINAL) NO.196 OF 2014
+
+ J U D G M E N T
+
+R.F. NARIMAN, J.
+
+1. This batch of writ petitions filed under Article 32 of the
+Constitution of India raises very important and far-reaching questions
+relatable primarily to the fundamental right of free speech and expression
+guaranteed by Article 19(1)(a) of the Constitution of India. The immediate
+cause for concern in these petitions is Section 66A of the Information
+Technology Act of 2000. This Section was not in the Act as originally
+enacted, but came into force by virtue of an Amendment Act of 2009 with
+effect from 27.10.2009. Since all the arguments raised by several counsel
+for the petitioners deal with the unconstitutionality of this Section it is
+set out hereinbelow:
+
+"66-A. Punishment for sending offensive messages through communication
+service, etc.-Any person who sends, by means of a computer resource or a
+communication device,-
+
+(a) any information that is grossly offensive or has menacing character; or
+
+(b) any information which he knows to be false, but for the purpose of
+causing annoyance, inconvenience, danger, obstruction, insult, injury,
+criminal intimidation, enmity, hatred or ill will, persistently by making
+use of such computer resource or a communication device; or
+
+(c) any electronic mail or electronic mail message for the purpose of
+causing annoyance or inconvenience or to deceive or to mislead the
+addressee or recipient about the origin of such messages,
+
+shall be punishable with imprisonment for a term which may extend to three
+years and with fine.
+
+Explanation.- For the purposes of this section, terms "electronic mail" and
+"electronic mail message" means a message or information created or
+transmitted or received on a computer, computer system, computer resource
+or communication device including attachments in text, image, audio, video
+and any other electronic record, which may be transmitted with the
+message."[1]
+
+2. A related challenge is also made to Section 69A introduced by the
+same amendment which reads as follows:-
+
+"69-A. Power to issue directions for blocking for public access of any
+information through any computer resource.-(1) Where the Central Government
+or any of its officers specially authorised by it in this behalf is
+satisfied that it is necessary or expedient so to do, in the interest of
+sovereignty and integrity of India, defence of India, security of the
+State, friendly relations with foreign States or public order or for
+preventing incitement to the commission of any cognizable offence relating
+to above, it may subject to the provisions of sub-section (2), for reasons
+to be recorded in writing, by order, direct any agency of the Government or
+intermediary to block for access by the public or cause to be blocked for
+access by the public any information generated, transmitted, received,
+stored or hosted in any computer resource.
+
+(2) The procedure and safeguards subject to which such blocking for access
+by the public may be carried out, shall be such as may be prescribed.
+
+(3) The intermediary who fails to comply with the direction issued under
+sub-section (1) shall be punished with an imprisonment for a term which may
+extend to seven years and shall also be liable to fine."
+
+3. The Statement of Objects and Reasons appended to the Bill which
+introduced the Amendment Act stated in paragraph 3 that:
+
+"3. A rapid increase in the use of computer and internet has given rise to
+new forms of crimes like publishing sexually explicit materials in
+electronic form, video voyeurism and breach of confidentiality and leakage
+of data by intermediary, e-commerce frauds like personation commonly known
+as Phishing, identity theft and offensive messages through communication
+services. So, penal provisions are required to be included in the
+Information Technology Act, the Indian Penal code, the Indian Evidence Act
+and the code of Criminal Procedure to prevent such crimes."
+
+4. The petitioners contend that the very basis of Section 66A - that it
+has given rise to new forms of crimes - is incorrect, and that Sections 66B
+to 67C and various Sections of the Indian Penal Code (which will be
+referred to hereinafter) are good enough to deal with all these crimes.
+
+5. The petitioners' various counsel raised a large number of points as
+to the constitutionality of Section 66A. According to them, first and
+foremost Section 66A infringes the fundamental right to free speech and
+expression and is not saved by any of the eight subjects covered in Article
+19(2). According to them, the causing of annoyance, inconvenience, danger,
+obstruction, insult, injury, criminal intimidation, enmity, hatred or ill-
+will are all outside the purview of Article 19(2). Further, in creating an
+offence, Section 66A suffers from the vice of vagueness because unlike the
+offence created by Section 66 of the same Act, none of the aforesaid terms
+are even attempted to be defined and cannot be defined, the result being
+that innocent persons are roped in as well as those who are not. Such
+persons are not told clearly on which side of the line they fall; and it
+would be open to the authorities to be as arbitrary and whimsical as they
+like in booking such persons under the said Section. In fact, a large
+number of innocent persons have been booked and many instances have been
+given in the form of a note to the Court. The enforcement of the said
+Section would really be an insidious form of censorship which impairs a
+core value contained in Article 19(1)(a). In addition, the said Section
+has a chilling effect on the freedom of speech and expression. Also, the
+right of viewers is infringed as such chilling effect would not give them
+the benefit of many shades of grey in terms of various points of view that
+could be viewed over the internet.
+
+The petitioners also contend that their rights under Articles 14 and 21 are
+breached inasmuch there is no intelligible differentia between those who
+use the internet and those who by words spoken or written use other mediums
+of communication. To punish somebody because he uses a particular medium of
+communication is itself a discriminatory object and would fall foul of
+Article 14 in any case.
+
+6. In reply, Mr. Tushar Mehta, learned Additional Solicitor General
+defended the constitutionality of Section 66A. He argued that the
+legislature is in the best position to understand and appreciate the needs
+of the people. The Court will, therefore, interfere with the legislative
+process only when a statute is clearly violative of the rights conferred on
+the citizen under Part-III of the Constitution. There is a presumption in
+favour of the constitutionality of an enactment. Further, the Court would
+so construe a statute to make it workable and in doing so can read into it
+or read down the provisions that are impugned. The Constitution does not
+impose impossible standards of determining validity. Mere possibility of
+abuse of a provision cannot be a ground to declare a provision invalid.
+Loose language may have been used in Section 66A to deal with novel methods
+of disturbing other people's rights by using the internet as a tool to do
+so. Further, vagueness is not a ground to declare a statute
+unconstitutional if the statute is otherwise legislatively competent and
+non-arbitrary. He cited a large number of judgments before us both from
+this Court and from overseas to buttress his submissions.
+
+Freedom of Speech and Expression
+
+Article 19(1)(a) of the Constitution of India states as follows:
+
+"Article 19. Protection of certain rights regarding freedom of speech, etc.-
+(1) All citizens shall have the right-
+
+(a) to freedom of speech and expression;"
+
+7. Article 19(2) states:
+
+"Article 19. Protection of certain rights regarding freedom of speech, etc.-
+(2) Nothing in sub-clause (a) of clause (1) shall affect the operation of
+any existing law, or prevent the State from making any law, in so far as
+such law imposes reasonable restrictions on the exercise of the right
+conferred by the said sub-clause in the interests of the sovereignty and
+integrity of India, the security of the State, friendly relations with
+foreign States, public order, decency or morality or in relation to
+contempt of court, defamation or incitement to an offence."
+
+8. The Preamble of the Constitution of India inter alia speaks of
+liberty of thought, expression, belief, faith and worship. It also says
+that India is a sovereign democratic republic. It cannot be over emphasized
+that when it comes to democracy, liberty of thought and expression is a
+cardinal value that is of paramount significance under our constitutional
+scheme.
+
+9. Various judgments of this Court have referred to the importance of
+freedom of speech and expression both from the point of view of the liberty
+of the individual and from the point of view of our democratic form of
+government. For example, in the early case of Romesh Thappar v. State of
+Madras, [1950] S.C.R. 594 at 602, this Court stated that freedom of speech
+lay at the foundation of all democratic organizations. In Sakal Papers (P)
+Ltd. & Ors. v. Union of India, [1962] 3 S.C.R. 842 at 866, a Constitution
+Bench of this Court said freedom of speech and expression of opinion is of
+paramount importance under a democratic constitution which envisages
+changes in the composition of legislatures and governments and must be
+preserved. In a separate concurring judgment Beg,J. said, in Bennett
+Coleman & Co. & Ors. v. Union of India & Ors., [1973] 2 S.C.R. 757 at 829,
+that the freedom of speech and of the press is the Ark of the Covenant of
+Democracy because public criticism is essential to the working of its
+institutions.[2]
+
+10. Equally, in S. Khushboo v. Kanniamal & Anr., (2010) 5 SCC 600 this
+Court stated, in paragraph 45 that the importance of freedom of speech and
+expression though not absolute was necessary as we need to tolerate
+unpopular views. This right requires the free flow of opinions and ideas
+essential to sustain the collective life of the citizenry. While an
+informed citizenry is a pre-condition for meaningful governance, the
+culture of open dialogue is generally of great societal importance.
+
+11. This last judgment is important in that it refers to the "market
+place of ideas" concept that has permeated American Law. This was put in
+the felicitous words of Justice Holmes in his famous dissent in Abrams v.
+United States, 250 US 616 (1919), thus:
+
+"But when men have realized that time has upset many fighting faiths, they
+may come to believe even more than they believe the very foundations of
+their own conduct that the ultimate good desired is better reached by free
+trade in ideas-that the best test of truth is the power of thought to get
+itself accepted in the competition of the market, and that truth is the
+only ground upon which their wishes safely can be carried out. That at any
+rate is the theory of our Constitution."
+
+12. Justice Brandeis in his famous concurring judgment in Whitney v.
+California, 71 L. Ed. 1095 said:
+
+"Those who won our independence believed that the final end of the state
+was to make men free to develop their faculties, and that in its government
+the deliberative forces should prevail over the arbitrary. They valued
+liberty both as an end and as a means. They believed liberty to be the
+secret of happiness and courage to be the secret of liberty. They believed
+that freedom to think as you will and to speak as you think are means
+indispensable to the discovery and spread of political truth; that without
+free speech and assembly discussion would be futile; that with them,
+discussion affords ordinarily adequate protection against the dissemination
+of noxious doctrine; that the greatest menace to freedom is an inert
+people; that public discussion is a political duty; and that this should be
+a fundamental principle of the American government. They recognized the
+risks to which all human institutions are subject. But they knew that order
+cannot be secured merely through fear of punishment for its infraction;
+that it is hazardous to discourage thought, hope and imagination; that fear
+breeds repression; that repression breeds hate; that hate menaces stable
+government; that the path of safety lies in the opportunity to discuss
+freely supposed grievances and proposed remedies; and that the fitting
+remedy for evil counsels is good ones. Believing in the power of reason as
+applied through public discussion, they eschewed silence coerced by law-the
+argument of force in its worst form. Recognizing the occasional tyrannies
+of governing majorities, they amended the Constitution so that free speech
+and assembly should be guaranteed.
+
+Fear of serious injury cannot alone justify suppression of free speech and
+assembly. Men feared witches and burnt women. It is the function of speech
+to free men from the bondage of irrational fears. To justify suppression of
+free speech there must be reasonable ground to fear that serious evil will
+result if free speech is practiced. There must be reasonable ground to
+believe that the danger apprehended is imminent. There must be reasonable
+ground to believe that the evil to be prevented is a serious one. Every
+denunciation of existing law tends in some measure to increase the
+probability that there will be violation of it. Condonation of a breach
+enhances the probability. Expressions of approval add to the probability.
+Propagation of the criminal state of mind by teaching syndicalism increases
+it. Advocacy of lawbreaking heightens it still further. But even advocacy
+of violation, however reprehensible morally, is not a justification for
+denying free speech where the advocacy falls short of incitement and there
+is nothing to indicate that the advocacy would be immediately acted on. The
+wide difference between advocacy and incitement, between preparation and
+attempt, between assembling and conspiracy, must be borne in mind. In order
+to support a finding of clear and present danger it must be shown either
+that immediate serious violence was to be expected or was advocated, or
+that the past conduct furnished reason to believe that such advocacy was
+then contemplated." (at page 1105, 1106)
+
+13. This leads us to a discussion of what is the content of the
+expression "freedom of speech and expression". There are three concepts
+which are fundamental in understanding the reach of this most basic of
+human rights. The first is discussion, the second is advocacy, and the
+third is incitement. Mere discussion or even advocacy of a particular
+cause howsoever unpopular is at the heart of Article 19(1)(a). It is only
+when such discussion or advocacy reaches the level of incitement that
+Article 19(2) kicks in.[3] It is at this stage that a law may be made
+curtailing the speech or expression that leads inexorably to or tends to
+cause public disorder or tends to cause or tends to affect the sovereignty
+& integrity of India, the security of the State, friendly relations with
+foreign States, etc. Why it is important to have these three concepts in
+mind is because most of the arguments of both petitioners and respondents
+tended to veer around the expression "public order".
+
+14. It is at this point that a word needs to be said about the use of
+American judgments in the context of Article 19(1)(a). In virtually every
+significant judgment of this Court, reference has been made to judgments
+from across the Atlantic. Is it safe to do so?
+
+15. It is significant to notice first the differences between the US
+First Amendment and Article 19(1)(a) read with Article 19(2). The first
+important difference is the absoluteness of the U.S. first Amendment -
+Congress shall make no law which abridges the freedom of speech. Second,
+whereas the U.S. First Amendment speaks of freedom of speech and of the
+press, without any reference to "expression", Article 19(1)(a) speaks of
+freedom of speech and expression without any reference to "the press".
+Third, under the US Constitution, speech may be abridged, whereas under our
+Constitution, reasonable restrictions may be imposed. Fourth, under our
+Constitution such restrictions have to be in the interest of eight
+designated subject matters - that is any law seeking to impose a
+restriction on the freedom of speech can only pass muster if it is
+proximately related to any of the eight subject matters set out in Article
+19(2).
+
+16. Insofar as the first apparent difference is concerned, the U.S.
+Supreme Court has never given literal effect to the declaration that
+Congress shall make no law abridging the freedom of speech. The approach
+of the Court which is succinctly stated in one of the early U.S. Supreme
+Court Judgments, continues even today. In Chaplinsky v. New Hampshire, 86
+L. Ed. 1031, Justice Murphy who delivered the opinion of the Court put it
+thus:-
+
+"Allowing the broadest scope to the language and purpose of the Fourteenth
+Amendment, it is well understood that the right of free speech is not
+absolute at all times and under all circumstances. There are certain well-
+defined and narrowly limited classes of speech, the prevention and
+punishment of which has never been thought to raise any Constitutional
+problem. These include the lewd and obscene, the profane, the libelous, and
+the insulting or 'fighting' words-those which by their very utterance
+inflict injury or tend to incite an immediate breach of the peace. It has
+been well observed that such utterances are no essential part of any
+exposition of ideas, and are of such slight social value as a step to truth
+that any benefit that may be derived from them is clearly outweighed by the
+social interest in order and morality. 'Resort to epithets or personal
+abuse is not in any proper sense communication of information or opinion
+safeguarded by the Constitution, and its punishment as a criminal act would
+raise no question under that instrument.' Cantwell v. Connecticut, 310 U.S.
+296, 309, 310, 60 S.Ct. 900, 906, 84 L.Ed.1213, 128 A.L.R. 1352." (at
+page 1035)
+
+17. So far as the second apparent difference is concerned, the American
+Supreme Court has included "expression" as part of freedom of speech and
+this Court has included "the press" as being covered under Article
+19(1)(a), so that, as a matter of judicial interpretation, both the US and
+India protect the freedom of speech and expression as well as press
+freedom. Insofar as abridgement and reasonable restrictions are concerned,
+both the U.S. Supreme Court and this Court have held that a restriction in
+order to be reasonable must be narrowly tailored or narrowly interpreted so
+as to abridge or restrict only what is absolutely necessary. It is only
+when it comes to the eight subject matters that there is a vast difference.
+ In the U.S., if there is a compelling necessity to achieve an important
+governmental or societal goal, a law abridging freedom of speech may pass
+muster. But in India, such law cannot pass muster if it is in the interest
+of the general public. Such law has to be covered by one of the eight
+subject matters set out under Article 19(2). If it does not, and is
+outside the pale of 19(2), Indian courts will strike down such law.
+
+18. Viewed from the above perspective, American judgments have great
+persuasive value on the content of freedom of speech and expression and the
+tests laid down for its infringement. It is only when it comes to sub-
+serving the general public interest that there is the world of a
+difference. This is perhaps why in Kameshwar Prasad & Ors. v. The State of
+Bihar & Anr., 1962 Supp. (3) S.C.R. 369, this Court held:
+
+"As regards these decisions of the American Courts, it should be borne in
+mind that though the First Amendment to the Constitution of the United
+State reading "Congress shall make no law.... abridging the freedom of
+speech..." appears to confer no power on the Congress to impose any
+restriction on the exercise of the guaranteed right, still it has always
+been understood that the freedom guaranteed is subject to the police power
+- the scope of which however has not been defined with precision or
+uniformly. It is on the basis of the police power to abridge that freedom
+that the constitutional validity of laws penalising libels, and those
+relating to sedition, or to obscene publications etc., has been sustained.
+The resultant flexibility of the restrictions that could be validly imposed
+renders the American decisions inapplicable to and without much use for
+resolving the questions arising under Art. 19(1) (a) or (b) of our
+Constitution wherein the grounds on which limitations might be placed on
+the guaranteed right are set out with definiteness and precision." ( At
+page 378)
+
+19. But when it comes to understanding the impact and content of freedom
+of speech, in Indian Express Newspapers (Bombay) Private Limited & Ors. v.
+Union of India & Ors., (1985) 2 SCR 287, Venkataramiah,J. stated:
+
+ "While examining the constitutionality of a law which is alleged to
+contravene Article 19 (1) (a) of the Constitution, we cannot, no doubt, be
+solely guided by the decisions of the Supreme Court of the United States of
+America. But in order to understand the basic principles of freedom of
+speech and expression and the need for that freedom in a democratic
+country, we may take them into consideration. The pattern of Article 19 (1)
+(a) and of Article 19 (1) (g) of our constitution is different from the
+pattern of the First Amendment to the American Constitution which is almost
+absolute in its terms. The rights guaranteed under Article 19 (1) (a) and
+Article 19 (1) (g) of the Constitution are to be read along with clauses
+(2) and (6) of Article 19 which carve out areas in respect of which valid
+legislation can be made." (at page 324)
+
+20. With these prefatory remarks, we will now go to the other aspects of
+the challenge made in these writ petitions and argued before us.
+
+A. Article 19(1)(a) -
+
+Section 66A has been challenged on the ground that it casts the net very
+wide - "all information" that is disseminated over the internet is included
+within its reach. It will be useful to note that Section 2(v) of
+Information Technology Act, 2000 defines information as follows:
+
+"2. Definitions.-(1) In this Act, unless the context otherwise requires,-
+(v) "Information" includes data, message, text, images, sound, voice,
+codes, computer programmes, software and databases or micro film or
+computer generated micro fiche."
+
+Two things will be noticed. The first is that the definition is an
+inclusive one. Second, the definition does not refer to what the content
+of information can be. In fact, it refers only to the medium through which
+such information is disseminated. It is clear, therefore, that the
+petitioners are correct in saying that the public's right to know is
+directly affected by Section 66A. Information of all kinds is roped in -
+such information may have scientific, literary or artistic value, it may
+refer to current events, it may be obscene or seditious. That such
+information may cause annoyance or inconvenience to some is how the offence
+is made out. It is clear that the right of the people to know - the market
+place of ideas - which the internet provides to persons of all kinds is
+what attracts Section 66A. That the information sent has to be annoying,
+inconvenient, grossly offensive etc., also shows that no distinction is
+made between mere discussion or advocacy of a particular point of view
+which may be annoying or inconvenient or grossly offensive to some and
+incitement by which such words lead to an imminent causal connection with
+public disorder, security of State etc. The petitioners are right in
+saying that Section 66A in creating an offence against persons who use the
+internet and annoy or cause inconvenience to others very clearly affects
+the freedom of speech and expression of the citizenry of India at large in
+that such speech or expression is directly curbed by the creation of the
+offence contained in Section 66A.
+
+In this regard, the observations of Justice Jackson in American
+Communications Association v. Douds, 94 L. Ed. 925 are apposite:
+
+"Thought control is a copyright of totalitarianism, and we have no claim to
+it. It is not the function of our Government to keep the citizen from
+falling into error; it is the function of the citizen to keep the
+Government from falling into error. We could justify any censorship only
+when the censors are better shielded against error than the censored."
+
+Article 19(2)
+
+One challenge to Section 66A made by the petitioners' counsel is that the
+offence created by the said Section has no proximate relation with any of
+the eight subject matters contained in Article 19(2). We may incidentally
+mention that the State has claimed that the said Section can be supported
+under the heads of public order, defamation, incitement to an offence and
+decency or morality.
+
+21. Under our constitutional scheme, as stated earlier, it is not open to
+the State to curtail freedom of speech to promote the general public
+interest. In Sakal Papers (P) Ltd. & Ors. v. Union of India, [1962] 3
+S.C.R. 842, this Court said:
+
+"It may well be within the power of the State to place, in the interest of
+the general public, restrictions upon the right of a citizen to carry on
+business but it is not open to the State to achieve this object by directly
+and immediately curtailing any other freedom of that citizen guaranteed by
+the Constitution and which is not susceptible of abridgment on the same
+grounds as are set out in clause (6) of Article 19. Therefore, the right of
+freedom of speech cannot be taken away with the object of placing
+restrictions on the business activities of a citizen. Freedom of speech can
+be restricted only in the interests of the security of the State, friendly
+relations with foreign State, public order, decency or morality or in
+relation to contempt of court, defamation or incitement to an offence. It
+cannot, like the freedom to carry on business, be curtailed in the interest
+of the general public. If a law directly affecting it is challenged, it is
+no answer that the restrictions enacted by it are justifiable under clauses
+(3) to (6). For, the scheme of Article 19 is to enumerate different
+freedoms separately and then to specify the extent of restrictions to which
+they may be subjected and the objects for securing which this could be
+done. A citizen is entitled to enjoy each and every one of the freedoms
+together and clause (1) does not prefer one freedom to another. That is the
+plain meaning of this clause. It follows from this that the State cannot
+make a law which directly restricts one freedom even for securing the
+better enjoyment of another freedom. All the greater reason, therefore for
+holding that the State cannot directly restrict one freedom by placing an
+otherwise permissible restriction on another freedom." (at page 863)
+
+22. Before we come to each of these expressions, we must understand what
+is meant by the expression "in the interests of". In The Superintendent,
+Central Prison, Fatehgarh v. Ram Manohar Lohia, [1960] 2 S.C.R. 821, this
+Court laid down:
+
+"We do not understand the observations of the Chief Justice to mean that
+any remote or fanciful connection between the impugned Act and the public
+order would be sufficient to sustain its validity. The learned Chief
+Justice was only making a distinction between an Act which expressly and
+directly purported to maintain public order and one which did not expressly
+state the said purpose but left it to be implied there from; and between an
+Act that directly maintained public order and that indirectly brought about
+the same result. The distinction does not ignore the necessity for intimate
+connection between the Act and the public order sought to be maintained by
+the Act." (at pages 834, 835)
+
+"The restriction made "in the interests of public order" must also have
+reasonable relation to the object to be achieved, i.e., the public order.
+If the restriction has no proximate relationship to the achievement of
+public order, it cannot be said that the restriction is a reasonable
+restriction within the meaning of the said clause." (at page 835)
+
+"The decision, in our view, lays down the correct test. The limitation
+imposed in the interests of public order to be a reasonable restriction,
+should be one which has a proximate connection or nexus with public order,
+but not one far-fetched, hypothetical or problematical or too remote in the
+chain of its relation with the public order..........There is no proximate
+or even foreseeable connection between such instigation and the public
+order sought to be protected under section. We cannot accept the argument
+of the learned Advocate General that instigation of a single individual not
+to pay tax or dues is a spark which may in the long run ignite a
+revolutionary movement destroying public order" (at page 836).
+
+Reasonable Restrictions:
+
+23. This Court has laid down what "reasonable restrictions" means in
+several cases. In Chintaman Rao v. The State of Madhya Pradesh, [1950]
+S.C.R. 759, this Court said:
+"The phrase "reasonable restriction" connotes that the limitation imposed
+on a person in enjoyment of the right should not be arbitrary or of an
+excessive nature, beyond what is required in the interests of the public.
+The word "reasonable" implies intelligent care and deliberation, that is,
+the choice of a course which reason dictates. Legislation which arbitrarily
+or excessively invades the right cannot be said to contain the quality of
+reasonableness and unless it strikes a proper balance between the freedom
+guaranteed in article 19(1)(g) and the social control permitted by clause
+(6) of article 19, it must be held to be wanting in that quality." (at
+page 763)
+
+24. In State of Madras v. V.G. Row, [1952] S.C.R. 597, this Court said:
+
+"This Court had occasion in Dr. Khare's case (1950) S.C.R. 519 to define
+the scope of the judicial review under clause (5) of Article19 where the
+phrase "imposing reasonable restriction on the exercise of the right" also
+occurs and four out of the five Judges participating in the decision
+expressed the view (the other Judge leaving the question open) that both
+the substantive and the procedural aspects of the impugned restrictive law
+should be examined from the point of view of reasonableness; that is to
+say, the Court should consider not only factors such as the duration and
+the extent of the restrictions, but also the circumstances under which and
+the manner in which their imposition has been authorised. It is important
+in this context to bear in mind that the test of reasonableness, where ever
+prescribed, should be applied to each, individual statute impugned and no
+abstract standard, or general pattern of reasonableness can be laid down as
+applicable to all cases. The nature of the right alleged to have been
+infringed, the underlying purpose of the restriction imposed, the extent
+and urgency of the evil sought to be remedied thereby, the disproportion of
+the imposition, the prevailing conditions at the time, should all enter
+into the judicial verdict. In evaluating such elusive factors and forming
+their own conception of what is reasonable, in all the circumstances of a
+given case, it is inevitable that the social philosophy and the scale of
+values of the judges participating in the decision should play an important
+part, and the limit to their interference with legislative judgment in such
+cases can only be dictated by their sense of responsibility and self-
+restraint and the sobering reflection that the Constitution is meant not
+only for people of their way of thinking but for all, and that the majority
+of the elected representatives of the people have, in authorising the
+imposition of the restrictions, considered them to be reasonable." (at page
+606-607)
+
+25. Similarly, in Mohd. Faruk v. State of Madhya Pradesh & Ors., [1970] 1
+S.C.R. 156, this Court said:
+
+"The Court must in considering the validity of the impugned law imposing a
+prohibition on the carrying on of a business or profession, attempt an
+evaluation of its direct and immediate impact upon the fundamental rights
+of the citizens affected thereby and the larger public interest sought to
+be ensured in the light of the object sought to be achieved, the necessity
+to restrict the citizen's freedom, the inherent pernicious nature of the
+act prohibited or its capacity or tendency to be harmful to the general
+public, the possibility of achieving the object by imposing a less drastic
+restraint, and in the absence of exceptional situations such as the
+prevalence of a state of emergency-national or local-or the necessity to
+maintain essential supplies, or the necessity to stop activities inherently
+dangerous, the existence of a machinery to satisfy the administrative
+authority that no case for imposing the restriction is made out or that a
+less drastic restriction may ensure the object intended to be achieved."
+(at page 161)
+
+26. In Dr. N. B. Khare v. State of Delhi, [1950] S.C.R. 519, a
+Constitution Bench also spoke of reasonable restrictions when it comes to
+procedure. It said:
+
+"While the reasonableness of the restrictions has to be considered with
+regard to the exercise of the right, it does not necessarily exclude from
+the consideration of the Court the question of reasonableness of the
+procedural part of the law. It is obvious that if the law prescribes five
+years externment or ten years externment, the question whether such period
+of externment is reasonable, being the substantive part, is necessarily for
+the consideration of the court under clause (5). Similarly, if the law
+provides the procedure under which the exercise of the right may be
+restricted, the same is also for the consideration of the Court, as it has
+to determine if the exercise of the right has been reasonably restricted."
+(at page 524)
+
+27. It was argued by the learned Additional Solicitor General that a
+relaxed standard of reasonableness of restriction should apply regard being
+had to the fact that the medium of speech being the internet differs from
+other mediums on several grounds. To appreciate the width and scope of his
+submissions, we are setting out his written submission verbatim:
+
+"(i) the reach of print media is restricted to one state or at the most
+one country while internet has no boundaries and its reach is global;
+
+(ii) the recipient of the free speech and expression used in a print media
+can only be literate persons while internet can be accessed by literate and
+illiterate both since one click is needed to download an objectionable post
+or a video;
+
+(iii) In case of televisions serials [except live shows] and movies, there
+is a permitted pre- censorship' which ensures right of viewers not to
+receive any information which is dangerous to or not in conformity with the
+social interest. While in the case of an internet, no such pre-censorship
+is possible and each individual is publisher, printer, producer, director
+and broadcaster of the content without any statutory regulation;
+
+In case of print media or medium of television and films whatever is truly
+recorded can only be published or broadcasted I televised I viewed. While
+in case of an internet, morphing of images, change of voices and many other
+technologically advance methods to create serious potential social disorder
+can be applied.
+
+ By the medium of internet, rumors having a serious potential of creating a
+serious social disorder can be spread to trillions of people without any
+check which is not possible in case of other mediums.
+
+ In case of mediums like print media, television and films, it is broadly
+not possible to invade privacy of unwilling persons. While in case of an
+internet, it is very easy to invade upon the privacy of any individual and
+thereby violating his right under Article 21 of the Constitution of India.
+
+ By its very nature, in the mediums like newspaper, magazine, television or
+a movie, it is not possible to sexually harass someone, outrage the modesty
+of anyone, use unacceptable filthy language and evoke communal frenzy which
+would lead to serious social disorder. While in the case of an internet, it
+is easily possible to do so by a mere click of a button without any
+geographical limitations and almost in all cases while ensuring anonymity
+of the offender.
+
+ By the very nature of the medium, the width and reach of internet is
+manifold as against newspaper and films. The said mediums have inbuilt
+limitations i.e. a person will have to buy / borrow a newspaper and / or
+will have to go to a theater to watch a movie. For television also one
+needs at least a room where a television is placed and can only watch those
+channels which he has subscribed and that too only at a time where it is
+being telecast. While in case of an internet a person abusing the internet,
+can commit an offence at any place at the time of his choice and
+maintaining his anonymity in almost all cases.
+
+(ix) In case of other mediums, it is impossible to maintain anonymity as a
+result of which speech ideal opinions films having serious potential of
+creating a social disorder never gets generated since its origin is bound
+to be known. While in case of an internet mostly its abuse takes place
+under the garb of anonymity which can be unveiled only after thorough
+investigation.
+
+(x) In case of other mediums like newspapers, television or films, the
+approach is always institutionalized approach governed by industry specific
+ethical norms of self conduct. Each newspaper / magazine / movie production
+house / TV Channel will have their own institutionalized policies in house
+which would generally obviate any possibility of the medium being abused.
+As against that use of internet is solely based upon individualistic
+approach of each individual without any check, balance or regulatory
+ethical norms for exercising freedom of speech and expression under Article
+19[ 1] [a].
+
+(xi) In the era limited to print media and cinematograph; or even in case
+of publication through airwaves, the chances of abuse of freedom of
+expression was less due to inherent infrastructural and logistical
+constrains. In the case of said mediums, it was almost impossible for an
+individual to create and publish an abusive content and make it available
+to trillions of people. Whereas, in the present internet age the said
+infrastructural and logistical constrains have disappeared as any
+individual using even a smart mobile phone or a portable computer device
+can create and publish abusive material on its own, without seeking help of
+anyone else and make it available to trillions of people by just one
+click."
+
+28. As stated, all the above factors may make a distinction between the
+print and other media as opposed to the internet and the legislature may
+well, therefore, provide for separate offences so far as free speech over
+the internet is concerned. There is, therefore, an intelligible
+differentia having a rational relation to the object sought to be achieved
+- that there can be creation of offences which are applied to free speech
+over the internet alone as opposed to other mediums of communication.
+Thus, an Article 14 challenge has been repelled by us on this ground later
+in this judgment. But we do not find anything in the features outlined by
+the learned Additional Solicitor General to relax the Court's scrutiny of
+the curbing of the content of free speech over the internet. While it may
+be possible to narrowly draw a Section creating a new offence, such as
+Section 69A for instance, relatable only to speech over the internet, yet
+the validity of such a law will have to be tested on the touchstone of the
+tests already indicated above.
+
+29. In fact, this aspect was considered in Secretary Ministry of
+Information & Broadcasting, Government of India v. Cricket Association of
+Bengal, (1995) 2 SCC 161 in para 37, where the following question was
+posed:
+
+"The next question which is required to be answered is whether there is any
+distinction between the freedom of the print media and that of the
+electronic media such as radio and television, and if so, whether it
+necessitates more restrictions on the latter media."
+
+This question was answered in para 78 thus:
+
+"There is no doubt that since the airwaves/frequencies are a public
+property and are also limited, they have to be used in the best interest of
+the society and this can be done either by a central authority by
+establishing its own broadcasting network or regulating the grant of
+licences to other agencies, including the private agencies. What is
+further, the electronic media is the most powerful media both because of
+its audio-visual impact and its widest reach covering the section of the
+society where the print media does not reach. The right to use the airwaves
+and the content of the programmes, therefore, needs regulation for
+balancing it and as well as to prevent monopoly of information and views
+relayed, which is a potential danger flowing from the concentration of the
+right to broadcast/telecast in the hands either of a central agency or of
+few private affluent broadcasters. That is why the need to have a central
+agency representative of all sections of the society free from control both
+of the Government and the dominant influential sections of the society.
+This is not disputed. But to contend that on that account the restrictions
+to be imposed on the right under Article 19(1)(a) should be in addition to
+those permissible under Article 19(2) and dictated by the use of public
+resources in the best interests of the society at large, is to misconceive
+both the content of the freedom of speech and expression and the problems
+posed by the element of public property in, and the alleged scarcity of,
+the frequencies as well as by the wider reach of the media. If the right to
+freedom of speech and expression includes the right to disseminate
+information to as wide a section of the population as is possible, the
+access which enables the right to be so exercised is also an integral part
+of the said right. The wider range of circulation of information or its
+greater impact cannot restrict the content of the right nor can it justify
+its denial. The virtues of the electronic media cannot become its enemies.
+It may warrant a greater regulation over licensing and control and
+vigilance on the content of the programme telecast. However, this control
+can only be exercised within the framework of Article 19(2) and the
+dictates of public interests. To plead for other grounds is to plead for
+unconstitutional measures. It is further difficult to appreciate such
+contention on the part of the Government in this country when they have a
+complete control over the frequencies and the content of the programme to
+be telecast. They control the sole agency of telecasting. They are also
+armed with the provisions of Article 19(2) and the powers of pre-censorship
+under the Cinematograph Act and Rules. The only limitation on the said
+right is, therefore, the limitation of resources and the need to use them
+for the benefit of all. When, however, there are surplus or unlimited
+resources and the public interests so demand or in any case do not prevent
+telecasting, the validity of the argument based on limitation of resources
+disappears. It is true that to own a frequency for the purposes of
+broadcasting is a costly affair and even when there are surplus or
+unlimited frequencies, only the affluent few will own them and will be in a
+position to use it to subserve their own interest by manipulating news and
+views. That also poses a danger to the freedom of speech and expression of
+the have-nots by denying them the truthful information on all sides of an
+issue which is so necessary to form a sound view on any subject. That is
+why the doctrine of fairness has been evolved in the US in the context of
+the private broadcasters licensed to share the limited frequencies with the
+central agency like the FCC to regulate the programming. But this
+phenomenon occurs even in the case of the print media of all the countries.
+Hence the body like the Press Council of India which is empowered to
+enforce, however imperfectly, the right to reply. The print media further
+enjoys as in our country, freedom from pre-censorship unlike the electronic
+media."
+
+Public Order
+
+30. In Article 19(2) (as it originally stood) this sub-head was
+conspicuously absent. Because of its absence, challenges made to an order
+made under Section 7 of the Punjab Maintenance of Public Order Act and to
+an order made under Section 9 (1)(a) of the Madras Maintenance of Public
+Order Act were allowed in two early judgments by this Court. Thus in
+Romesh Thappar v. State of Madras, [1950] S.C.R. 594, this Court held that
+an order made under Section 9(1)(a) of the Madras Maintenance of Public
+Order Act (XXIII of 1949) was unconstitutional and void in that it could
+not be justified as a measure connected with security of the State. While
+dealing with the expression "public order", this Court held that "public
+order" is an expression which signifies a state of tranquility which
+prevails amongst the members of a political society as a result of the
+internal regulations enforced by the Government which they have
+established.
+
+31. Similarly, in Brij Bhushan & Anr. v. State of Delhi, [1950] S.C.R.
+605, an order made under Section 7 of the East Punjab Public Safety Act,
+1949, was held to be unconstitutional and void for the self-same reason.
+
+32. As an aftermath of these judgments, the Constitution First Amendment
+added the words "public order" to Article 19(2).
+
+33. In Superintendent, Central Prison, Fatehgarh v. Ram Manohar Lohia,
+[1960] 2 S.C.R. 821, this Court held that public order is synonymous with
+public safety and tranquility; it is the absence of disorder involving
+breaches of local significance in contradistinction to national upheavals,
+such as revolution, civil strife, war, affecting the security of the State.
+This definition was further refined in Dr. Ram Manohar Lohia v. State of
+Bihar & Ors., [1966] 1 S.C.R. 709, where this Court held:
+
+"It will thus appear that just as "public order" in the rulings of this
+Court (earlier cited) was said to comprehend disorders of less gravity than
+those affecting "security of State", "law and order" also comprehends
+disorders of less gravity than those affecting "public order". One has to
+imagine three concentric circles. Law and order represents the largest
+circle within which is the next circle representing public order and the
+smallest circle represents security of State. It is then easy to see that
+an act may affect law and order but not public order just as an act may
+affect public order but not security of the State." (at page 746)
+
+34. In Arun Ghosh v. State of West Bengal, [1970] 3 S.C.R. 288, Ram
+Manohar Lohia's case was referred to with approval in the following terms:
+
+"In Dr. Ram Manohar Lohia's case this Court pointed out the difference
+between maintenance of law and order and its disturbance and the
+maintenance of public order and its disturbance. Public order was said to
+embrace more of the community than law and order. Public order is the even
+tempo of the life of the community taking the country as a whole or even a
+specified locality. Disturbance of public order is to be distinguished,
+from acts directed against individuals which do not disturb the society to
+the extent of causing a general disturbance of public tranquility. It is
+the degree of disturbance and its effect upon the life of the community in
+a locality which determines whether the disturbance amounts only to a
+breach of law and order. Take for instance, a man stabs another. People may
+be shocked and even disturbed, but the life of the community keeps moving
+at an even tempo, however much one may dislike the act. Take another case
+of a town where there is communal tension. A man stabs a member of the
+other community. This is an act of a very different sort. Its implications
+are deeper and it affects the even tempo of life and public order is
+jeopardized because the repercussions of the act embrace large Sections of
+the community and incite them to make further breaches of the law and order
+and to subvert the public order. An act by itself is not determinant of its
+own gravity. In its quality it may not differ from another but in its
+potentiality it may be very different. Take the case of assault on girls. A
+guest at a hotel may kiss or make advances to half a dozen chamber maids.
+He may annoy them and also the management but he does not cause disturbance
+of public order. He may even have a fracas with the friends of one of the
+girls but even then it would be a case of breach of law and order only.
+Take another case of a man who molests women in lonely places. As a result
+of his activities girls going to colleges and schools are in constant
+danger and fear. Women going for their ordinary business are afraid of
+being waylaid and assaulted. The activity of this man in its essential
+quality is not different from the act of the other man but in its
+potentiality and in its effect upon the public tranquility there is a vast
+difference. The act of the man who molests the girls in lonely places
+causes a disturbance in the even tempo of living which is the first
+requirement of public order. He disturbs the society and the community. His
+act makes all the women apprehensive of their honour and he can be said to
+be causing disturbance of public order and not merely committing individual
+actions which may be taken note of by the criminal prosecution agencies. It
+means therefore that the question whether a man has only committed a breach
+of law and order or has acted in a manner likely to cause a disturbance of
+the public order is a question of degree and the extent of the reach of the
+act upon the society. The French distinguish law and order and public order
+by designating the latter as order publique. The latter expression has been
+recognised as meaning something more than ordinary maintenance of law and
+order. Justice Ramaswami in Writ Petition No. 179 of 1968 drew a line of
+demarcation between the serious and aggravated forms of breaches of public
+order which affect the community or endanger the public interest at large
+from minor breaches of peace which do not affect the public at large. He
+drew an analogy between public and private crimes. The analogy is useful
+but not to be pushed too far. A large number of acts directed against
+persons or individuals may total up into a breach of public order. In Dr.
+Ram Manohar Lohia's case examples were given by Sarkar, and Hidayatullah,
+JJ. They show how similar acts in different contexts affect differently law
+and order on the one hand and public order on the other. It is always a
+question of degree of the harm and its effect upon the community. The
+question to ask is: Does it lead to disturbance of the current of life of
+the community so as to amount to a disturbance of the public order or does
+it affect merely an individual leaving the tranquility of the society
+undisturbed? This question has to be faced in every case on facts. There is
+no formula by which one case can be distinguished from another." (at pages
+290 and 291).
+
+35. This decision lays down the test that has to be formulated in all
+these cases. We have to ask ourselves the question: does a particular act
+lead to disturbance of the current life of the community or does it merely
+affect an individual leaving the tranquility of society undisturbed? Going
+by this test, it is clear that Section 66A is intended to punish any person
+who uses the internet to disseminate any information that falls within the
+sub-clauses of Section 66A. It will be immediately noticed that the
+recipient of the written word that is sent by the person who is accused of
+the offence is not of any importance so far as this Section is concerned.
+(Save and except where under sub-clause (c) the addressee or recipient is
+deceived or misled about the origin of a particular message.) It is clear,
+therefore, that the information that is disseminated may be to one
+individual or several individuals. The Section makes no distinction
+between mass dissemination and dissemination to one person. Further, the
+Section does not require that such message should have a clear tendency to
+disrupt public order. Such message need not have any potential which could
+disturb the community at large. The nexus between the message and action
+that may be taken based on the message is conspicuously absent - there is
+no ingredient in this offence of inciting anybody to do anything which a
+reasonable man would then say would have the tendency of being an immediate
+threat to public safety or tranquility. On all these counts, it is clear
+that the Section has no proximate relationship to public order whatsoever.
+The example of a guest at a hotel `annoying' girls is telling - this Court
+has held that mere `annoyance' need not cause disturbance of public order.
+Under Section 66A, the offence is complete by sending a message for the
+purpose of causing annoyance, either `persistently' or otherwise without in
+any manner impacting public order.
+
+Clear and present danger - tendency to affect.
+
+36. It will be remembered that Justice Holmes in Schenck v. United
+States, 63 L. Ed. 470 enunciated the clear and present danger test as
+follows:
+
+"...The most stringent protection of free speech would not protect a man in
+falsely shouting fire in a theatre and causing a panic. It does not even
+protect a man from an injunction against uttering words that may have all
+the effect of force. Gompers v. Buck's Stove & Range Co., 221 U. S. 418,
+439, 31 Sup. Ct. 492, 55 L. ed. 797, 34 L. R. A. (N. S.) 874. The question
+in every case is whether the words used are used in such circumstances and
+are of such a nature as to create a clear and present danger that they will
+bring about the substantive evils that Congress has a right to prevent. It
+is a question of proximity and degree." (At page 473, 474)
+
+37. This was further refined in Abrams v. Unites States 250 U.S. 616
+(1919), this time in a Holmesian dissent, to be clear and imminent danger.
+However, in most of the subsequent judgments of the U.S. Supreme Court, the
+test has been understood to mean to be "clear and present danger". The test
+of "clear and present danger" has been used by the U.S. Supreme Court in
+many varying situations and has been adjusted according to varying fact
+situations. It appears to have been repeatedly applied, see- Terminiello
+v. City of Chicago 93 L. Ed. 1131 (1949) at page 1134-1135, Brandenburg v.
+Ohio 23 L. Ed. 2d 430 (1969) at 434-435 & 436, Virginia v. Black 155 L. Ed.
+2d 535 (2003) at page 551, 552 and 553[4].
+
+38. We have echoes of it in our law as well S. Rangarajan v. P. Jagjivan
+& Ors., (1989) 2 SCC 574 at paragraph 45:
+
+"45. The problem of defining the area of freedom of expression when it
+appears to conflict with the various social interests enumerated under
+Article 19(2) may briefly be touched upon here. There does indeed have to
+be a compromise between the interest of freedom of expression and special
+interests. But we cannot simply balance the two interests as if they are of
+equal weight. Our commitment of freedom of expression demands that it
+cannot be suppressed unless the situations created by allowing the freedom
+are pressing and the community interest is endangered. The anticipated
+danger should not be remote, conjectural or far-fetched. It should have
+proximate and direct nexus with the expression. The expression of thought
+should be intrinsically dangerous to the public interest. In other words,
+the expression should be inseparably locked up with the action contemplated
+like the equivalent of a "spark in a powder keg".
+
+39. This Court has used the expression "tendency" to a particular act.
+Thus, in State of Bihar v. Shailabala Devi, [1952] S.C.R. 654, an early
+decision of this Court said that an article, in order to be banned must
+have a tendency to excite persons to acts of violence (at page 662-663).
+The test laid down in the said decision was that the article should be
+considered as a whole in a fair free liberal spirit and then it must be
+decided what effect it would have on the mind of a reasonable reader. (at
+pages 664-665)
+
+40. In Ramji Lal Modi v. The State of U.P., [1957] S.C.R. 860 at page
+867, this court upheld Section 295A of the Indian Penal Code only because
+it was read down to mean that aggravated forms of insults to religion must
+have a tendency to disrupt public order. Similarly, in Kedar Nath Singh v.
+State of Bihar, 1962 Supp. (2) S.C.R. 769, Section 124A of the Indian Penal
+Code was upheld by construing it narrowly and stating that the offence
+would only be complete if the words complained of have a tendency of
+creating public disorder by violence. It was added that merely creating
+disaffection or creating feelings of enmity in certain people was not good
+enough or else it would violate the fundamental right of free speech under
+Article 19(1)(a). Again, in Dr. Ramesh Yeshwant Prabhoo v. Prabhakar
+Kashinath Kunte & Ors., 1996 (1) SCC 130, Section 123 (3A) of the
+Representation of People Act was upheld only if the enmity or hatred that
+was spoken about in the Section would tend to create immediate public
+disorder and not otherwise.
+
+41. Viewed at either by the standpoint of the clear and present danger
+test or the tendency to create public disorder, Section 66A would not pass
+muster as it has no element of any tendency to create public disorder which
+ought to be an essential ingredient of the offence which it creates.
+
+Defamation
+
+42. Defamation is defined in Section 499 of the Penal Code as follows:
+
+"499. Defamation.-Whoever, by words either spoken or intended to be read,
+or by signs or by visible representations, makes or publishes any
+imputation concerning any person intending to harm, or knowing or having
+reason to believe that such imputation will harm, the reputation of such
+person, is said, except in the cases hereinafter excepted, to defame that
+person.
+
+Explanation 1.-It may amount to defamation to impute anything to a deceased
+person, if the imputation would harm the reputation of that person if
+living, and is intended to be hurtful to the feelings of his family or
+other near relatives.
+
+Explanation 2.-It may amount to defamation to make an imputation concerning
+a company or an association or collection of persons as such.
+
+Explanation 3.-An imputation in the form of an alternative or expressed
+ironically, may amount to defamation.
+
+Explanation 4.-No imputation is said to harm a person's reputation, unless
+that imputation directly or indirectly, in the estimation of others, lowers
+the moral or intellectual character of that person, or lowers the character
+of that person in respect of his caste or of his calling, or lowers the
+credit of that person, or causes it to be believed that the body of that
+person is in a loathsome state, or in a state generally considered as
+disgraceful."
+
+43. It will be noticed that for something to be defamatory, injury to
+reputation is a basic ingredient. Section 66A does not concern itself with
+injury to reputation. Something may be grossly offensive and may annoy or
+be inconvenient to somebody without at all affecting his reputation. It is
+clear therefore that the Section is not aimed at defamatory statements at
+all.
+
+Incitement to an offence:
+
+44. Equally, Section 66A has no proximate connection with incitement to
+commit an offence. Firstly, the information disseminated over the
+internet need not be information which "incites" anybody at all. Written
+words may be sent that may be purely in the realm of "discussion" or
+"advocacy" of a "particular point of view". Further, the mere causing of
+annoyance, inconvenience, danger etc., or being grossly offensive or having
+a menacing character are not offences under the Penal Code at all. They
+may be ingredients of certain offences under the Penal Code but are not
+offences in themselves. For these reasons, Section 66A has nothing to do
+with "incitement to an offence". As Section 66A severely curtails
+information that may be sent on the internet based on whether it is grossly
+offensive, annoying, inconvenient, etc. and being unrelated to any of the
+eight subject matters under Article 19(2) must, therefore, fall foul of
+Article 19(1)(a), and not being saved under Article 19(2), is declared as
+unconstitutional.
+
+Decency or Morality
+
+45. This Court in Ranjit Udeshi v. State of Maharashtra [1965] 1 S.C.R.
+65 took a rather restrictive view of what would pass muster as not being
+obscene. The Court followed the test laid down in the old English judgment
+in Hicklin's case which was whether the tendency of the matter charged as
+obscene is to deprave and corrupt those whose minds are open to such
+immoral influences and into whose hands a publication of this sort may
+fall. Great strides have been made since this decision in the UK, United
+States as well as in our country. Thus, in Director General, Directorate
+General of Doordarshan v. Anand Patwardhan, 2006 (8) SCC 433, this Court
+noticed the law in the United States and said that a material may be
+regarded as obscene if the average person applying contemporary community
+standards would find that the subject matter taken as a whole appeals to
+the prurient interest and that taken as a whole it otherwise lacks serious
+literary artistic, political, educational or scientific value (see Para
+31).
+
+46. In a recent judgment of this Court, Aveek Sarkar v. State of West
+Bengal, 2014 (4) SCC 257, this Court referred to English, U.S. and Canadian
+judgments and moved away from the Hicklin test and applied the contemporary
+community standards test.
+
+47. What has been said with regard to public order and incitement to an
+offence equally applies here. Section 66A cannot possibly be said to
+create an offence which falls within the expression 'decency' or 'morality'
+in that what may be grossly offensive or annoying under the Section need
+not be obscene at all - in fact the word 'obscene' is conspicuous by its
+absence in Section 66A.
+
+48. However, the learned Additional Solicitor General asked us to read
+into Section 66A each of the subject matters contained in Article 19(2) in
+order to save the constitutionality of the provision. We are afraid that
+such an exercise is not possible for the simple reason that when the
+legislature intended to do so, it provided for some of the subject matters
+contained in Article 19(2) in Section 69A. We would be doing complete
+violence to the language of Section 66A if we were to read into it
+something that was never intended to be read into it. Further, he argued
+that the statute should be made workable, and the following should be read
+into Section 66A:
+
+"(i) Information which would appear highly abusive, insulting, pejorative,
+offensive by reasonable person in general, judged by the standards of an
+open and just multi-caste, multi-religious, multi racial society;
+
+Director of Public Prosecutions v. Collins - (2006) 1 WLR 2223 @ para 9 and
+21
+
+Connolly v. Director of Public Prosecutions reported in [2008] 1 W.L.R.
+276/2007 [1] All ER 1012
+
+House of Lords Select Committee 1st Report of Session 2014-2015 on
+Communications titled as "Social Media And Criminal Offences" @ pg 260 of
+compilation of judgments Vol I Part B
+
+(ii) Information which is directed to incite or can produce imminent
+lawless action Brandenburg v. Ohio 395 U.S. 444 (1969);
+
+(iii) Information which may constitute credible threats of violence to the
+person or damage;
+
+(iv) Information which stirs the public to anger, invites violent disputes
+brings about condition of violent unrest and disturbances;
+
+Terminiello v. Chicago 337 US 1 (1949)
+
+(v) Information which advocates or teaches the duty, necessity or
+proprietary of violence as a means of accomplishing political, social or
+religious reform and/or justifies commissioning of violent acts with an
+intent to exemplify glorify such violent means to accomplish political,
+social, economical or religious reforms
+
+[Whitney vs. California 274 US 357];
+
+(vi) Information which contains fighting or abusive material;
+
+Chaplinsky v. New Hampshire, 315 U.S. 568 (1942)
+
+(vii) Information which promotes hate speech i.e.
+
+Information which propagates hatred towards individual or a groups, on the
+basis of race, religion, religion, casteism, ethnicity,
+
+Information which is intended to show the supremacy of one particular
+religion/race/caste by making disparaging, abusive and/or highly
+inflammatory remarks against religion/race/caste.
+
+Information depicting religious deities, holy persons, holy symbols, holy
+books which are created to insult or to show contempt or lack of reverence
+for such religious deities, holy persons, holy symbols, holy books or
+towards something which is considered sacred or inviolable.
+
+(viii) Satirical or iconoclastic cartoon and caricature which fails the
+test laid down in Hustler Magazine, Inc. v. Falwell 485 U.S. 46 (1988)
+
+(ix) Information which glorifies terrorism and use of drugs;
+
+(x) Information which infringes right of privacy of the others and includes
+acts of cyber bullying, harassment or stalking.
+
+(xi) Information which is obscene and has the tendency to arouse feeling or
+revealing an overt sexual desire and should be suggestive of deprave mind
+and designed to excite sexual passion in persons who are likely to see it.
+
+Aveek Sarkar and Anr. vs. State of West Bengal and Ors. (2014) 4 SCC 257.
+
+(xii) Context and background test of obscenity. Information which is
+posted in such a context or background which has a consequential effect of
+outraging the modesty of the pictured individual.
+
+Aveek Sarkar and Anr. vs. State of West Bengal and Ors. (2014) 4 SCC 257."
+
+49. What the learned Additional Solicitor General is asking us to do is
+not to read down Section 66A - he is asking for a wholesale substitution of
+the provision which is obviously not possible.
+
+Vagueness
+
+50. Counsel for the petitioners argued that the language used in Section
+66A is so vague that neither would an accused person be put on notice as to
+what exactly is the offence which has been committed nor would the
+authorities administering the Section be clear as to on which side of a
+clearly drawn line a particular communication will fall.
+
+51. We were given Collin's dictionary, which defined most of the terms
+used in Section 66A, as follows:
+
+"Offensive:-
+
+Unpleasant or disgusting, as to the senses
+
+Causing anger or annoyance; insulting
+
+For the purpose of attack rather than defence.
+
+Menace:-
+
+To threaten with violence, danger, etc.
+
+A threat of the act of threatening
+
+Something menacing; a source of danger
+
+A nuisance
+
+Annoy:-
+
+To irritate or displease
+
+To harass with repeated attacks
+
+Annoyance
+
+The feeling of being annoyed
+
+The act of annoying.
+
+Inconvenience
+
+The state of quality of being inconvenient
+
+Something inconvenient; a hindrance, trouble, or difficulty
+
+Danger:-
+
+The state of being vulnerable to injury, loss, or evil risk
+
+A person or a thing that may cause injury pain etc.
+
+Obstruct:-
+
+To block (a road a passageway, etc.) with an obstacle
+
+To make (progress or activity) difficult.
+
+To impede or block a clear view of.
+
+Obstruction:- a person or a thing that obstructs.
+
+Insult:-
+
+To treat, mention, or speak to rudely; offend; affront
+
+To assault; attack
+
+An offensive or contemptuous remark or action; affront; slight
+
+A person or thing producing the effect of an affront = some television is
+an insult to intelligence
+
+An injury or trauma."
+
+52. The U.S. Supreme Court has repeatedly held in a series of judgments
+that where no reasonable standards are laid down to define guilt in a
+Section which creates an offence, and where no clear guidance is given to
+either law abiding citizens or to authorities and courts, a Section which
+creates an offence and which is vague must be struck down as being
+arbitrary and unreasonable. Thus, in Musser v. Utah, 92 L. Ed. 562, a Utah
+statute which outlawed conspiracy to commit acts injurious to public morals
+was struck down.
+
+53. In Winters v. People of State of New York, 92 L. Ed. 840, a New York
+Penal Law read as follows:-
+
+"1141. Obscene prints and articles
+
+1. A person......who,
+
+2. Prints, utters, publishes, sells, lends, gives away, distributes or
+shows, or has in his possession with intent to sell, lend, give away,
+distribute or show, or otherwise offers for sale, loan, gift or
+distribution, any book, pamphlet, magazine, newspaper or other printed
+paper devoted to the publication, and principally made up of criminal news,
+police reports, or accounts of criminal deeds, or pictures, or stories of
+deeds of bloodshed, lust or
+crime;.....................................................
+
+'Is guilty of a misdemeanor, .....'" (at page 846)
+
+The court in striking down the said statute held:
+
+"The impossibility of defining the precise line between permissible
+uncertainty in statutes caused by describing crimes by words well
+understood through long use in the criminal law - obscene, lewd,
+lascivious, filthy, indecent or disgusting-and the unconstitutional
+vagueness that leaves a person uncertain as to the kind of prohibited
+conduct-massing stories to incite crime-has resulted in three arguments of
+this case in this Court. The legislative bodies in draftsmanship obviously
+have the same difficulty as do the judicial in interpretation. Nevertheless
+despite the difficulties, courts must do their best to determine whether or
+not the vagueness is of such a character 'that men of common intelligence
+must necessarily guess at its meaning.' Connally v. General Constr. Co.,
+269 U.S. 385, 391, 46 S.Ct. 126, 127, 70 L.Ed. 322. The entire text of the
+statute or the subjects dealt with may furnish an adequate standard. The
+present case as to a vague statute abridging free speech involves the
+circulation of only vulgar magazines. The next may call for decision as to
+free expression of political views in the light of a statute intended to
+punish subversive activities.
+
+The subsection of the New York Penal Law, as now interpreted by the Court
+of Appeals prohibits distribution of a magazine principally made up of
+criminal news or stories of deeds of bloodshed, or lust, so massed as to
+become vehicles for inciting violent and depraved crimes against the
+person. But even considering the gloss put upon the literal meaning by the
+Court of Appeals' restriction of the statute to collections of stories 'so
+massed as to become vehicles for inciting violent and depraved crimes
+against the person * * * not necessarily * * * sexual passion,' we find the
+specification of publications, prohibited from distribution, too uncertain
+and indefinite to justify the conviction of this petitioner. Even though
+all detective tales and treatises on criminology are not forbidden, and
+though publications made up of criminal deeds not characterized by
+bloodshed or lust are omitted from the interpretation of the Court of
+Appeals, we think fair use of collections of pictures and stories would be
+interdicted because of the utter impossibility of the actor or the trier to
+know where this new standard of guilt would draw the line between the
+allowable and the forbidden publications. No intent or purpose is required-
+no indecency or obscenity in any sense heretofore known to the law. 'So
+massed as to incite to crime' can become meaningful only by concrete
+instances. This one example is not enough. The clause proposes to punish
+the printing and circulation of publications that courts or juries may
+think influence generally persons to commit crime of violence against the
+person. No conspiracy to commit a crime is required. See Musser v. State of
+Utah, 68 S.Ct. 397, this Term. It is not an effective notice of new crime.
+The clause has no technical or common law meaning. Nor can light as to the
+meaning be gained from the section as a whole or the Article of the Penal
+Law under which it appears. As said in the Cohen Grocery Co. case, supra,
+255 U.S. at page 89, 41 S.Ct. at page 300, 65 L.Ed. 516, 14 A.L.R. 1045:
+
+'It leaves open, therefore, the widest conceivable inquiry, the scope of
+which no one can foresee and the result of which no one can foreshadow or
+adequately guard against.'
+
+The statute as construed by the Court of Appeals does not limit punishment
+to the indecent and obscene, as formerly understood. When stories of deeds
+of bloodshed, such as many in the accused magazines, are massed so as to
+incite to violent crimes, the statute is violated. it does not seem to us
+that an honest distributor of publications could know when he might be held
+to have ignored such a prohibition. Collections of tales of war horrors,
+otherwise unexceptionable, might well be found to be 'massed' so as to
+become 'vehicles for inciting violent and depraved crimes.' Where a statute
+is so vague as to make criminal an innocent act, a conviction under it
+cannot be sustained. Herndon v. Lowry, 301 U.S. 242, 259, 57 S.Ct. 732,
+739, 81 L.Ed. 1066." (at page 851-852)
+
+54. In Burstyn v. Wilson, 96 L. Ed. 1098, sacrilegious writings and
+utterances were outlawed. Here again, the U.S. Supreme Court stepped in to
+strike down the offending Section stating:
+
+"It is not a sufficient answer to say that 'sacrilegious' is definite,
+because all subjects that in any way might be interpreted as offending the
+religious beliefs of any one of the 300 sects of the United States are
+banned in New York. To allow such vague, undefinable powers of censorship
+to be exercised is bound to have stultifying consequences on the creative
+process of literature and art-for the films are derived largely from
+literature. History does not encourage reliance on the wisdom and
+moderation of the censor as a safeguard in the exercise of such drastic
+power over the minds of men. We not only do not know but cannot know what
+is condemnable by 'sacrilegious.' And if we cannot tell, how are those to
+be governed by the statute to tell? (at page 1121)
+
+55. In City of Chicago v. Morales et al, 527 U.S. 41 (1999), a Chicago
+Gang Congregation Ordinance prohibited criminal street gang members from
+loitering with one another or with other persons in any public place for no
+apparent purpose. The Court referred to an earlier judgment in United
+States v. Reese 92 U.S. 214 (1875) at 221 in which it was stated that the
+Constitution does not permit a legislature to set a net large enough to
+catch all possible offenders and leave it to the Court to step in and say
+who could be rightfully detained and who should be set at liberty. It was
+held that the broad sweep of the Ordinance violated the requirement that a
+legislature needs to meet: to establish minimum guidelines to govern law
+enforcement. As the impugned Ordinance did not have any such guidelines, a
+substantial amount of innocent conduct would also be brought within its
+net, leading to its unconstitutionality.
+
+56. It was further held that a penal law is void for vagueness if it
+fails to define the criminal offence with sufficient definiteness. Ordinary
+people should be able to understand what conduct is prohibited and what is
+permitted. Also, those who administer the law must know what offence has
+been committed so that arbitrary and discriminatory enforcement of the law
+does not take place.
+
+57. Similarly, in Grayned v. City of Rockford, 33 L.Ed. 2d. 222, the
+State of Illinois provided in an anti noise ordinance as follows:
+
+"'(N)o person, while on public or private grounds adjacent to any building
+in which a school or any class thereof is in session, shall willfully make
+or assist in the making of any noise or diversion which disturbs or tends
+to disturb the peace or good order of such school session or class thereof.
+. . .' Code of Ordinances, c. 28, 19.2(a)."
+
+The law on the subject of vagueness was clearly stated thus:
+
+"It is a basic principle of due process that an enactment is void for
+vagueness if its prohibitions are not clearly defined. Vague laws offend
+several important values. First, because we assume that man is free to
+steer between lawful and unlawful conduct, we insist that laws give the
+person of ordinary intelligence a reasonable opportunity to know what is
+prohibited, so that he may act accordingly. Vague laws may trap the
+innocent by not providing fair warning. Second, if arbitrary and
+discriminatory enforcement is to be prevented, laws must provide explicit
+standards for those who apply them. A vague law impermissibly delegates
+basic policy matters to policemen, judges, and juries for resolution on an
+ad hoc and subjective basis, with the attendant dangers of arbitrary and
+discriminatory application. Third, but related, where a vague statute
+'abut(s) upon sensitive areas of basic First Amendment freedoms, it
+'operates to inhibit the exercise of (those) freedoms.' Uncertain meanings
+inevitably lead citizens to "steer far wider of the unlawful zone' . . .
+than if the boundaries of the forbidden areas were clearly marked.'"(at
+page 227-228)
+
+58. The anti noise ordinance was upheld on facts in that case because it
+fixed the time at which noise disrupts school activity - while the school
+is in session - and at a fixed place - 'adjacent' to the school.
+
+59. Secondly, there had to be demonstrated a causality between
+disturbance that occurs and the noise or diversion. Thirdly, acts have to
+be willfully done. It is important to notice that the Supreme Court
+specifically held that "undesirables" or their "annoying conduct" may not
+be punished. It is only on these limited grounds that the said Ordinance
+was considered not to be impermissibly vague.
+
+60. In Reno, Attorney General of the United States, et al. v. American
+Civil Liberties Union et al., 521 U.S. 844 (1997), two provisions of the
+Communications Decency Act of 1996 which sought to protect minors from
+harmful material on the internet were adjudged unconstitutional. This
+judgment is a little important for two basic reasons - that it deals with a
+penal offence created for persons who use the internet as also for the
+reason that the statute which was adjudged unconstitutional uses the
+expression "patently offensive" which comes extremely close to the
+expression "grossly offensive" used by the impugned Section 66A. Section
+223(d), which was adjudged unconstitutional, is set out hereinbelow:-
+
+"223 (d) Whoever-
+
+"(1) in interstate or foreign communications knowingly-
+
+(A) uses an interactive computer service to send to a specific person or
+persons under 18 years of age, or
+
+(B) uses any interactive computer service to display in a manner available
+to a person under 18 years of age, "any comment, request, suggestion,
+proposal, image, or other communication that, in context, depicts or
+describes, in terms patently offensive as measured by contemporary
+community standards, sexual or excretory activities or organs, regardless
+of whether the user of such service placed the call or initiated the
+communication; or
+
+(2) knowingly permits any telecommunications facility under such person's
+control to be used for an activity prohibited by paragraph (1) with the
+intent that it be used for such activity,
+
+shall be fined under Title 18, or imprisoned not more than two years, or
+both." (at page 860)
+
+Interestingly, the District Court Judge writing of the internet said:
+
+"[i]t is no exaggeration to conclude that the Internet has achieved, and
+continues to achieve, the most participatory marketplace of mass speech
+that this country - and indeed the world - as yet seen. The plaintiffs in
+these actions correctly describe the 'democratizing' effects of Internet
+communication: individual citizens of limited means can speak to a
+worldwide audience on issues of concern to them. Federalists and Anti-
+federalists may debate the structure of their government nightly, but these
+debates occur in newsgroups or chat rooms rather than in pamphlets. Modern-
+day Luthers still post their theses, but to electronic bulletins boards
+rather than the door of the Wittenberg Schlosskirche. More mundane (but
+from a constitutional perspective, equally important) dialogue occurs
+between aspiring artists, or French cooks, or dog lovers, or fly
+fishermen." 929 F. Supp. At 881. (at page 425)
+
+61. The Supreme Court held that the impugned statute lacked the precision
+that the first amendment required when a statute regulates the content of
+speech. In order to deny minors access to potentially harmful speech, the
+impugned Act effectively suppresses a large amount of speech that adults
+have a constitutional right to receive and to address to one another.
+
+62. Such a burden on adult speech is unacceptable if less restrictive
+alternatives would be as effective in achieving the legitimate purpose that
+the statute was enacted to serve. It was held that the general undefined
+term "patently offensive" covers large amounts of non-pornographic
+material with serious educational or other value and was both vague and
+over broad.
+
+ It was, thus, held that the impugned statute was not narrowly
+tailored and would fall foul of the first amendment.
+
+63. In Federal Communications Commission v. Fox Television Stations, 132
+S.Ct. 2307, it was held:
+
+"A fundamental principle in our legal system is that laws which regulate
+persons or entities must give fair notice of conduct that is forbidden or
+required. See Connally v. General Constr. Co., 269 U. S. 385, 391
+(1926) ("[A] statute which either forbids or requires the doing of an act
+in terms so vague that men of common intelligence must necessarily guess at
+its meaning and differ as to its application, violates the first essential
+of due process of law"); Papachristou v. Jacksonville, 405 U. S. 156, 162
+(1972) ("Living under a rule of law entails various suppositions, one of
+which is that '[all persons] are entitled to be informed as to what the
+State commands or forbids'" (quoting Lanzetta v. New Jersey, 306 U. S. 451,
+453 (1939) (alteration in original))). This requirement of clarity in
+regulation is essential to the protections provided by the Due Process
+Clause of the Fifth Amendment. See United States v. Williams, 553 U. S.
+285, 304 (2008). It requires the invalidation of laws that are
+impermissibly vague. A conviction or punishment fails to comply with due
+process if the statute or regulation under which it is obtained "fails to
+provide a person of ordinary intelligence fair notice of what is
+prohibited, or is so standardless that it authorizes or encourages
+seriously discriminatory enforcement." Ibid. As this Court has explained, a
+regulation is not vague because it may at times be difficult to prove an
+incriminating fact but rather because it is unclear as to what fact must be
+proved. See id., at 306.
+
+Even when speech is not at issue, the void for vagueness doctrine addresses
+at least two connected but discrete due process concerns: first, that
+regulated parties should know what is required of them so they may act
+accordingly; second, precision and guidance are necessary so that those
+enforcing the law do not act in an arbitrary or discriminatory way.
+See Grayned v. City of Rockford, 408 U. S. 104, 108-109 (1972). When speech
+is involved, rigorous adherence to those requirements is necessary to
+ensure that ambiguity does not chill protected speech."(at page 2317)
+
+64. Coming to this Court's judgments, in State of Madhya Pradesh v.
+Baldeo Prasad, [1961] 1 S.C.R. 970 an inclusive definition of the word
+"goonda" was held to be vague and the offence created by Section 4A of the
+Goondas Act was, therefore, violative of Article 19(1)(d) and (e) of the
+Constitution. It was stated:
+
+"Incidentally it would also be relevant to point out that the definition of
+the word "goonda" affords no assistance in deciding which citizen can be
+put under that category. It is an inclusive definition and it does not
+indicate which tests have to be applied in deciding whether a person falls
+in the first part of the definition. Recourse to the dictionary meaning of
+the word would hardly be of any assistance in this matter. After all it
+must be borne in mind that the Act authorises the District Magistrate to
+deprive a citizen of his fundamental right under Art. 19(1)(d) and (e), and
+though the object of the Act and its purpose would undoubtedly attract the
+provisions of Art. 19(5) care must always be taken in passing such acts
+that they provide sufficient safeguards against casual, capricious or even
+malicious exercise of the powers conferred by them. It is well known that
+the relevant provisions of the Act are initially put in motion against a
+person at a lower level than the District magistrate, and so it is always
+necessary that sufficient safeguards should be provided by the Act to
+protect the fundamental rights of innocent citizens and to save them from
+unnecessary harassment. That is why we think the definition of the word
+"goonda" should have given necessary assistance to the District Magistrate
+in deciding whether a particular citizen falls under the category of goonda
+or not; that is another infirmity in the Act. As we have already pointed
+out s. 4-A suffers from the same infirmities as s. 4.
+
+Having regard to the two infirmities in Sections 4, 4-A respectively we
+do not think it would be possible to accede to the argument of the Learned
+Advocate-General that the operative portion of the Act can fall under Art.
+19(5) of the Constitution. The person against whom action can be taken
+under the Act is not entitled to know the source of the information
+received by the District Magistrate; he is only told about his prejudicial
+activities on which the satisfaction of the District Magistrate is based
+that action should be taken against him under s.4 or s. 4-A. In such a
+case it is absolutely essential that the Act must clearly indicate by a
+proper definition or otherwise when and under what circumstances a person
+can be called a goonda, and it must impose an obligation on the District
+Magistrate to apply his mind to the question as to whether the person
+against whom complaints are received is such a goonda or not. It has been
+urged before us that such an obligation is implicit in Sections 4 and 4-A.
+We are, however, not impressed by this argument. Where a statute empowers
+the specified authorities to take preventive action against the citizens it
+is essential that it should expressly make it a part of the duty of the
+said authorities to satisfy themselves about the existence of what the
+statute regards as conditions precedent to the exercise of the said
+authority. If the statute is silent in respect of one of such conditions
+precedent it undoubtedly constitutes a serious infirmity which would
+inevitably take it out of the provisions of Art. 19(5). The result of this
+infirmity is that it has left to the unguided and unfettered discretion of
+the authority concerned to treat any citizen as a goonda. In other words,
+the restrictions which it allows to be imposed on the exercise of the
+fundamental right of a citizen guaranteed by Art. 19(1)(d) and (e) must in
+the circumstances be held to be unreasonable. That is the view taken by the
+High court and we see no reason to differ from it." (at pages 979, 980)
+
+65. At one time this Court seemed to suggest that the doctrine of
+vagueness was no part of the Constitutional Law of India. That was
+dispelled in no uncertain terms in K.A. Abbas v. The Union of India &
+Another, [1971] 2 S.C.R. 446:
+
+"This brings us to the manner of the exercise of control and restriction by
+the directions. Here the argument is that most of the regulations are vague
+and further that they leave no scope for the exercise of creative genius in
+the field of art. This poses the first question before us whether the 'void
+for vagueness' doctrine is applicable. Reliance in this connection is
+placed on Municipal Committee Amritsar and Anr. v. The State of Rajasthan .
+In that case a Division Bench of this Court lays down that an Indian Act
+cannot be declared invalid on the ground that it violates the due process
+clause or that it is vague......" (at page 469)
+
+"These observations which are clearly obiter are apt to be too generally
+applied and need to be explained. While it is true that the principles
+evolved by the Supreme Court of the United States of America in the
+application of the Fourteenth Amendment were eschewed in our Constitution
+and instead the limits of restrictions on each fundamental right were
+indicated in the clauses that follow the first clause of the nineteenth
+article, it cannot be said as an absolute principle that no law will be
+considered bad for sheer vagueness. There is ample authority for the
+proposition that a law affecting fundamental rights may be so considered. A
+very pertinent example is to be found in State of Madhya Pradesh and Anr.
+v. Baldeo Prasad, 1961 (1) SCR 970 where the Central Provinces and Berar
+Goondas Act 1946 was declared void for uncertainty. The condition for the
+application of Sections 4 and 4A was that the person sought to be proceeded
+against must be a goonda but the definition of goonda in the Act indicated
+no tests for deciding which person fell within the definition. The
+provisions were therefore held to be uncertain and vague.
+
+ The real rule is that if a law is vague or appears to be so, the court
+must try to construe it, as far as may be, and language permitting, the
+construction sought to be placed on it, must be in accordance with the
+intention of the legislature. Thus if the law is open to diverse
+construction, that construction which accords best with the intention of
+the legislature and advances the purpose of legislation, is to be
+preferred. Where however the law admits of no such construction and the
+persons applying it are in a boundless sea of uncertainty and the law prima
+facie takes away a guaranteed freedom, the law must be held to offend the
+Constitution as was done in the case of the Goonda Act. This is not
+application of the doctrine of due process. The invalidity arises from the
+probability of the misuse of the law to the detriment of the individual. If
+possible, the Court instead of striking down the law may itself draw the
+line of demarcation where possible but this effort should be sparingly made
+and only in the clearest of cases." (at pages 470, 471)
+
+66. Similarly, in Harakchand Ratanchand Banthia & Ors. v. Union of India
+& Ors., 1969 (2) SCC 166, Section 27 of the Gold Control Act was struck
+down on the ground that the conditions imposed by it for the grant of
+renewal of licences are uncertain, vague and unintelligible. The Court
+held:
+
+"21. We now come to Section 27 of the Act which relates to licensing of
+dealers. It was stated on behalf of the petitioners that the conditions
+imposed by sub-section (6) of Section 27 for the grant or renewal of
+licences are uncertain, vague and unintelligible and consequently wide and
+unfettered power was conferred upon the statutory authorities in the matter
+of grant or renewal of licence. In our opinion this contention is well
+founded and must be accepted as correct. Section 27(6)(a) states that in
+the matter of issue or renewal of licences the Administrator shall have
+regard to "the number of dealers existing in the region in which the
+applicant intends to carry on business as a dealer". But the word "region"
+is nowhere defined in the Act. Similarly Section 27(6)(b) requires the
+Administrator to have regard to "the anticipated demand, as estimated by
+him, for ornaments in that region." The expression "anticipated demand" is
+a vague expression which is not capable of objective assessment and is
+bound to lead to a great deal of uncertainty. Similarly the expression
+"suitability of the applicant" in Section 27(6)(e) and "public interest" in
+Section 27(6)(g) do not provide any objective standard or norm or guidance.
+For these reasons it must be held that clauses (a),(d),(e) and (g) of
+Section 27(6) impose unreasonable restrictions on the fundamental right of
+the petitioner to carry on business and are constitutionally invalid. It
+was also contended that there was no reason why the conditions for renewal
+of licence should be as rigorous as the conditions for initial grant of
+licence. The requirement of strict conditions for the renewal of licence
+renders the entire future of the business of the dealer uncertain and
+subjects it to the caprice and arbitrary will of the administrative
+authorities. There is justification for this argument and the requirement
+of Section 26 of the Act imposing the same conditions for the renewal of
+the licence as for the initial grant appears to be unreasonable. In our
+opinion clauses (a), (b), (e) and (g) are inextricably bound up with the
+other clauses of Section 27(6) and form part of a single scheme. The result
+is that clauses (a), (b), (c), (e) and (g) are not severable and the entire
+Section 27(6) of the Act must be held invalid. Section 27(2)(d) of the Act
+states that a valid licence issued by the Administrator "may contain such
+conditions, limitations and restrictions as the Administrator may think fit
+to impose and different conditions, limitations and restrictions may be
+imposed for different classes of dealers". On the face of it, this sub-
+section confers such wide and vague power upon the Administrator that it is
+difficult to limit its scope. In our opinion Section 27(2)(d) of the Act
+must be struck down as an unreasonable restriction on the fundamental right
+of the petitioners to carry on business. It appears, however, to us that if
+Section 27(2)(d) and Section 27(6) of the Act are invalid the licensing
+scheme contemplated by the rest of Section 27 of the Act cannot be worked
+in practice. It is, therefore, necessary for Parliament to enact fresh
+legislation imposing appropriate conditions and restrictions for the grant
+and renewal of licences to dealers. In the alternative the Central
+Government may make appropriate rules for the same purpose in exercise of
+its rule-making power under Section 114 of the Act."
+
+67. In A.K. Roy & Ors. v. Union of India & Ors., [1982] 2 S.C.R. 272, a
+part of Section 3 of the National Security Ordinance was read down on the
+ground that "acting in any manner prejudicial to the maintenance of
+supplies and services essential to the community" is an expression so vague
+that it is capable of wanton abuse. The Court held:
+
+"What we have said above in regard to the expressions 'defence of India',
+'security of India', 'security of the State' and 'relations of India with
+foreign powers' cannot apply to the expression "acting in any manner
+prejudicial to the maintenance of supplies and services essential to the
+community" which occurs in Section 3(2) of the Act. Which supplies and
+services are essential to the community can easily be defined by the
+legislature and indeed, legislations which regulate the prices and
+possession of essential commodities either enumerate those commodities or
+confer upon the appropriate Government the power to do so. In the absence
+of a definition of 'supplies and services essential to the community', the
+detaining authority will be free to extend the application of this clause
+of sub-section (2) to any commodities or services the maintenance of supply
+of which, according to him, is essential to the community.
+
+But that is not all. The Explanation to sub-section (2) gives to the
+particular phrase in that sub-section a meaning which is not only uncertain
+but which, at any given point of time, will be difficult to ascertain or
+fasten upon. According to the Explanation, no order of detention can be
+made under the National Security Act on any ground on which an order of
+detention may be made under the Prevention of Blackmarketing and
+Maintenance of Supplies of Essential Commodities Act, 1980. The reason for
+this, which is stated in the Explanation itself, is that for the purposes
+of sub-section (2), "acting in any manner prejudicial to the maintenance of
+supplies essential to the community" does not include "acting in any manner
+prejudicial to the maintenance of supplies of commodities essential to the
+community" as defined in the Explanation to sub-section (1) of Section 3 of
+the Act of 1980. Clauses (a) and (b) of the Explanation to Section 3(1) of
+the Act of 1980 exhaust almost the entire range of essential commodities.
+Clause (a) relates to committing or instigating any person to commit any
+offence punishable under the Essential Commodities Act, 10 of 1955, or
+under any other law for the time being in force relating to the control of
+the production, supply or distribution of, or trade and commerce in, any
+commodity essential to the community. Clause (b) of the Explanation to
+Section 3(1) of the Act of 1980 relates to dealing in any commodity which
+is an essential commodity as defined in the Essential Commodities Act,
+1955, or with respect to which provisions have been made in any such other
+law as is referred to in clause (a). We find it quite difficult to
+understand as to which are the remaining commodities outside the scope of
+the Act of 1980, in respect of which it can be said that the maintenance of
+their supplies is essential to the community. The particular clause in sub-
+section (2) of Section 3 of the National Security Act is, therefore,
+capable of wanton abuse in that, the detaining authority can place under
+detention any person for possession of any commodity on the basis that the
+authority is of the opinion that the maintenance of supply of that
+commodity is essential to the community. We consider the particular clause
+not only vague and uncertain but, in the context of the Explanation,
+capable of being extended cavalierly to supplies, the maintenance of which
+is not essential to the community. To allow the personal liberty of the
+people to be taken away by the application of that clause would be a
+flagrant violation of the fairness and justness of procedure which is
+implicit in the provisions of Article 21." (at page 325-326)
+
+68. Similarly, in Kartar Singh v. State of Punjab, (1994) 3 SCC 569 at
+para 130-131, it was held:
+
+"130. It is the basic principle of legal jurisprudence that an enactment is
+void for vagueness if its prohibitions are not clearly defined. Vague laws
+offend several important values. It is insisted or emphasized that laws
+should give the person of ordinary intelligence a reasonable opportunity to
+know what is prohibited, so that he may act accordingly. Vague laws may
+trap the innocent by not providing fair warning. Such a law impermissibly
+delegates basic policy matters to policemen and also judges for resolution
+on an ad hoc and subjective basis, with the attendant dangers of arbitrary
+and discriminatory application. More so uncertain and undefined words
+deployed inevitably lead citizens to "steer far wider of the unlawful zone
+... than if the boundaries of the forbidden areas were clearly marked.
+
+131. Let us examine clause (i) of Section 2(1)(a). This section is shown to
+be blissfully and impermissibly vague and imprecise. As rightly pointed out
+by the learned counsel, even an innocent person who ingenuously and
+undefiledly communicates or associates without any knowledge or having no
+reason to believe or suspect that the person or class of persons with whom
+he has communicated or associated is engaged in assisting in any manner
+terrorists or disruptionists, can be arrested and prosecuted by abusing or
+misusing or misapplying this definition. In ultimate consummation of the
+proceedings, perhaps that guiltless and innoxious innocent person may also
+be convicted."
+
+69. Judged by the standards laid down in the aforesaid judgments, it is
+quite clear that the expressions used in 66A are completely open-ended and
+undefined. Section 66 in stark contrast to Section 66A states:
+
+"66. Computer related offences.-If any person, dishonestly or fraudulently,
+does any act referred to in Section 43, he shall be punishable with
+imprisonment for a term which may extend to three years or with fine which
+may extend to five lakh rupees or with both.
+
+Explanation.-For the purposes of this section,-
+
+(a) the word "dishonestly" shall have the meaning assigned to it in Section
+24 of the Indian Penal Code (45 of 1860);
+
+(b) the word "fraudulently" shall have the meaning assigned to it in
+Section 25 of the Indian Penal Code (45 of 1860)."
+
+70. It will be clear that in all computer related offences that are
+spoken of by Section 66, mens rea is an ingredient and the expression
+"dishonestly" and "fraudulently" are defined with some degree of
+specificity, unlike the expressions used in Section 66A.
+
+71. The provisions contained in Sections 66B up to Section 67B also
+provide for various punishments for offences that are clearly made out.
+For example, under Section 66B, whoever dishonestly receives or retains any
+stolen computer resource or communication device is punished with
+imprisonment. Under Section 66C, whoever fraudulently or dishonestly makes
+use of any identification feature of another person is liable to punishment
+with imprisonment. Under Section 66D, whoever cheats by personating
+becomes liable to punishment with imprisonment. Section 66F again is a
+narrowly drawn section which inflicts punishment which may extend to
+imprisonment for life for persons who threaten the unity, integrity,
+security or sovereignty of India. Sections 67 to 67B deal with punishment
+for offences for publishing or transmitting obscene material including
+depicting children in sexually explicit acts in electronic form.
+
+72. In the Indian Penal Code, a number of the expressions that occur in
+Section 66A occur in Section 268.
+
+"268. Public nuisance.-A person is guilty of a public nuisance who does any
+act or is guilty of an illegal omission, which causes any common injury,
+danger or annoyance to the public or to the people in general who dwell or
+occupy property in the vicinity, or which must necessarily cause injury,
+obstruction, danger or annoyance to persons who may have occasion to use
+any public right.
+
+A common nuisance is not excused on the ground that it causes some
+convenience or advantage."
+
+73. It is important to notice the distinction between the Sections 268
+and 66A. Whereas, in Section 268 the various expressions used are
+ingredients for the offence of a public nuisance, these ingredients now
+become offences in themselves when it comes to Section 66A. Further, under
+Section 268, the person should be guilty of an act or omission which is
+illegal in nature - legal acts are not within its net. A further
+ingredient is that injury, danger or annoyance must be to the public in
+general. Injury, danger or annoyance are not offences by themselves
+howsoever made and to whomsoever made. The expression "annoyance" appears
+also in Sections 294 and 510 of the IPC:
+
+"294. Obscene acts and songs.-Whoever, to the annoyance of others,
+
+(a) does any obscene act in any public place, or
+
+(b) sings, recites or utters any obscene songs, ballad or words, in or near
+any public place,
+
+shall be punished with imprisonment of either description for a term which
+may extend to three months, or with fine, or with both.
+
+510. Misconduct in public by a drunken person.-Whoever, in a state of
+intoxication, appears in any public place, or in any place which it is a
+trespass in him to enter, and there conducts himself in such a manner as to
+cause annoyance to any person, shall be punished with simple imprisonment
+for a term which may extend to twenty-four hours, or with fine which may
+extend to ten rupees, or with both."
+
+74. If one looks at Section 294, the annoyance that is spoken of is
+clearly defined - that is, it has to be caused by obscene utterances or
+acts. Equally, under Section 510, the annoyance that is caused to a person
+must only be by another person who is in a state of intoxication and who
+annoys such person only in a public place or in a place for which it is a
+trespass for him to enter. Such narrowly and closely defined contours of
+offences made out under the Penal Code are conspicuous by their absence in
+Section 66A which in stark contrast uses completely open ended, undefined
+and vague language.
+
+75. Incidentally, none of the expressions used in Section 66A are
+defined. Even "criminal intimidation" is not defined - and the definition
+clause of the Information Technology Act, Section 2 does not say that words
+and expressions that are defined in the Penal Code will apply to this Act.
+
+76. Quite apart from this, as has been pointed out above, every
+expression used is nebulous in meaning. What may be offensive to one may
+not be offensive to another. What may cause annoyance or inconvenience to
+one may not cause annoyance or inconvenience to another. Even the
+expression "persistently" is completely imprecise - suppose a message is
+sent thrice, can it be said that it was sent "persistently"? Does a
+message have to be sent (say) at least eight times, before it can be said
+that such message is "persistently" sent? There is no demarcating line
+conveyed by any of these expressions - and that is what renders the Section
+unconstitutionally vague.
+
+77. However, the learned Additional Solicitor General argued before us
+that expressions that are used in Section 66A may be incapable of any
+precise definition but for that reason they are not constitutionally
+vulnerable. He cited a large number of judgments in support of this
+submission. None of the cited judgments dealt with a Section creating an
+offence which is saved despite its being vague and in capable of any
+precise definition. In fact, most of the judgments cited before us did not
+deal with criminal law at all. The few that did are dealt with
+hereinbelow. For instance, Madan Singh v. State of Bihar, (2004) 4 SCC 622
+was cited before us. The passage cited from the aforesaid judgment is
+contained in para 19 of the judgment. The cited passage is not in the
+context of an argument that the word "terrorism" not being separately
+defined would, therefore, be struck down on the ground of vagueness. The
+cited passage was only in the context of upholding the conviction of the
+accused in that case. Similarly, in Zameer Ahmed Latifur Rehman Sheikh v.
+State of Maharashtra & Ors., (2010) 5 SCC 246, the expression "insurgency"
+was said to be undefined and would defy a precise definition, yet it could
+be understood to mean break down of peace and tranquility as also a grave
+disturbance of public order so as to endanger the security of the State and
+its sovereignty. This again was said in the context of a challenge on the
+ground of legislative competence. The provisions of the Maharashtra
+Control of Organised Crime Act were challenged on the ground that they were
+outside the expression "public order" contained in Entry 1 of List I of the
+7th Schedule of the Constitution of India. This contention was repelled by
+saying that the expression "public order" was wide enough to encompass
+cases of "insurgency". This case again had nothing to do with a challenge
+raised on the ground of vagueness.
+
+78. Similarly, in State of M.P. v. Kedia Leather & Liquor Limited, (2003)
+7 SCC 389, paragraph 8 was cited to show that the expression "nuisance"
+appearing in Section 133 of the Code of Criminal Procedure was also not
+capable of precise definition. This again was said in the context of an
+argument that Section 133 of the Code of Criminal Procedure was impliedly
+repealed by the Water (Prevention and Control of Pollution) Act, 1974.
+This contention was repelled by saying that the areas of operation of the
+two provisions were completely different and they existed side by side
+being mutually exclusive. This case again did not contain any argument
+that the provision contained in Section 133 was vague and, therefore,
+unconstitutional. Similarly, in State of Karnataka v. Appa Balu Ingale,
+1995 Supp. (4) SCC 469, the word "untouchability" was said not to be
+capable of precise definition. Here again, there was no constitutional
+challenge on the ground of vagueness.
+
+79. In fact, two English judgments cited by the learned Additional
+Solicitor General would demonstrate how vague the words used in Section 66A
+are. In Director of Public Prosecutions v. Collins, (2006) 1 WLR 2223, the
+very expression "grossly offensive" is contained in Section 127(1)(1) of
+the U.K. Communications Act, 2003. A 61 year old man made a number of
+telephone calls over two years to the office of a Member of Parliament. In
+these telephone calls and recorded messages Mr. Collins who held strong
+views on immigration made a reference to "Wogs", "Pakis", "Black bastards"
+and "Niggers". Mr. Collins was charged with sending messages which were
+grossly offensive. The Leicestershire Justices dismissed the case against
+Mr. Collins on the ground that the telephone calls were offensive but not
+grossly offensive. A reasonable person would not so find the calls to be
+grossly offensive. The Queen's Bench agreed and dismissed the appeal filed
+by the Director of Public Prosecutions. The House of Lords reversed the
+Queen's Bench stating:
+
+"9. The parties agreed with the rulings of the Divisional Court that it is
+for the Justices to determine as a question of fact whether a message is
+grossly offensive, that in making this determination the Justices must
+apply the standards of an open and just multi-racial society, and that the
+words must be judged taking account of their context and all relevant
+circumstances. I would agree also. Usages and sensitivities may change over
+time. Language otherwise insulting may be used in an unpejorative, even
+affectionate, way, or may be adopted as a badge of honour ("Old
+Contemptibles"). There can be no yardstick of gross offensiveness otherwise
+than by the application of reasonably enlightened, but not perfectionist,
+contemporary standards to the particular message sent in its particular
+context. The test is whether a message is couched in terms liable to cause
+gross offence to those to whom it relates. 
+
+10. In contrast with section 127(2)(a) and its predecessor subsections,
+which require proof of an unlawful purpose and a degree of knowledge,
+section 127(1)(a) provides no explicit guidance on the state of mind which
+must be proved against a defendant to establish an offence against the
+subsection."
+
+80. Similarly in Chambers v. Director of Public Prosecutions, [2013] 1
+W.L.R. 1833, the Queen's Bench was faced with the following facts:
+
+"Following an alert on the Internet social network, Twitter, the defendant
+became aware that, due to adverse weather conditions, an airport from which
+he was due to travel nine days later was closed. He responded by posting
+several "tweets" on Twitter in his own name, including the following:
+"Crap1 Robin Hood Airport is closed. You've got a week and a bit to get
+your shit together otherwise I am blowing the airport sky high1" None of
+the defendant's "followers" who read the posting was alarmed by it at the
+time. Some five days after its posting the defendant's tweet was read by
+the duty manager responsible for security at the airport on a general
+Internet search for tweets relating to the airport. Though not believed to
+be a credible threat the matter was reported to the police. In interview
+the defendant asserted that the tweet was a joke and not intended to be
+menacing. The defendant was charged with sending by a public electronic
+communications network a message of a menacing character contrary to
+section 127(1)(a) of the Communications Act 2003. He was convicted in a
+magistrates' court and, on appeal, the Crown Court upheld the conviction,
+being satisfied that the message was "menacing per se" and that the
+defendant was, at the very least, aware that his message was of a menacing
+character."
+
+81. The Crown Court was satisfied that the message in question was
+"menacing" stating that an ordinary person seeing the tweet would be
+alarmed and, therefore, such message would be "menacing". The Queen's
+Bench Division reversed the Crown Court stating:
+
+"31. Before concluding that a message is criminal on the basis that it
+represents a menace, its precise terms, and any inferences to be drawn from
+its precise terms, need to be examined in the context in and the means by
+which the message was sent. The Crown Court was understandably concerned
+that this message was sent at a time when, as we all know, there is public
+concern about acts of terrorism and the continuing threat to the security
+of the country from possible further terrorist attacks. That is plainly
+relevant to context, but the offence is not directed to the inconvenience
+which may be caused by the message. In any event, the more one reflects on
+it, the clearer it becomes that this message did not represent a terrorist
+threat, or indeed any other form of threat. It was posted on "Twitter" for
+widespread reading, a conversation piece for the defendant's followers,
+drawing attention to himself and his predicament. Much more significantly,
+although it purports to address "you", meaning those responsible for the
+airport, it was not sent to anyone at the airport or anyone responsible for
+airport security, or indeed any form of public security. The grievance
+addressed by the message is that the airport is closed when the writer
+wants it to be open. The language and punctuation are inconsistent with
+the writer intending it to be or it to be taken as a serious warning.
+Moreover, as Mr. Armson noted, it is unusual for a threat of a terrorist
+nature to invite the person making it to be readily identified, as this
+message did. Finally, although we are accustomed to very brief messages by
+terrorists to indicate that a bomb or explosive device has been put in
+place and will detonate shortly, it is difficult to imagine a serious
+threat in which warning of it is given to a large number of tweet
+"followers" in ample time for the threat to be reported and extinguished."
+
+82. These two cases illustrate how judicially trained minds would find a
+person guilty or not guilty depending upon the Judge's notion of what is
+"grossly offensive" or "menacing". In Collins' case, both the
+Leicestershire Justices and two Judges of the Queen's Bench would have
+acquitted Collins whereas the House of Lords convicted him. Similarly, in
+the Chambers case, the Crown Court would have convicted Chambers whereas
+the Queen's Bench acquitted him. If judicially trained minds can come to
+diametrically opposite conclusions on the same set of facts it is obvious
+that expressions such as "grossly offensive" or "menacing" are so vague
+that there is no manageable standard by which a person can be said to have
+committed an offence or not to have committed an offence. Quite obviously,
+a prospective offender of Section 66A and the authorities who are to
+enforce Section 66A have absolutely no manageable standard by which to book
+a person for an offence under Section 66A. This being the case, having
+regard also to the two English precedents cited by the learned Additional
+Solicitor General, it is clear that Section 66A is unconstitutionally
+vague.
+
+Ultimately, applying the tests referred to in Chintaman Rao and V.G. Row's
+case, referred to earlier in the judgment, it is clear that Section 66A
+arbitrarily, excessively and disproportionately invades the right of free
+speech and upsets the balance between such right and the reasonable
+restrictions that may be imposed on such right.
+
+Chilling Effect And Overbreadth
+
+83. Information that may be grossly offensive or which causes annoyance
+or inconvenience are undefined terms which take into the net a very large
+amount of protected and innocent speech. A person may discuss or even
+advocate by means of writing disseminated over the internet information
+that may be a view or point of view pertaining to governmental, literary,
+scientific or other matters which may be unpalatable to certain sections of
+society. It is obvious that an expression of a view on any matter may cause
+annoyance, inconvenience or may be grossly offensive to some. A few
+examples will suffice. A certain section of a particular community may be
+grossly offended or annoyed by communications over the internet by "liberal
+views" - such as the emancipation of women or the abolition of the caste
+system or whether certain members of a non proselytizing religion should be
+allowed to bring persons within their fold who are otherwise outside the
+fold. Each one of these things may be grossly offensive, annoying,
+inconvenient, insulting or injurious to large sections of particular
+communities and would fall within the net cast by Section 66A. In point of
+fact, Section 66A is cast so widely that virtually any opinion on any
+subject would be covered by it, as any serious opinion dissenting with the
+mores of the day would be caught within its net. Such is the reach of the
+Section and if it is to withstand the test of constitutionality, the
+chilling effect on free speech would be total.
+
+84. Incidentally, some of our judgments have recognized this chilling
+effect of free speech. In R. Rajagopal v. State of T.N., (1994) 6 SCC 632,
+this Court held:
+
+"19. The principle of Sullivan [376 US 254 : 11 L Ed 2d 686 (1964)] was
+carried forward - and this is relevant to the second question arising in
+this case - in Derbyshire County Council v. Times Newspapers Ltd. [(1993) 2
+WLR 449 : (1993) 1 All ER 1011, HL] , a decision rendered by the House of
+Lords. The plaintiff, a local authority brought an action for damages for
+libel against the defendants in respect of two articles published
+in Sunday Times questioning the propriety of investments made for its
+superannuation fund. The articles were headed "Revealed: Socialist tycoon
+deals with Labour Chief" and "Bizarre deals of a council leader and the
+media tycoon". A preliminary issue was raised whether the plaintiff has a
+cause of action against the defendant. The trial Judge held that such an
+action was maintainable but on appeal the Court of Appeal held to the
+contrary. When the matter reached the House of Lords, it affirmed the
+decision of the Court of Appeal but on a different ground. Lord Keith
+delivered the judgment agreed to by all other learned Law Lords. In his
+opinion, Lord Keith recalled that in Attorney General v. Guardian
+Newspapers Ltd. (No. 2)[(1990) 1 AC 109 : (1988) 3 All ER 545 : (1988) 3
+WLR 776, HL] popularly known as "Spycatcher case", the House of Lords had
+opined that "there are rights available to private citizens which
+institutions of... Government are not in a position to exercise unless they
+can show that it is in the public interest to do so". It was also held
+therein that not only was there no public interest in allowing governmental
+institutions to sue for libel, it was "contrary to the public interest
+because to admit such actions would place an undesirable fetter on freedom
+of speech" and further that action for defamation or threat of such action
+"inevitably have an inhibiting effect on freedom of speech". The learned
+Law Lord referred to the decision of the United States Supreme Court in New
+York Times v. Sullivan [376 US 254 : 11 L Ed 2d 686 (1964)] and certain
+other decisions of American Courts and observed - and this is significant
+for our purposes-
+"while these decisions were related most directly to the provisions of the
+American Constitution concerned with securing freedom of speech, the public
+interest considerations which underlaid them are no less valid in this
+country. What has been described as 'the chilling effect' induced by the
+threat of civil actions for libel is very important. Quite often the facts
+which would justify a defamatory publication are known to be true, but
+admissible evidence capable of proving those facts is not available."
+Accordingly, it was held that the action was not maintainable in law."
+
+85. Also in S. Khushboo v. Kanniammal, (2010) 5 SCC 600, this Court
+said:
+
+"47. In the present case, the substance of the controversy does not really
+touch on whether premarital sex is socially acceptable. Instead, the real
+issue of concern is the disproportionate response to the appellant's
+remarks. If the complainants vehemently disagreed with the appellant's
+views, then they should have contested her views through the news media or
+any other public platform. The law should not be used in a manner that has
+chilling effects on the "freedom of speech and expression".
+
+86. That the content of the right under Article 19(1)(a) remains the same
+whatever the means of communication including internet communication is
+clearly established by Reno's case (supra) and by The Secretary, Ministry
+of Information & Broadcasting v. Cricket Association of Bengal & Anr.,
+(1995) SCC 2 161 at Para 78 already referred to. It is thus clear that not
+only are the expressions used in Section 66A expressions of inexactitude
+but they are also over broad and would fall foul of the repeated
+injunctions of this Court that restrictions on the freedom of speech must
+be couched in the narrowest possible terms. For example, see, Kedar Nath
+Singh v. State of Bihar, [1962] Supp. 2 S.C.R. 769 at 808 -809. In point of
+fact, judgments of the Constitution Bench of this Court have struck down
+sections which are similar in nature. A prime example is the section
+struck down in the first Ram Manohar Lohia case, namely, Section 3 of the
+U.P. Special Powers Act, where the persons who "instigated" expressly or by
+implication any person or class of persons not to pay or to defer payment
+of any liability were punishable. This Court specifically held that under
+the Section a wide net was cast to catch a variety of acts of instigation
+ranging from friendly advice to systematic propaganda. It was held that in
+its wide amplitude, the Section takes in the innocent as well as the
+guilty, bonafide and malafide advice and whether the person be a legal
+adviser, a friend or a well wisher of the person instigated, he cannot
+escape the tentacles of the Section. The Court held that it was not
+possible to predicate with some kind of precision the different categories
+of instigation falling within or without the field of constitutional
+prohibitions. It further held that the Section must be declared
+unconstitutional as the offence made out would depend upon factors which
+are uncertain.
+
+87. In Kameshwar Prasad & Ors. v. The State of Bihar & Anr., [1962]
+Supp. 3 S.C.R. 369, Rule 4-A of the Bihar Government Servants Conduct
+Rules, 1956 was challenged. The rule states "No government servant shall
+participate in any demonstration or resort to any form of strike in
+connection with any matter pertaining to his conditions of service."
+
+88. The aforesaid rule was challenged under Articles 19 (1)(a) and (b) of
+the Constitution. The Court followed the law laid down in Ram Manohar
+Lohia's case [1960] 2 S.C.R. 821 and accepted the challenge. It first held
+that demonstrations are a form of speech and then held:
+
+"The approach to the question regarding the constitutionality of the rule
+should be whether the ban that it imposes on demonstrations would be
+covered by the limitation of the guaranteed rights contained in Art. 19 (2)
+and 19(3). In regard to both these clauses the only relevant criteria which
+has been suggested by the respondent-State is that the rule is framed "in
+the interest of public order". A demonstration may be defined as "an
+expression of one's feelings by outward signs." A demonstration such as is
+prohibited by, the rule may be of the most innocent type - peaceful orderly
+such as the mere wearing of a badge by a Government servant or even by a
+silent assembly say outside office hours - demonstrations which could in no
+sense be suggested to involve any breach of tranquility, or of a type
+involving incitement to or capable of leading to disorder. If the rule had
+confined itself to demonstrations of type which would lead to disorder then
+the validity of that rule could have been sustained but what the rule does
+is the imposition of a blanket-ban on all demonstrations of whatever type -
+innocent as well as otherwise - and in consequence its validity cannot be
+upheld." (at page 374)
+
+89. The Court further went on to hold that remote disturbances of public
+order by demonstration would fall outside Article 19(2). The connection
+with public order has to be intimate, real and rational and should arise
+directly from the demonstration that is sought to be prohibited. Finally,
+the Court held:
+
+"The vice of the rule, in our opinion, consists in this that it lays a ban
+on every type of demonstration - be the same however innocent and however
+incapable of causing a breach of public tranquility and does not confine
+itself to those forms of demonstrations which might lead to that result."
+(at page 384)
+
+90. These two Constitution Bench decisions bind us and would apply
+directly on Section 66A. We, therefore, hold that the Section is
+unconstitutional also on the ground that it takes within its sweep
+protected speech and speech that is innocent in nature and is liable
+therefore to be used in such a way as to have a chilling effect on free
+speech and would, therefore, have to be struck down on the ground of
+overbreadth.
+
+Possibility of an act being abused is not a ground to test its validity:
+
+91. The learned Additional Solicitor General cited a large number of
+judgments on the proposition that the fact that Section 66A is capable of
+being abused by the persons who administered it is not a ground to test its
+validity if it is otherwise valid. He further assured us that this
+Government was committed to free speech and that Section 66A would not be
+used to curb free speech, but would be used only when excesses are
+perpetrated by persons on the rights of others. In The Collector of
+Customs, Madras v. Nathella Sampathu Chetty & Anr., [1962] 3 S.C.R. 786,
+this Court observed:
+
+"....This Court has held in numerous rulings, to which it is unnecessary to
+refer, that the possibility of the abuse of the powers under the provisions
+contained in any statute is no ground for declaring the provision to be
+unreasonable or void. Commenting on a passage in the judgment of the Court
+of Appeal of Northern Ireland which stated:
+
+"If such powers are capable of being exercised reasonably it is impossible
+to say that they may not also be exercised unreasonably"
+
+and treating this as a ground for holding the statute invalid Viscount
+Simonds observed in Belfast Corporation v. O.D. Commission [ 1960 AC 490 at
+pp. 520-521] :
+
+"It appears to me that the short answer to this contention (and I hope its
+shortness will not be regarded as disrespect) is that the validity of a
+measure is not to be determined by its application to particular cases....
+If it is not so exercised (i.e. if the powers are abused) it is open to
+challenge and there is no need for express provision for its challenge in
+the statute."
+
+The possibility of abuse of a statute otherwise valid does not impart to it
+any element of invalidity. The converse must also follow that a statute
+which is otherwise invalid as being unreasonable cannot be saved by its
+being administered in a reasonable manner. The constitutional validity of
+the statute would have to be determined on the basis of its provisions and
+on the ambit of its operation as reasonably construed. If so judged it
+passes the test of reasonableness, possibility of the powers conferred
+being improperly used is no ground for pronouncing the law itself invalid
+and similarly if the law properly interpreted and tested in the light of
+the requirements set out in Part III of the Constitution does not pass the
+test it cannot be pronounced valid merely because it is administered in a
+manner which might not conflict with the constitutional requirements."
+(at page 825)
+
+92. In this case, it is the converse proposition which would really apply
+if the learned Additional Solicitor General's argument is to be accepted.
+If Section 66A is otherwise invalid, it cannot be saved by an assurance
+from the learned Additional Solicitor General that it will be administered
+in a reasonable manner. Governments may come and Governments may go but
+Section 66A goes on forever. An assurance from the present Government even
+if carried out faithfully would not bind any successor Government. It
+must, therefore, be held that Section 66A must be judged on its own merits
+without any reference to how well it may be administered.
+
+Severability:
+
+93. The argument of the learned Additional Solicitor General on this
+score is reproduced by us verbatim from one of his written submissions:
+
+"Furthermore it is respectfully submitted that in the event of Hon'ble
+Court not being satisfied about the constitutional validity of either any
+expression or a part of the provision, the Doctrine of Severability as
+enshrined under Article 13 may be resorted to."
+
+94. The submission is vague: the learned Additional Solicitor General
+does not indicate which part or parts of Section 66A can possibly be saved.
+This Court in Romesh Thappar v. The State of Madras, [1950] S.C.R. 594
+repelled a contention of severability when it came to the courts enforcing
+the fundamental right under Article 19(1)(a) in the following terms:
+
+"It was, however, argued that Section 9(1-A) could not be considered wholly
+void, as, under Article 13(1), an existing law inconsistent with a
+fundamental right is void only to the extent of the inconsistency and no
+more. Insofar as the securing of the public safety or the maintenance of
+public order would include the security of the State, the impugned
+provision, as applied to the latter purpose, was covered by clause (2) of
+Article 19 and must, it was said, be held to be valid. We are unable to
+accede to this contention. Where a law purports to authorise the imposition
+of restrictions on a fundamental right in language wide enough to cover
+restrictions both within and without the limits of constitutionally
+permissible legislative action affecting such right, it is not possible to
+uphold it even so far as it may be applied within the constitutional
+limits, as it is not severable. So long as the possibility of its being
+applied for purposes not sanctioned by the Constitution cannot be ruled
+out, it must be held to be wholly unconstitutional and void. In other
+words, clause (2) of Article 19 having allowed the imposition of
+restrictions on the freedom of speech and expression only in cases where
+danger to the State is involved, an enactment, which is capable of being
+applied to cases where no such danger could arise, cannot be held to be
+constitutional and valid to any extent." (At page 603)
+
+95. It has been held by us that Section 66A purports to authorize the
+imposition of restrictions on the fundamental right contained in Article
+19(1)(a) in language wide enough to cover restrictions both within and
+without the limits of constitutionally permissible legislative action. We
+have held following K.A. Abbas' case (Supra) that the possibility of
+Section 66A being applied for purposes not sanctioned by the Constitution
+cannot be ruled out. It must, therefore, be held to be wholly
+unconstitutional and void. Romesh Thappar's Case was distinguished in
+R.M.D. Chamarbaugwalla v. The Union of India, [1957] S.C.R. 930 in the
+context of a right under Article 19(1)(g) as follows:
+
+"20. In Romesh Thappar v. State of Madras [ (1950) SCR 594] , the question
+was as to the validity of Section 9(1-A) of the Madras Maintenance of
+Public Order Act, 23 of 1949. That section authorised the Provincial
+Government to prohibit the entry and circulation within the State of a
+newspaper "for the purpose of securing the public safety or the maintenance
+of public order." Subsequent to the enactment of this statute, the
+Constitution came into force, and the validity of the impugned provision
+depended on whether it was protected by Article 19(2), which saved
+"existing law insofar as it relates to any matter which undermines the
+security of or tends to overthrow the State." It was held by this Court
+that as the purposes mentioned in Section 9(1-A) of the Madras Act were
+wider in amplitude than those specified in Article 19(2), and as it was not
+possible to split up Section 9(1-A) into what was within and what was
+without the protection of Article 19(2), the provision must fail in its
+entirety. That is really a decision that the impugned provision was on its
+own contents inseverable. It is not an authority for the position that even
+when a provision is severable, it must be struck down on the ground that
+the principle of severability is inadmissible when the invalidity of a
+statute arises by reason of its contravening constitutional prohibitions.
+It should be mentioned that the decision in Romesh Thappar v. State of
+Madras [ (1950) SCR 594] was referred to in State of Bombay v. F.N.
+Balsara [ (1951) SCR 682] and State of Bombay v. United
+Motors (India) Ltd. [ (1953) SCR 1069 at 1098-99] and distinguished."[pic]
+
+96. The present being a case of an Article 19(1)(a) violation, Romesh
+Thappar's judgment would apply on all fours. In an Article 19(1)(g)
+challenge, there is no question of a law being applied for purposes not
+sanctioned by the Constitution for the simple reason that the eight subject
+matters of Article 19(2) are conspicuous by their absence in Article 19(6)
+which only speaks of reasonable restrictions in the interests of the
+general public. The present is a case where, as has been held above,
+Section 66A does not fall within any of the subject matters contained in
+Article 19(2) and the possibility of its being applied for purposes outside
+those subject matters is clear. We therefore hold that no part of Section
+66A is severable and the provision as a whole must be declared
+unconstitutional.
+
+Article 14
+
+97. Counsel for the petitioners have argued that Article 14 is also
+infringed in that an offence whose ingredients are vague in nature is
+arbitrary and unreasonable and would result in arbitrary and discriminatory
+application of the criminal law. Further, there is no intelligible
+differentia between the medium of print, broadcast, and real live speech as
+opposed to speech on the internet and, therefore, new categories of
+criminal offences cannot be made on this ground. Similar offences which
+are committed on the internet have a three year maximum sentence under
+Section 66A as opposed to defamation which has a two year maximum sentence.
+Also, defamation is a non-cognizable offence whereas under Section 66A the
+offence is cognizable.
+
+98. We have already held that Section 66A creates an offence which is
+vague and overbroad, and, therefore, unconstitutional under Article
+19(1)(a) and not saved by Article 19(2). We have also held that the wider
+range of circulation over the internet cannot restrict the content of the
+right under Article 19(1)(a) nor can it justify its denial. However, when
+we come to discrimination under Article 14, we are unable to agree with
+counsel for the petitioners that there is no intelligible differentia
+between the medium of print, broadcast and real live speech as opposed to
+speech on the internet. The intelligible differentia is clear - the
+internet gives any individual a platform which requires very little or no
+payment through which to air his views. The learned Additional Solicitor
+General has correctly said that something posted on a site or website
+travels like lightning and can reach millions of persons all over the
+world. If the petitioners were right, this Article 14 argument would apply
+equally to all other offences created by the Information Technology Act
+which are not the subject matter of challenge in these petitions. We make
+it clear that there is an intelligible differentia between speech on the
+internet and other mediums of communication for which separate offences can
+certainly be created by legislation. We find, therefore, that the
+challenge on the ground of Article 14 must fail.
+
+Procedural Unreasonableness
+
+99. One other argument must now be considered. According to the
+petitioners, Section 66A also suffers from the vice of procedural
+unreasonableness. In that, if, for example, criminal defamation is
+alleged, the safeguards available under Section 199 Cr.P.C. would not be
+available for a like offence committed under Section 66A. Such safeguards
+are that no court shall take cognizance of such an offence except upon a
+complaint made by some person aggrieved by the offence and that such
+complaint will have to be made within six months from the date on which the
+offence is alleged to have been committed. Further, safeguards that are to
+be found in Sections 95 and 96 of the Cr.P.C. are also absent when it comes
+to Section 66A. For example, where any newspaper book or document wherever
+printed appears to contain matter which is obscene, hurts the religious
+feelings of some community, is seditious in nature, causes enmity or hatred
+to a certain section of the public, or is against national integration,
+such book, newspaper or document may be seized but under Section 96 any
+person having any interest in such newspaper, book or document may within
+two months from the date of a publication seizing such documents, books or
+newspapers apply to the High court to set aside such declaration. Such
+matter is to be heard by a Bench consisting of at least three Judges or in
+High Courts which consist of less than three Judges, such special Bench as
+may be composed of all the Judges of that High Court.
+
+100. It is clear that Sections 95 and 96 of the Criminal Procedure Code
+reveal a certain degree of sensitivity to the fundamental right to free
+speech and expression. If matter is to be seized on specific grounds which
+are relatable to the subject matters contained in Article 19(2), it would
+be open for persons affected by such seizure to get a declaration from a
+High Court consisting of at least three Judges that in fact publication of
+the so-called offensive matter does not in fact relate to any of the
+specified subjects contained in Article 19(2).
+
+Further, Section 196 of the Cr.P.C. states:
+
+"196. Prosecution for offences against the State and for criminal
+conspiracy to commit such offence.- (1) No Court shall take cognizance of-
+
+(a) any offence punishable under Chapter VI or under Section 153-A, 
+[Section 295-A or sub-section (1) of Section 505] of the Indian Penal Code,
+1860 (45 of 1860), or
+
+(b) a criminal conspiracy to commit such offence, or
+
+(c) any such abetment, as is described in Section 108-A of the Indian Penal
+Code (45 of 1860),
+
+except with the previous sanction of the Central Government or of the State
+Government.
+
+[(1-A)
+
+No Court shall take cognizance of-
+
+(a) any offence punishable under Section 153-B or sub-section (2) or sub-
+section (3) of Section 505 of the Indian Penal Code, 1860 (45 of 1860), or
+
+(b) a criminal conspiracy to commit such offence,
+
+except with the previous sanction of the Central Government or of the State
+Government or of the District Magistrate.]
+
+(2) No court shall take cognizance of the offence of any criminal
+conspiracy punishable under Section 120-B of the Indian Penal Code (45 of
+1860), other than a criminal conspiracy to commit [an offence] punishable
+with death, imprisonment for life or rigorous imprisonment for a term of
+two years or upwards, unless the State Government or the District
+Magistrate has consented in writing to the initiation of the proceedings:
+
+Provided that where the criminal conspiracy is one to which the provisions
+of Section 195 apply, no such consent shall be necessary.
+
+ (3) The Central Government or the State Government may, before according
+sanction [under sub-section (1) or sub-section (1-A) and the District
+Magistrate may, before according sanction under sub-section (1-A)] and the
+State Government or the District Magistrate may, before giving consent
+under sub-section (2), order a preliminary investigation by a police
+officer not being below the rank of Inspector, in which case such police
+officer shall have the powers referred to in sub-section (3) of Section
+155."
+
+101. Again, for offences in the nature of promoting enmity between
+different groups on grounds of religion etc. or offences relatable to
+deliberate and malicious acts intending to outrage religious feelings or
+statements that create or promote enmity, hatred or ill-will between
+classes can only be taken cognizance of by courts with the previous
+sanction of the Central Government or the State Government. This
+procedural safeguard does not apply even when a similar offence may be
+committed over the internet where a person is booked under Section 66A
+instead of the aforesaid Sections.
+
+Having struck down Section 66A on substantive grounds, we need not decide
+the procedural unreasonableness aspect of the Section.
+
+Section 118 of the Kerala Police Act.
+
+102. Learned counsel for the Petitioner in Writ Petition No. 196 of 2014
+assailed sub-section (d) of Section 118 which is set out hereinbelow:
+
+"118. Penalty for causing grave violation of public order or danger.- Any
+person who,-
+
+ (d) Causes annoyance to any person in an indecent manner by
+statements or verbal or comments or telephone calls or calls of any type
+or by chasing or sending messages or mails by any means;
+shall, on conviction be punishable with imprisonment for a term which may
+extend to three years or with fine not exceeding ten thousand rupees or
+with both."
+
+103. Learned counsel first assailed the Section on the ground of
+legislative competence stating that this being a Kerala Act, it would fall
+outside Entries1 and 2 of List II and fall within Entry 31 of List I. In
+order to appreciate the argument we set out the relevant entries:
+"List - I
+
+31. Posts and telegraphs; telephones, wireless, broadcasting and other like
+forms of communication.
+
+List - II
+
+1. Public order (but not including the use of any naval, military or air
+force or any other armed force of the Union or of any other force subject
+to the control of the Union or of any contingent or unit thereof in aid of
+the civil power).
+
+2. Police (including railway and village police) subject to the provisions
+of entry 2A of List I."
+
+ The Kerala Police Act as a whole would necessarily fall under Entry 2
+of List II. In addition, Section 118 would also fall within Entry 1 of
+List II in that as its marginal note tells us it deals with penalties for
+causing grave violation of public order or danger.
+
+104. It is well settled that a statute cannot be dissected and then
+examined as to under what field of legislation each part would separately
+fall. In A.S. Krishna v. State of Madras, [1957] S.C.R. 399, the law is
+stated thus:
+
+"The position, then, might thus be summed up : When a law is impugned on
+the ground that it is ultra vires the powers of the legislature which
+enacted it, what has to be ascertained is the true character of the
+legislation. To do that, one must have regard to the enactment as a whole,
+to its objects and to the scope and effect of its provisions. If on such
+examination it is found that the legislation is in substance one on a
+matter assigned to the legislature, then it must be held to be valid in its
+entirety, even though it might incidentally trench on matters which are
+beyond its competence. It would be quite an erroneous approach to the
+question to view such a statute not as an organic whole, but as a mere
+collection of sections, then disintegrate it into parts, examine under what
+heads of legislation those parts would severally fall, and by that process
+determine what portions thereof are intra vires, and what are not." (at
+page 410)
+
+105. It is, therefore, clear that the Kerala Police Act as a whole and
+Section 118 as part thereof falls in pith and substance within Entry 2 List
+II, notwithstanding any incidental encroachment that it may have made on
+any other Entry in List I. Even otherwise, the penalty created for causing
+annoyance in an indecent manner in pith and substance would fall within
+Entry 1 List III which speaks of criminal law and would thus be within the
+competence of the State Legislature in any case.
+
+106. However, what has been said about Section 66A would apply directly to
+Section 118(d) of the Kerala Police Act, as causing annoyance in an
+indecent manner suffers from the same type of vagueness and over breadth,
+that led to the invalidity of Section 66A, and for the reasons given for
+striking down Section 66A, Section 118(d) also violates Article 19(1)(a)
+and not being a reasonable restriction on the said right and not being
+saved under any of the subject matters contained in Article 19(2) is hereby
+declared to be unconstitutional.
+
+Section 69A and the Information Technology (Procedure and Safeguards for
+Blocking for Access of Information by Public) Rules, 2009.
+
+107. Section 69A of the Information Technology Act has already been set
+out in paragraph 2 of the judgment. Under sub-section (2) thereof, the
+2009 Rules have been framed. Under Rule 3, the Central Government shall
+designate by notification in the official gazette an officer of the Central
+Government not below the rank of a Joint Secretary as the Designated
+Officer for the purpose of issuing direction for blocking for access by the
+public any information referable to Section 69A of the Act. Under Rule 4,
+every organization as defined under Rule 2(g), (which refers to the
+Government of India, State Governments, Union Territories and agencies of
+the Central Government as may be notified in the Official Gazette by the
+Central Government)- is to designate one of its officers as the "Nodal
+Officer". Under Rule 6, any person may send their complaint to the "Nodal
+Officer" of the concerned Organization for blocking, which complaint will
+then have to be examined by the concerned Organization regard being had to
+the parameters laid down in Section 69A(1) and after being so satisfied,
+shall transmit such complaint through its Nodal Officer to the Designated
+Officer in a format specified by the Rules. The Designated Officer is not
+to entertain any complaint or request for blocking directly from any
+person. Under Rule 5, the Designated Officer may on receiving any such
+request or complaint from the Nodal Officer of an Organization or from a
+competent court, by order direct any intermediary or agency of the
+Government to block any information or part thereof for the reasons
+specified in 69A(1). Under Rule 7 thereof, the request/complaint shall then
+be examined by a Committee of Government Personnel who under Rule 8 are
+first to make all reasonable efforts to identify the originator or
+intermediary who has hosted the information. If so identified, a notice
+shall issue to appear and submit their reply at a specified date and time
+which shall not be less than 48 hours from the date and time of receipt of
+notice by such person or intermediary. The Committee then examines the
+request and is to consider whether the request is covered by 69A(1) and is
+then to give a specific recommendation in writing to the Nodal Officer of
+the concerned Organization. It is only thereafter that the Designated
+Officer is to submit the Committee's recommendation to the Secretary,
+Department of Information Technology who is to approve such requests or
+complaints. Upon such approval, the Designated Officer shall then direct
+any agency of Government or intermediary to block the offending
+information. Rule 9 provides for blocking of information in cases of
+emergency where delay caused would be fatal in which case the blocking may
+take place without any opportunity of hearing. The Designated Officer
+shall then, not later than 48 hours of the issue of the interim direction,
+bring the request before the Committee referred to earlier, and only on the
+recommendation of the Committee, is the Secretary Department of Information
+Technology to pass the final order. Under Rule 10, in the case of an order
+of a competent court in India, the Designated Officer shall, on receipt of
+a certified copy of a court order, submit it to the Secretary, Department
+of Information Technology and then initiate action as directed by the
+Court. In addition to the above safeguards, under Rule 14 a Review
+Committee shall meet at least once in two months and record its findings as
+to whether directions issued are in accordance with Section 69A(1) and if
+it is of the contrary opinion, the Review Committee may set aside such
+directions and issue orders to unblock the said information. Under Rule
+16, strict confidentiality shall be maintained regarding all the requests
+and complaints received and actions taken thereof.
+
+108. Learned counsel for the petitioners assailed the constitutional
+validity of Section 69A, and assailed the validity of the 2009 Rules.
+According to learned counsel, there is no pre-decisional hearing afforded
+by the Rules particularly to the "originator" of information, which is
+defined under Section 2(za) of the Act to mean a person who sends,
+generates, stores or transmits any electronic message; or causes any
+electronic message to be sent, generated, stored or transmitted to any
+other person. Further, procedural safeguards such as which are provided
+under Section 95 and 96 of the Code of Criminal Procedure are not available
+here. Also, the confidentiality provision was assailed stating that it
+affects the fundamental rights of the petitioners.
+
+109. It will be noticed that Section 69A unlike Section 66A is a narrowly
+drawn provision with several safeguards. First and foremost, blocking can
+only be resorted to where the Central Government is satisfied that it is
+necessary so to do. Secondly, such necessity is relatable only to some of
+the subjects set out in Article 19(2). Thirdly, reasons have to be
+recorded in writing in such blocking order so that they may be assailed in
+a writ petition under Article 226 of the Constitution.
+
+110. The Rules further provide for a hearing before the Committee set up -
+which Committee then looks into whether or not it is necessary to block
+such information. It is only when the Committee finds that there is such a
+necessity that a blocking order is made. It is also clear from an
+examination of Rule 8 that it is not merely the intermediary who may be
+heard. If the "person" i.e. the originator is identified he is also to be
+heard before a blocking order is passed. Above all, it is only after these
+procedural safeguards are met that blocking orders are made and in case
+there is a certified copy of a court order, only then can such blocking
+order also be made. It is only an intermediary who finally fails to comply
+with the directions issued who is punishable under sub-section (3) of
+Section 69A.
+
+111. Merely because certain additional safeguards such as those found in
+Section 95 and 96 CrPC are not available does not make the Rules
+constitutionally infirm. We are of the view that the Rules are not
+constitutionally infirm in any manner.
+
+Section 79 and the Information Technology (Intermediary Guidelines) Rules,
+2011.
+
+112. Section 79 belongs to Chapter XII of the Act in which intermediaries
+are exempt from liability if they fulfill the conditions of the Section.
+Section 79 states:
+
+"79. Exemption from liability of intermediary in certain cases.-(1)
+Notwithstanding anything contained in any law for the time being in force
+but subject to the provisions of sub-sections (2) and (3), an intermediary
+shall not be liable for any third party information, data, or communication
+link made available or hosted by him.
+(2) The provisions of sub-section (1) shall apply if-
+(a) the function of the intermediary is limited to providing access to a
+communication system over which information made available by third parties
+is transmitted or temporarily stored or hosted; or
+(b) the intermediary does not-
+(i) initiate the transmission,
+(ii) select the receiver of the transmission, and
+(iii) select or modify the information contained in the transmission;
+(c) the intermediary observes due diligence while discharging his duties
+under this Act and also observes such other guidelines as the Central
+Government may prescribe in this behalf.
+(3) The provisions of sub-section (1) shall not apply if-
+(a) the intermediary has conspired or abetted or aided or induced, whether
+by threats or promise or otherwise in the commission of the unlawful act;
+(b) upon receiving actual knowledge, or on being notified by the
+appropriate Government or its agency that any information, data or
+communication link residing in or connected to a computer resource
+controlled by the intermediary is being used to commit the unlawful act,
+the intermediary fails to expeditiously remove or disable access to that
+material on that resource without vitiating the evidence in any manner.
+Explanation.-For the purposes of this section, the expression "third party
+information" means any information dealt with by an intermediary in his
+capacity as an intermediary.]"
+
+113. Under the 2011 Rules, by Rule 3 an intermediary has not only to
+publish the rules and regulations, privacy policy and user agreement for
+access or usage of the intermediary's computer resource but he has also to
+inform all users of the various matters set out in Rule 3(2). Since Rule
+3(2) and 3(4) are important, they are set out hereinbelow:-
+"3. Due diligence to be observed by intermediary.-The intermediary shall
+observe following due diligence while discharging his duties, namely:-
+
+(2) Such rules and regulations, terms and conditions or user agreement
+shall inform the users of computer resource not to host, display, upload,
+modify, publish, transmit, update or share any information that-
+
+(a) belongs to another person and to which the user does not have any right
+to;
+
+(b) is grossly harmful, harassing, blasphemous defamatory, obscene,
+pornographic, paedophilic, libellous, invasive of another's privacy,
+hateful, or racially, ethnically objectionable, disparaging, relating or
+encouraging money laundering or gambling, or otherwise unlawful in any
+manner whatever;
+
+(c) harm minors in any way;
+
+(d) infringes any patent, trademark, copyright or other proprietary rights;
+
+(e) violates any law for the time being in force;
+
+(f) deceives or misleads the addressee about the origin of such messages or
+communicates any information which is grossly offensive or menacing in
+nature;
+
+(g) impersonate another person;
+
+(h) contains software viruses or any other computer code, files or programs
+designed to interrupt, destroy or limit the functionality of any computer
+resource;
+
+(i) threatens the unity, integrity, defence, security or sovereignty of
+India, friendly relations with foreign states, or public order or causes
+incitement to the commission of any cognisable offence or prevents
+investigation of any offence or is insulting any other nation.
+
+(4) The intermediary, on whose computer system the information is stored or
+hosted or published, upon obtaining knowledge by itself or been brought to
+actual knowledge by an affected person in writing or through e-mail signed
+with electronic signature about any such information as mentioned in sub-
+rule (2) above, shall act within thirty-six hours and where applicable,
+work with user or owner of such information to disable such information
+that is in contravention of sub-rule (2). Further the intermediary shall
+preserve such information and associated records for at least ninety days
+for investigation purposes."
+
+114. Learned counsel for the petitioners assailed Rules 3(2) and 3(4) on
+two basic grounds. Firstly, the intermediary is called upon to exercise
+its own judgment under sub-rule (4) and then disable information that is in
+contravention of sub-rule (2), when intermediaries by their very definition
+are only persons who offer a neutral platform through which persons may
+interact with each other over the internet. Further, no safeguards are
+provided as in the 2009 Rules made under Section 69A. Also, for the very
+reasons that Section 66A is bad, the petitioners assailed sub-rule (2) of
+Rule 3 saying that it is vague and over broad and has no relation with the
+subjects specified under Article 19(2).
+
+115. One of the petitioners' counsel also assailed Section 79(3)(b) to the
+extent that it makes the intermediary exercise its own judgment upon
+receiving actual knowledge that any information is being used to commit
+unlawful acts. Further, the expression "unlawful acts" also goes way
+beyond the specified subjects delineated in Article 19(2).
+
+116. It must first be appreciated that Section 79 is an exemption
+provision. Being an exemption provision, it is closely related to
+provisions which provide for offences including Section 69A. We have seen
+how under Section 69A blocking can take place only by a reasoned order
+after complying with several procedural safeguards including a hearing to
+the originator and intermediary. We have also seen how there are only two
+ways in which a blocking order can be passed - one by the Designated
+Officer after complying with the 2009 Rules and the other by the Designated
+Officer when he has to follow an order passed by a competent court. The
+intermediary applying its own mind to whether information should or should
+not be blocked is noticeably absent in Section 69A read with 2009 Rules.
+
+117. Section 79(3)(b) has to be read down to mean that the intermediary
+upon receiving actual knowledge that a court order has been passed asking
+it to expeditiously remove or disable access to certain material must then
+fail to expeditiously remove or disable access to that material. This is
+for the reason that otherwise it would be very difficult for intermediaries
+like Google, Facebook etc. to act when millions of requests are made and
+the intermediary is then to judge as to which of such requests are
+legitimate and which are not. We have been informed that in other
+countries worldwide this view has gained acceptance, Argentina being in the
+forefront. Also, the Court order and/or the notification by the appropriate
+Government or its agency must strictly conform to the subject matters laid
+down in Article 19(2). Unlawful acts beyond what is laid down in Article
+19(2) obviously cannot form any part of Section 79. With these two
+caveats, we refrain from striking down Section 79(3)(b).
+
+118. The learned Additional Solicitor General informed us that it is a
+common practice worldwide for intermediaries to have user agreements
+containing what is stated in Rule 3(2). However, Rule 3(4) needs to be
+read down in the same manner as Section 79(3)(b). The knowledge spoken of
+in the said sub-rule must only be through the medium of a court order.
+Subject to this, the Information Technology (Intermediaries Guidelines)
+Rules, 2011 are valid.
+
+119. In conclusion, we may summarise what has been held by us above:
+
+Section 66A of the Information Technology Act, 2000 is struck down in its
+entirety being violative of Article 19(1)(a) and not saved under Article
+19(2).
+
+Section 69A and the Information Technology (Procedure & Safeguards for
+Blocking for Access of Information by Public) Rules 2009 are
+constitutionally valid.
+
+Section 79 is valid subject to Section 79(3)(b) being read down to mean
+that an intermediary upon receiving actual knowledge from a court order or
+on being notified by the appropriate government or its agency that unlawful
+acts relatable to Article 19(2) are going to be committed then fails to
+expeditiously remove or disable access to such material. Similarly, the
+Information Technology "Intermediary Guidelines" Rules, 2011 are valid
+subject to Rule 3 sub-rule (4) being read down in the same manner as
+indicated in the judgment.
+
+Section 118(d) of the Kerala Police Act is struck down being violative of
+Article 19(1)(a) and not saved by Article 19(2).
+
+All the writ petitions are disposed in the above terms.
+
+............................................J.
+ (J. Chelameswar)
+
+............................................J.
+ (R.F. Nariman)
+New Delhi,
+March 24, 2015.
+
+-----------------------
+[1]
+
+ [2]The genealogy of this Section may be traced back to Section
+10(2)(a) of the U.K. Post Office (Amendment) Act, 1935, which made it an
+offence to send any message by telephone which is grossly offensive or of
+an indecent, obscene, or menacing character. This Section was
+substantially reproduced by Section 66 of the UK Post Office Act, 1953 as
+follows:
+ 66. Prohibition of sending offensive or false telephone messages or
+false telegrams, etc.
+ If any person-
+ (a)sends any message by telephone which is grossly offensive or of an
+indecent, obscene or menacing character ;
+ (b)sends any message by telephone, or any telegram, which he knows to
+be false, for the purpose of causing annoyance, inconvenience or needless
+anxiety to any other person ; or
+ (c)persistently makes telephone calls without reasonable cause and
+for any such purpose as aforesaid,
+ he shall be liable on summary conviction to a fine not exceeding ten
+pounds, or to imprisonment for a term not exceeding one month, or to both.
+ This Section in turn was replaced by Section 49 of the British
+Telecommunication Act, 1981 and Section 43 of the British Telecommunication
+Act, 1984. In its present form in the UK, it is Section 127 of the
+Telecommunication Act, 2003 which is relevant and which is as follows:-
+ 127. Improper use of public electronic communications network
+ A person is guilty of an offence if he -
+ sends by means of a public electronic communications network a
+message or other matter that is grossly offensive or of an indecent,
+obscene or menacing character; or
+ cause any such message or matter to be so sent.
+ A person is guilty of an offence if, for the purpose of causing
+annoyance, inconvenience or needless anxiety to another, he-
+ sends by means of a public electronic communications network, a
+message that he knows to be false,
+ causes such a message to be sent; or
+ persistently makes use of a public electronic communications network.
+
+ A person guilty of an offence under this section shall be liable, on
+summary conviction, to imprisonment for a term not exceeding six months or
+to a fine not exceeding level 5 on the standard scale, or to both.
+ Subsections (1) and (2) do not apply to anything done in the course
+of providing a programme service (within the meaning of the Broadcasting
+Act 1990 (c.42)).
+
+[3]
+ [4] Incidentally, the Ark of the Covenant is perhaps the single most
+important focal point in Judaism. The original ten commandments which the
+Lord himself gave to Moses was housed in a wooden chest which was gold
+plated and called the Ark of the Covenant and carried by the Jews from
+place to place until it found its final repose in the first temple - that
+is the temple built by Solomon.
+
+[5]
+ [6] A good example of the difference between advocacy and incitement
+is Mark Antony's speech in Shakespeare's immortal classic Julius Caesar.
+Mark Antony begins cautiously. Brutus is chastised for calling Julius
+Caesar ambitious and is repeatedly said to be an "honourable man". He then
+shows the crowd Caesar's mantle and describes who struck Caesar where. It
+is at this point, after the interjection of two citizens from the crowd,
+that Antony says-
+ "ANTONY- Good friends, sweet friends, let me not stir you up
+ To such a sudden flood of mutiny.
+ They that have done this deed are honourable:
+ What private griefs they have, alas, I know not,
+ That made them do it: they are wise and honourable,
+ And will, no doubt, with reasons answer you.
+ I come not, friends, to steal away your hearts:
+ I am no orator, as Brutus is;
+ But, as you know me all, a plain blunt man,
+ That love my friend; and that they know full well
+ That gave me public leave to speak of him:
+ For I have neither wit, nor words, nor worth,
+ Action, nor utterance, nor the power of speech,
+ To stir men's blood: I only speak right on;
+ I tell you that which you yourselves do know;
+ Show you sweet Caesar's wounds, poor poor dumb mouths,
+ And bid them speak for me: but were I Brutus,
+ And Brutus Antony, there were an Antony
+ Would ruffle up your spirits and put a tongue
+ In every wound of Caesar that should move
+ The stones of Rome to rise and mutiny.
+ ALL- We'll mutiny."
+[7]
+ [8] In its present form the clear and present danger test has been
+reformulated to say that:
+
+ "The constitutional guarantees of free speech and free press do not
+permit a State to forbid or proscribe advocacy of the use of force or of
+law violation except where such advocacy is directed to inciting or
+producing imminent lawless action and is likely to incite or produce such
+action."
+
+ Interestingly, the US Courts have gone on to make a further
+refinement. The State may ban what is called a "true threat".
+
+ "'True threats' encompass those statements where the speaker means to
+communicate a serious expression of an intent to commit an act of unlawful
+violence to a particular individual or group of individuals."
+
+ "The speaker need not actually intend to carry out the threat.
+Rather, a prohibition on true threats protects individuals from the fear of
+violence and from the disruption that fear engenders, in addition to
+protecting people from the possibility that the threatened violence will
+occur. Intimidation in the constitutionally proscribable sense of the word
+is a type of true threat, where a speaker directs a threat to a person or
+group of persons with the intent of placing the victim in fear of bodily
+harm or death."
+
+ See Virginia v. Black (Supra) and Watts v. United States 22 L. Ed.
+2d. 664 at 667
