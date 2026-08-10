@@ -8,7 +8,7 @@ import { MessageBubble } from "@/components/chat/message-bubble";
 import { TechnicalDrawer } from "@/components/chat/technical-drawer";
 import { IngestDialog } from "@/components/chat/ingest-dialog";
 import { Button } from "@/components/ui/button";
-import { ApiError, postQuery } from "@/lib/api";
+import { ApiError, getHistory, postQuery } from "@/lib/api";
 import { getOrCreateSessionId } from "@/lib/session";
 import type { ChatTurn } from "@/lib/types";
 
@@ -25,6 +25,7 @@ export default function Home() {
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [ingestOpen, setIngestOpen] = useState(false);
   const [currentDocument, setCurrentDocument] = useState<string | null>(null);
+  const [historyLoaded, setHistoryLoaded] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -34,6 +35,41 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setSessionId(getOrCreateSessionId());
   }, []);
+
+  useEffect(() => {
+    if (!sessionId) return;
+    let cancelled = false;
+
+    getHistory(sessionId)
+      .then((history) => {
+        if (cancelled) return;
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setTurns(
+          history.map((h) => ({
+            id: crypto.randomUUID(),
+            question: h.question,
+            response: h.response,
+            error: null,
+            pending: false,
+            askedAt: h.asked_at * 1000,
+          }))
+        );
+      })
+      .catch(() => {
+        // Rehydration is best-effort - a failed history fetch just means
+        // the chat starts empty, same as before this existed.
+      })
+      .finally(() => {
+        if (!cancelled) {
+          // eslint-disable-next-line react-hooks/set-state-in-effect
+          setHistoryLoaded(true);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [sessionId]);
 
   useEffect(() => {
     scrollRef.current?.scrollTo({
@@ -92,7 +128,7 @@ export default function Home() {
 
       <div className="flex min-h-0 flex-1 flex-col">
         <div ref={scrollRef} className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
-          {turns.length === 0 ? (
+          {!historyLoaded ? null : turns.length === 0 ? (
             <EmptyState onPick={handleSubmit} />
           ) : (
             <div className="mx-auto flex max-w-3xl flex-col gap-6">

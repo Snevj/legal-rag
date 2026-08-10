@@ -46,6 +46,12 @@ class QueryResponse(BaseModel):
     escalation_reasons: list[str]
 
 
+class ChatHistoryTurn(BaseModel):
+    question: str
+    response: QueryResponse
+    asked_at: float
+
+
 class IngestResponse(BaseModel):
     doc_id: str
     source_title: str

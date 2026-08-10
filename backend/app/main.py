@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import escalations, health, ingest, query, usage
+from app.api.routes import escalations, health, history, ingest, query, usage
 from app.tracing.langfuse_client import flush as flush_langfuse
 
 
@@ -27,5 +27,6 @@ app.add_middleware(
 app.include_router(health.router, tags=["health"])
 app.include_router(ingest.router, tags=["ingestion"])
 app.include_router(query.router, tags=["query"])
+app.include_router(history.router, tags=["history"])
 app.include_router(usage.router, tags=["usage"])
 app.include_router(escalations.router, tags=["escalations"])

@@ -73,6 +73,14 @@ export interface ApiErrorBody {
   detail?: string;
 }
 
+/** A stored turn as returned by GET /history - server-side record of a
+ * completed query, used to rehydrate the chat after a reload/route change. */
+export interface ChatHistoryTurn {
+  question: string;
+  response: QueryResponse;
+  asked_at: number;
+}
+
 /** One turn in the chat transcript, pairing the request with its full
  * response so the technical panel can show the exact backend payload. */
 export interface ChatTurn {

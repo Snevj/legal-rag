@@ -1,5 +1,6 @@
 import type {
   ApiErrorBody,
+  ChatHistoryTurn,
   EscalationRecord,
   HealthResponse,
   IngestResponse,
@@ -72,6 +73,10 @@ export function postIngest(file: File, sessionId?: string) {
     method: "POST",
     body: formData,
   });
+}
+
+export function getHistory(sessionId: string) {
+  return request<ChatHistoryTurn[]>(`/history?session_id=${encodeURIComponent(sessionId)}`);
 }
 
 export function getUsage(sessionId: string | undefined, adminKey?: string) {

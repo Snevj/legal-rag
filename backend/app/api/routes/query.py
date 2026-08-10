@@ -5,6 +5,7 @@ from fastapi import APIRouter, HTTPException
 from app.cost.budget import BudgetExceededError
 from app.graph.pipeline import get_pipeline
 from app.llm.gateway import AllModelsUnavailableError, GatewayError, UserThrottledError
+from app.memory.chat_history import get_chat_history
 from app.models.schemas import GuardrailInfo, QueryRequest, QueryResponse, SourceChunk
 from app.tracing.langfuse_client import trace_query
 
@@ -44,7 +45,7 @@ def query(request: QueryRequest) -> QueryResponse:
             metadata={"model_used": result["model_used"], "cost_usd": result["cost_usd"]},
         )
 
-        return QueryResponse(
+        response = QueryResponse(
             answer=result["answer"],
             sources=sources,
             session_id=session_id,
@@ -71,3 +72,6 @@ def query(request: QueryRequest) -> QueryResponse:
             escalated=result.get("escalated", False),
             escalation_reasons=result.get("escalation_reasons", []),
         )
+
+        get_chat_history().append(session_id, request.question, response.model_dump())
+        return response

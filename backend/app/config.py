@@ -60,6 +60,10 @@ class Settings(BaseSettings):
 
     conversation_memory_turns: int = 6
     conversation_memory_ttl_seconds: int = 7_200
+    # Separate from conversation_memory_turns: that cap keeps LLM prompt
+    # context small, this one is just how much chat the UI can rehydrate
+    # after a reload, so it can afford to be larger.
+    chat_history_max_turns: int = 50
 
     difficulty_word_threshold: int = 40
 
