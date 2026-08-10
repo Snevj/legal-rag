@@ -25,6 +25,7 @@ class RagState(TypedDict, total=False):
     question_embedding: list[float]
     cache_hit: bool
 
+    expanded_queries: list[str]
     retrieved: list[SourceRef]
     reranked: list[SourceRef]
 
@@ -34,6 +35,11 @@ class RagState(TypedDict, total=False):
     completion_tokens: int
     cost_usd: float
     latency_ms: float
+
+    citation_check_attempts: int
+    citation_check_retry: bool
+    citation_revision_note: str
+    fabricated_citations: list[str]
 
     output_pii_types: list[str]
     grounding_score: float

@@ -45,6 +45,44 @@ def _other_model(model: str) -> str:
     return settings.groq_model_expensive if model == settings.groq_model_cheap else settings.groq_model_cheap
 
 
+def expand_query(question: str, session_id: str) -> list[str]:
+    """Best-effort query decomposition for multi-query retrieval: always
+    uses the cheap model, and fails open (returns []) on any error - budget
+    exhaustion, rate limit, malformed response - rather than raising, since
+    this is a retrieval-quality enhancement, not a step the pipeline should
+    ever block on. retrieve_node falls back to single-query search on []."""
+    settings = get_settings()
+    try:
+        budget = get_budget_tracker()
+        breakers = get_circuit_breakers()
+        buckets = get_model_buckets()
+        model = settings.groq_model_cheap
+
+        if breakers[model].is_open():
+            return []
+
+        estimated_tokens = estimate_prompt_tokens("", question)
+        budget.check_preflight(session_id, estimated_tokens)
+        if not buckets[model].try_consume(estimated_tokens):
+            return []
+
+        client = get_groq_client()
+        retryer = Retrying(
+            retry=retry_if_exception_type(RETRYABLE_ERRORS),
+            wait=wait_random_exponential(multiplier=settings.backoff_base_seconds, max=10),
+            stop=stop_after_attempt(2),
+            reraise=True,
+        )
+        queries, prompt_tokens, completion_tokens = retryer(client.expand_query, model, question)
+
+        breakers[model].record_success()
+        cost_usd = estimate_cost_usd(model, prompt_tokens, completion_tokens)
+        budget.record_usage(session_id, prompt_tokens + completion_tokens, cost_usd)
+        return queries
+    except Exception:  # noqa: BLE001 - any failure here degrades to single-query retrieval, never blocks the pipeline
+        return []
+
+
 def _call_with_retry(model: str, question: str, context: str, history: str):
     settings = get_settings()
     client = get_groq_client()

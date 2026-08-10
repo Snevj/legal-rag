@@ -63,6 +63,13 @@ class Settings(BaseSettings):
 
     difficulty_word_threshold: int = 40
 
+    # Multi-query retrieval: an extra cheap-model call decomposes "hard"
+    # (multi-part/analytical) questions into several targeted sub-queries
+    # before retrieval, fanning out search across each rather than a single
+    # blended embedding. Gated on difficulty rather than always-on to avoid
+    # spending an LLM call on every simple factual lookup.
+    enable_query_expansion: bool = True
+
     langfuse_public_key: str | None = None
     langfuse_secret_key: str | None = None
     langfuse_host: str = "https://cloud.langfuse.com"

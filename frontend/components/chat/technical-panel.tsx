@@ -82,6 +82,20 @@ export function TechnicalPanel({ turn }: { turn: ChatTurn | null }) {
       </Row>
       <Row label="session_id">{r.session_id.slice(0, 12)}…</Row>
 
+      {r.expanded_queries.length > 0 && (
+        <>
+          <Separator className="my-3" />
+          <SectionLabel>Query expansion ({r.expanded_queries.length})</SectionLabel>
+          <ul className="space-y-1">
+            {r.expanded_queries.map((q) => (
+              <li key={q} className="font-mono text-[11px] text-ash">
+                · {q}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
       <Separator className="my-3" />
 
       <SectionLabel>Cost &amp; latency</SectionLabel>
@@ -135,6 +149,14 @@ export function TechnicalPanel({ turn }: { turn: ChatTurn | null }) {
           {String(g.disclaimer_added)}
         </StatusBadge>
       </Row>
+      <Row label="fabricated_citations (hard gate)">
+        {g.fabricated_citations.length ? (
+          <StatusBadge tone="bad">{g.fabricated_citations.length}</StatusBadge>
+        ) : (
+          <StatusBadge tone="good">0</StatusBadge>
+        )}
+      </Row>
+      <Row label="citation_revision_attempts">{g.citation_revision_attempts}</Row>
 
       <Separator className="my-3" />
 

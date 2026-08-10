@@ -19,19 +19,20 @@ from app.ingestion.service import ingest_text
 
 MAX_CHARS = 300_000
 
-# slug -> (Indian Kanoon doc ID, display title). Doc IDs found via Indian
-# Kanoon search for each act's exact title, one-off, and pinned here rather
-# than re-searched at runtime.
+# slug -> (Indian Kanoon doc ID, display title). Doc IDs found via one-off
+# Indian Kanoon search for each act's exact title (verified by checking the
+# fetched page's own <h2 class="doc_title">) and pinned here rather than
+# re-searched at runtime, since a bad search match would silently ingest
+# the wrong act.
 ACTS: dict[str, tuple[str, str]] = {
-    "constitution_of_india": ("1218090", "The Constitution of India, 1950"),
+    "constitution_of_india": ("237570", "Constitution of India"),
     "indian_penal_code_1860": ("1569253", "The Indian Penal Code, 1860"),
-    "code_of_criminal_procedure_1973": ("1922870", "The Code of Criminal Procedure, 1973"),
-    "indian_evidence_act_1872": ("1436241", "The Indian Evidence Act, 1872"),
-    "indian_contract_act_1872": ("1704043", "The Indian Contract Act, 1872"),
+    "code_of_criminal_procedure_1973": ("445276", "The Code of Criminal Procedure, 1973"),
+    "indian_evidence_act_1872": ("1953529", "The Indian Evidence Act, 1872"),
+    "indian_contract_act_1872": ("171398", "The Indian Contract Act, 1872"),
     "information_technology_act_2000": ("1965344", "The Information Technology Act, 2000"),
-    "code_of_civil_procedure_1908": ("1199182", "The Code of Civil Procedure, 1908"),
-    "right_to_information_act_2005": ("1360819", "The Right To Information Act, 2005"),
-    "advocates_act_1961": ("1188742", "The Advocates Act, 1961"),
+    "code_of_civil_procedure_1908": ("161831507", "The Code of Civil Procedure, 1908"),
+    "advocates_act_1961": ("262262", "The Advocates Act, 1961"),
 }
 
 

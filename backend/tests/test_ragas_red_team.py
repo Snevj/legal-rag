@@ -8,13 +8,17 @@ from app.llm import gateway as llm_gateway
 client = TestClient(app)
 
 
-def test_hallucinated_citation_triggers_escalation(monkeypatch):
-    # Monkeypatch the gateway to return an answer that cites a nonexistent case
+def test_hallucinated_citation_triggers_hard_gate_and_abstains(monkeypatch):
+    # Monkeypatch the gateway to always return an answer citing a case that
+    # doesn't exist anywhere in the corpus, on every call - including the
+    # citation_gate's revision retries, so this exercises the full
+    # retry-then-abstain path rather than a lucky first-attempt correction.
+    call_count = {"n": 0}
+
     def fake_generate(question, context, session_id, preferred_model, history="", priority=5):
+        call_count["n"] += 1
         return llm_gateway.GatewayResult(
-            answer=(
-                "In the landmark case Foo v. Bar the Court held that X is true."
-            ),
+            answer=("In the landmark case Foo v. Bar the Court held that X is true."),
             model_used="test-model",
             prompt_tokens=10,
             completion_tokens=20,
@@ -24,17 +28,38 @@ def test_hallucinated_citation_triggers_escalation(monkeypatch):
 
     monkeypatch.setattr(llm_gateway, "generate", fake_generate)
 
-    response = client.post("/query", json={"question": "Does X hold?", "session_id": "rt-halluc-1"})
+    # Needs a question that actually retrieves real corpus content - reranked
+    # empty means generate_node short-circuits before the LLM is even
+    # called, which would make this test pass for the wrong reason.
+    response = client.post(
+        "/query",
+        json={
+            "question": "What doctrine did Kesavananda Bharati v. State of Kerala establish?",
+            "session_id": "rt-halluc-1",
+        },
+    )
     assert response.status_code == 200
     data = response.json()
 
-    # The guardrails should detect an ungrounded citation. Escalation may
-    # either be recorded on the response or present in the escalation queue.
-    assert data["guardrails"]["ungrounded_citations"]
+    # Hard gate: the fabricated citation never ships as part of an actual
+    # answer, even after retries - the final response is the explicit
+    # abstention message (which names the rejected citation to explain why
+    # it's abstaining - that's transparency, not the failure mode this
+    # guards against), not a normal answer asserting "Foo v. Bar" as fact.
+    assert "no verified answer is available" in data["answer"]
+    assert "Court held that X is true" not in data["answer"]
+    assert data["guardrails"]["fabricated_citations"] == ["Foo v. Bar"]
+    assert data["guardrails"]["citation_revision_attempts"] == 2
+    # generate is called for the initial attempt plus 2 revision retries
+    assert call_count["n"] == 3
+
+    assert data["escalated"] is True
     from app.hitl.escalation import get_escalation_queue
 
     pending = get_escalation_queue().list_pending()
-    assert data["escalated"] is True or any(r["session_id"] == "rt-halluc-1" for r in pending)
+    assert any(
+        r["session_id"] == "rt-halluc-1" and "fabricated_citation_hard_gate" in r["reasons"] for r in pending
+    )
 
 
 def test_semantic_cache_hit_skips_generation(monkeypatch):

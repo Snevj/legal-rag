@@ -25,6 +25,8 @@ class GuardrailInfo(BaseModel):
     grounding_score: float
     ungrounded_citations: list[str]
     disclaimer_added: bool
+    fabricated_citations: list[str]
+    citation_revision_attempts: int
 
 
 class QueryResponse(BaseModel):
@@ -33,6 +35,7 @@ class QueryResponse(BaseModel):
     session_id: str
     model_used: str
     difficulty: str
+    expanded_queries: list[str]
     prompt_tokens: int
     completion_tokens: int
     cost_usd: float

@@ -15,6 +15,8 @@ export interface GuardrailInfo {
   grounding_score: number;
   ungrounded_citations: string[];
   disclaimer_added: boolean;
+  fabricated_citations: string[];
+  citation_revision_attempts: number;
 }
 
 export interface QueryResponse {
@@ -23,6 +25,7 @@ export interface QueryResponse {
   session_id: string;
   model_used: string;
   difficulty: string;
+  expanded_queries: string[];
   prompt_tokens: number;
   completion_tokens: number;
   cost_usd: number;

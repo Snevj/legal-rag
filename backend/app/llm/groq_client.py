@@ -1,9 +1,23 @@
+import json
+import re
 from dataclasses import dataclass
 from functools import lru_cache
 
 from groq import Groq
 
 from app.config import get_settings
+
+QUERY_EXPANSION_SYSTEM_PROMPT = (
+    "You break an Indian legal research question into up to 4 short, "
+    "targeted search queries covering the distinct facts, issues, and legal "
+    "concepts in it, so a search engine can retrieve relevant Indian case "
+    "law and statute text for each part separately rather than one blended "
+    "query. Use Indian legal terminology and framework (e.g. Articles of "
+    "the Constitution of India, IPC/CrPC/Evidence Act sections) rather than "
+    "other jurisdictions' law, unless the question explicitly asks about "
+    "another jurisdiction. Respond with ONLY a JSON object: "
+    "{\"queries\": [\"...\", \"...\"]}. No other text."
+)
 
 SYSTEM_PROMPT = (
     "You are a legal research assistant helping lawyers locate and understand "
@@ -54,6 +68,33 @@ class GroqClient:
             prompt_tokens=usage.prompt_tokens if usage else 0,
             completion_tokens=usage.completion_tokens if usage else 0,
         )
+
+    def expand_query(self, model: str, question: str) -> tuple[list[str], int, int]:
+        completion = self._client.chat.completions.create(
+            model=model,
+            messages=[
+                {"role": "system", "content": QUERY_EXPANSION_SYSTEM_PROMPT},
+                {"role": "user", "content": question},
+            ],
+            temperature=0.2,
+        )
+        usage = completion.usage
+        prompt_tokens = usage.prompt_tokens if usage else 0
+        completion_tokens = usage.completion_tokens if usage else 0
+
+        text = completion.choices[0].message.content or ""
+        match = re.search(r"\{.*\}", text, re.DOTALL)
+        if not match:
+            return [], prompt_tokens, completion_tokens
+        try:
+            data = json.loads(match.group(0))
+        except json.JSONDecodeError:
+            return [], prompt_tokens, completion_tokens
+
+        queries = data.get("queries", [])
+        if not isinstance(queries, list):
+            return [], prompt_tokens, completion_tokens
+        return [q for q in queries if isinstance(q, str) and q.strip()][:4], prompt_tokens, completion_tokens
 
 
 @lru_cache

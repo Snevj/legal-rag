@@ -9,6 +9,7 @@ from redis.commands.search.query import Query
 from app.config import get_settings
 
 CHUNK_KEY_PREFIX = "chunk:"
+KNOWN_TITLES_KEY = "corpus:known_titles"
 
 
 class RedisVectorStore:
@@ -45,6 +46,7 @@ class RedisVectorStore:
 
     def upsert_chunks(self, chunks: list[dict], embeddings: list[list[float]]) -> None:
         pipe = self._client.pipeline(transaction=False)
+        titles: set[str] = set()
         for chunk, vector in zip(chunks, embeddings):
             key = f"{CHUNK_KEY_PREFIX}{chunk['doc_id']}:{chunk['chunk_index']}"
             vector_bytes = np.array(vector, dtype=np.float32).tobytes()
@@ -58,7 +60,17 @@ class RedisVectorStore:
                     "embedding": vector_bytes,
                 },
             )
+            titles.add(chunk["source_title"])
+        if titles:
+            # Corpus-wide registry of every ingested document's title, kept
+            # separately from the vector index - this is what lets citation
+            # verification check "does this case exist anywhere in the
+            # corpus" rather than only "was it retrieved for this query".
+            pipe.sadd(KNOWN_TITLES_KEY, *titles)
         pipe.execute()
+
+    def known_titles(self) -> set[str]:
+        return self._client.smembers(KNOWN_TITLES_KEY)
 
     def search(self, query_vector: list[float], top_k: int) -> list[dict]:
         vector_bytes = np.array(query_vector, dtype=np.float32).tobytes()
