@@ -1,0 +1,42 @@
+# Production stack: redis + backend + frontend are internal-only (docker
+# network), nginx is the single published port. Run alongside the base
+# docker-compose.yml:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+#
+# Memory note for AWS free-tier (t2/t3.micro, 1GB RAM): the backend alone
+# loads two local transformer models (bge-small embedder + bge-reranker-base
+# cross-encoder) that realistically use 500MB-800MB together, on top of
+# redis-stack-server and the frontend's node process. This is tight on 1GB -
+# expect to need a swap file (see DEPLOYMENT.md) or a t3.small (2GB) if you
+# see containers getting OOM-killed.
+services:
+  redis:
+    ports: !reset []  # no public port - only backend needs to reach it, over the internal network
+    restart: unless-stopped
+
+  backend:
+    ports: !reset []  # no public port - only nginx routes to it
+    restart: unless-stopped
+    mem_limit: 900m
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_BASE_URL: /api
+    restart: unless-stopped
+    mem_limit: 300m
+    depends_on:
+      backend:
+        condition: service_started
+
+  nginx:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./deploy/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - frontend
+      - backend
