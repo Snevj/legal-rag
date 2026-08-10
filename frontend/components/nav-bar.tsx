@@ -20,7 +20,7 @@ export function NavBar() {
           §
         </span>
         <span className="hidden truncate text-sm font-medium tracking-tight text-ivory sm:inline">
-          Legal RAG Assistant
+          Kanoon ke Haath
         </span>
       </Link>
       <nav className="flex items-center gap-0.5 sm:gap-1">

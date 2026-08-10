@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Legal RAG Assistant",
+  title: "Kanoon ke Haath",
   description: "RAG pipeline for legal Q&A, grounded and cited to source text.",
 };
 
