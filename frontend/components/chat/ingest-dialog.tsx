@@ -37,9 +37,13 @@ function StatusIcon({ status }: { status: FileStatus }) {
 export function IngestDialog({
   open,
   onOpenChange,
+  sessionId,
+  onIngested,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  sessionId?: string;
+  onIngested?: (sourceTitle: string) => void;
 }) {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [queue, setQueue] = useState<QueuedFile[]>([]);
@@ -67,7 +71,7 @@ export function IngestDialog({
         prev.map((q) => (q.id === item.id ? { ...q, status: "uploading" } : q))
       );
       try {
-        const res = await postIngest(item.file);
+        const res = await postIngest(item.file, sessionId);
         setQueue((prev) =>
           prev.map((q) =>
             q.id === item.id
@@ -75,6 +79,7 @@ export function IngestDialog({
               : q
           )
         );
+        onIngested?.(res.source_title);
       } catch (err) {
         setQueue((prev) =>
           prev.map((q) =>

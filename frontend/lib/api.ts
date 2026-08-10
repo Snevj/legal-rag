@@ -62,9 +62,12 @@ export function postQuery(payload: {
   });
 }
 
-export function postIngest(file: File) {
+export function postIngest(file: File, sessionId?: string) {
   const formData = new FormData();
   formData.append("file", file);
+  if (sessionId) {
+    formData.append("session_id", sessionId);
+  }
   return request<IngestResponse>("/ingest", {
     method: "POST",
     body: formData,

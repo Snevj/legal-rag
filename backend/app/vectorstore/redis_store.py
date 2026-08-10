@@ -94,6 +94,38 @@ class RedisVectorStore:
             for doc in results.docs
         ]
 
+    def search_within_doc(self, query_vector: list[float], doc_id: str, top_k: int) -> list[dict]:
+        """Same KNN search as `search`, but restricted to one document via
+        the doc_id tag filter. Used to guarantee a just-uploaded document a
+        fair shot at being reranked: with a large corpus, a short/vague
+        follow-up question about "this file" can fail to surface any of its
+        chunks in a corpus-wide top-k at all, simply because it's
+        outnumbered by every other ingested document - not because it's
+        irrelevant. Scores here are real KNN distances against the actual
+        question, not fabricated, so the downstream relevance threshold
+        still applies normally."""
+        vector_bytes = np.array(query_vector, dtype=np.float32).tobytes()
+        escaped_doc_id = doc_id.replace("-", "\\-")
+        query = (
+            Query(f"(@doc_id:{{{escaped_doc_id}}})=>[KNN {top_k} @embedding $vec AS distance]")
+            .sort_by("distance")
+            .return_fields("doc_id", "source_title", "chunk_index", "text", "distance")
+            .dialect(2)
+        )
+        results = self._client.ft(self._index_name).search(
+            query, query_params={"vec": vector_bytes}
+        )
+        return [
+            {
+                "doc_id": doc.doc_id,
+                "source_title": doc.source_title,
+                "chunk_index": int(doc.chunk_index),
+                "text": doc.text,
+                "distance": float(doc.distance),
+            }
+            for doc in results.docs
+        ]
+
     def ping(self) -> bool:
         try:
             return bool(self._client.ping())

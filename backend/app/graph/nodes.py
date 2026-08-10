@@ -11,6 +11,7 @@ from app.guardrails.prompt_injection import detect_injection
 from app.hitl.escalation import get_escalation_queue
 from app.llm import gateway as llm_gateway
 from app.memory.conversation import get_conversation_memory
+from app.memory.session_uploads import get_session_uploads
 from app.vectorstore.redis_store import get_vector_store
 
 _LOW_GROUNDING_THRESHOLD = 0.15  # grounding_score is a rough lexical-overlap ratio, not a calibrated probability
@@ -116,13 +117,28 @@ def retrieve_node(state: RagState) -> dict:
     # chunk's best (lowest) distance score across all the queries that
     # retrieved it.
     merged: dict[tuple[str, int], dict] = {}
+    question_vector = state.get("question_embedding") or embedder.embed_query(question)
     for i, q in enumerate(sub_queries):
-        query_vector = (
-            state.get("question_embedding")
-            if i == 0 and state.get("question_embedding")
-            else embedder.embed_query(q)
-        )
+        query_vector = question_vector if i == 0 else embedder.embed_query(q)
         for h in store.search(query_vector, top_k=per_query_top_k):
+            key = (h["doc_id"], h["chunk_index"])
+            if key not in merged or h["distance"] < merged[key]["distance"]:
+                merged[key] = h
+
+    # Guarantee the most recently uploaded document in this session a fair
+    # shot at reranking. A vague follow-up like "what is this file about"
+    # carries almost no signal for corpus-wide vector search *or* the
+    # cross-encoder reranker to act on - "what is this file about" scores
+    # near-zero relevance against literally any document's text, including
+    # the right one, so min_rerank_score would filter it out regardless of
+    # whether retrieval found it. rerank_node exempts this specific doc_id
+    # from that threshold below, since it's the user's own explicit upload
+    # this session, not an arbitrary corpus match.
+    session_upload_doc_id = None
+    last_upload = get_session_uploads().get(state["session_id"])
+    if last_upload:
+        session_upload_doc_id = last_upload["doc_id"]
+        for h in store.search_within_doc(question_vector, session_upload_doc_id, settings.top_k_rerank):
             key = (h["doc_id"], h["chunk_index"])
             if key not in merged or h["distance"] < merged[key]["distance"]:
                 merged[key] = h
@@ -137,27 +153,49 @@ def retrieve_node(state: RagState) -> dict:
         }
         for h in merged.values()
     ]
-    return {"retrieved": retrieved, "expanded_queries": expanded_queries}
+    return {
+        "retrieved": retrieved,
+        "expanded_queries": expanded_queries,
+        "session_upload_doc_id": session_upload_doc_id,
+    }
 
 
 def rerank_node(state: RagState) -> dict:
     settings = get_settings()
     reranker = get_reranker()
+    question = state["question"]
 
-    candidates = [(item["text"], item) for item in state["retrieved"]]
-    top = reranker.rerank(state["question"], candidates, top_k=settings.top_k_rerank)
+    # The session's just-uploaded document gets its own dedicated reranking
+    # pass, separate from the corpus-wide candidates. Two reasons a single
+    # shared top-k doesn't work: (1) a meta-question like "what is this file
+    # about" scores near-zero relevance against *any* document under the
+    # cross-encoder - the reranker isn't calibrated for "is this the
+    # document the user is looking at", only "is this passage relevant to
+    # this question's content" - so a real corpus-wide score threshold would
+    # reject the right document for the wrong reason; and (2) even without a
+    # threshold, that near-zero score is noise-dominated, so the upload's
+    # one chunk can lose the shared top-k slot competition against ten
+    # corpus candidates by pure chance. Giving it its own slot budget (small
+    # and bounded - at most top_k_rerank chunks, from a document the user
+    # explicitly provided this session) sidesteps both problems without
+    # loosening the corpus-wide threshold that guards against citing an
+    # arbitrary, unrelated precedent.
+    session_upload_doc_id = state.get("session_upload_doc_id")
+    corpus_items = [item for item in state["retrieved"] if item["doc_id"] != session_upload_doc_id]
+    upload_items = [item for item in state["retrieved"] if item["doc_id"] == session_upload_doc_id]
 
-    # KNN vector search always returns its top_k nearest neighbors even when
-    # nothing in the index is actually relevant to the question - dropping
-    # sub-threshold chunks here (rather than after generation) keeps them out
-    # of both the LLM context and the API response's `sources`, so the model
-    # can't cite an irrelevant case just because it happened to be nearby in
-    # embedding space.
-    reranked = [
-        {**metadata, "score": score}
-        for _, metadata, score in top
-        if score >= settings.min_rerank_score
-    ]
+    reranked: list[dict] = []
+
+    if corpus_items:
+        top = reranker.rerank(question, [(item["text"], item) for item in corpus_items], top_k=settings.top_k_rerank)
+        reranked.extend(
+            {**metadata, "score": score} for _, metadata, score in top if score >= settings.min_rerank_score
+        )
+
+    if upload_items:
+        top = reranker.rerank(question, [(item["text"], item) for item in upload_items], top_k=settings.top_k_rerank)
+        reranked.extend({**metadata, "score": score} for _, metadata, score in top)
+
     return {"reranked": reranked}
 
 

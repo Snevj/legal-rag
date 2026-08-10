@@ -26,6 +26,7 @@ class RagState(TypedDict, total=False):
     cache_hit: bool
 
     expanded_queries: list[str]
+    session_upload_doc_id: str | None
     retrieved: list[SourceRef]
     reranked: list[SourceRef]
 

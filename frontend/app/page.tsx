@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Scale } from "lucide-react";
+import { FileText, Scale } from "lucide-react";
 import { NavBar } from "@/components/nav-bar";
 import { Composer } from "@/components/chat/composer";
 import { MessageBubble } from "@/components/chat/message-bubble";
@@ -24,6 +24,7 @@ export default function Home() {
   const [detailsId, setDetailsId] = useState<string | null>(null);
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [ingestOpen, setIngestOpen] = useState(false);
+  const [currentDocument, setCurrentDocument] = useState<string | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -109,6 +110,16 @@ export default function Home() {
           )}
         </div>
         <div className="mx-auto w-full max-w-3xl">
+          {currentDocument && (
+            <div className="mb-2 flex items-center gap-1.5 px-1 text-xs text-muted-foreground">
+              <FileText className="size-3.5 text-cobalt" />
+              <span>
+                Grounded on <span className="text-ivory">{currentDocument}</span> for
+                vague follow-ups (e.g. &quot;what is this about?&quot;), in addition to
+                the full corpus.
+              </span>
+            </div>
+          )}
           <Composer
             onSubmit={handleSubmit}
             onIngestClick={() => setIngestOpen(true)}
@@ -122,7 +133,12 @@ export default function Home() {
         onOpenChange={setDetailsOpen}
         turn={detailsTurn}
       />
-      <IngestDialog open={ingestOpen} onOpenChange={setIngestOpen} />
+      <IngestDialog
+        open={ingestOpen}
+        onOpenChange={setIngestOpen}
+        sessionId={sessionId}
+        onIngested={setCurrentDocument}
+      />
     </div>
   );
 }
