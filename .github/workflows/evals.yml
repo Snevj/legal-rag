@@ -8,6 +8,21 @@ on:
 jobs:
   evals:
     runs-on: ubuntu-latest
+    services:
+      redis:
+        # Must be redis-stack, not plain redis - the vector store and
+        # semantic cache use RediSearch (FT.CREATE/FT.SEARCH), which the
+        # stock redis image doesn't include.
+        image: redis/redis-stack-server:latest
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 5s
+          --health-timeout 3s
+          --health-retries 5
+    env:
+      REDIS_URL: redis://localhost:6379
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
@@ -19,6 +34,14 @@ jobs:
           cd backend
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Seed sample corpus
+        # seed_corpus_dir defaults to "data/sample_case_law" relative to cwd;
+        # in the Docker image that's /app/data (bind-mounted at the repo's
+        # top-level data/ dir), but here cwd is backend/, a sibling of
+        # data/, not its parent - point it at the sibling path instead.
+        run: |
+          cd backend
+          GROQ_API_KEY=dry-run SEED_CORPUS_DIR=../data/sample_case_law python -m app.ingestion.seed_corpus
       - name: Run evals (dry-run)
         run: |
           cd backend
