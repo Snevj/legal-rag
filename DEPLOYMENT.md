@@ -151,9 +151,11 @@ a code change:
    Put that in a cron job (`crontab -e`) if you want it automatic, e.g. nightly at 2am: `0 2 * * * cd /home/ubuntu/legal-rag && ./backup.sh`.
 
 This is genuinely optional — skip it if losing uploaded docs on instance
-termination is acceptable (the pre-seeded 100+ document corpus is in the
-git repo either way, so the assistant keeps working; only user-uploaded
-extras would be lost).
+termination is acceptable. Note this is only about *your own uploads*: the
+~100+ document base corpus (Indian Kanoon judgments + core statutes) is
+**not** in the git repo — it lives in Redis, populated by the scraper
+scripts in Step 8.5 below. It has to be reseeded on every fresh Redis
+volume (including a fresh instance), same as your uploads would be.
 
 ## Step 8 — Build and start
 
@@ -170,6 +172,50 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml logs -f backend
 ```
 
 Wait for `Application startup complete` before testing.
+
+## Step 8.5 — Seed the corpus (do this before Step 9 — a fresh Redis has nothing in it)
+
+A brand-new `redis-data` volume is empty — none of the base legal corpus
+exists until you populate it. Skipping this step doesn't error, it just
+means every real question returns "No indexed document appears relevant."
+Run these inside the backend container, in order (fastest first, so you
+can sanity-check retrieval before committing to the long scrape):
+
+```bash
+cd ~/legal-rag
+# 5 landmark cases used by the eval dataset - seconds, not minutes.
+docker compose -f docker-compose.yml -f docker-compose.prod.yml exec backend python -m app.ingestion.seed_corpus
+
+# 8 core statutes (Constitution, IPC, CrPC, Evidence Act, Contract Act,
+# IT Act, CPC, Advocates Act) - a couple of minutes.
+docker compose -f docker-compose.yml -f docker-compose.prod.yml exec backend python -m app.ingestion.bulk_seed_statutes
+
+# ~100+ judgments across ~20 legal topics scraped from Indian Kanoon -
+# the long one. Each document is scraped, chunked, and embedded on this
+# instance's single throttled vCPU (see BOTTLENECKS.md) - expect this to
+# take a while. Run it detached so a dropped SSH session doesn't kill it:
+nohup docker compose -f docker-compose.yml -f docker-compose.prod.yml exec -T backend \
+  python -m app.ingestion.bulk_seed_indiankanoon > seed_indiankanoon.log 2>&1 &
+disown
+```
+
+Watch progress with `tail -f seed_indiankanoon.log`. When it's done, confirm
+the corpus actually landed:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.prod.yml exec redis redis-cli SCARD corpus:known_titles
+```
+
+Should read 100+ once the full scrape finishes (13 immediately after the
+statutes+sample step above). If you tested queries before seeding finished,
+also clear the semantic cache — it will have cached "no relevant document"
+answers for real questions, and those stale entries will keep being served
+even after the corpus is populated:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.prod.yml exec redis redis-cli --scan --pattern "qacache:*" | \
+  xargs -r docker compose -f docker-compose.yml -f docker-compose.prod.yml exec -T redis redis-cli DEL
+```
 
 ## Step 9 — Verify
 
