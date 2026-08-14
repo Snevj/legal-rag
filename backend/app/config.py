@@ -7,7 +7,12 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     groq_api_key: str
-    groq_model_cheap: str = "llama-3.1-8b-instant"
+    # llama-3.1-8b-instant is decommissioned by Groq on 2026-08-16; migrated
+    # to their recommended replacement. Note the free-tier ceiling drops
+    # hard: llama-3.1-8b-instant was RPD 14,400 / TPD 500K, gpt-oss-20b is
+    # RPD 1,000 / TPD 200K (same table as the expensive tier) - re-check
+    # console.groq.com/settings/limits before assuming cheap-tier headroom.
+    groq_model_cheap: str = "openai/gpt-oss-20b"
     groq_model_expensive: str = "llama-3.3-70b-versatile"
 
     # Free-tier limits per Groq's published docs (console.groq.com/docs/rate-limits).
