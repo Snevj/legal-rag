@@ -11,7 +11,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { cn, generateId } from "@/lib/utils";
 import { postIngest } from "@/lib/api";
 
 type FileStatus = "queued" | "uploading" | "done" | "error";
@@ -52,7 +52,7 @@ export function IngestDialog({
   function addFiles(files: FileList | null) {
     if (!files) return;
     const next: QueuedFile[] = Array.from(files).map((file) => ({
-      id: crypto.randomUUID(),
+      id: generateId(),
       file,
       status: "queued",
     }));

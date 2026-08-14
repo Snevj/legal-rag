@@ -1,10 +1,10 @@
+import { generateId } from "@/lib/utils";
+
 const SESSION_KEY = "legal-rag:session_id";
 const ADMIN_KEY_KEY = "legal-rag:admin_key";
 
 function randomId(): string {
-  return typeof crypto !== "undefined" && "randomUUID" in crypto
-    ? crypto.randomUUID().replace(/-/g, "")
-    : Math.random().toString(16).slice(2) + Date.now().toString(16);
+  return generateId().replace(/-/g, "");
 }
 
 export function getOrCreateSessionId(): string {

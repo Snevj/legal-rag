@@ -10,6 +10,7 @@ import { IngestDialog } from "@/components/chat/ingest-dialog";
 import { Button } from "@/components/ui/button";
 import { ApiError, getHistory, postQuery } from "@/lib/api";
 import { getOrCreateSessionId } from "@/lib/session";
+import { generateId } from "@/lib/utils";
 import type { ChatTurn } from "@/lib/types";
 
 const SUGGESTIONS = [
@@ -46,7 +47,7 @@ export default function Home() {
         // eslint-disable-next-line react-hooks/set-state-in-effect
         setTurns(
           history.map((h) => ({
-            id: crypto.randomUUID(),
+            id: generateId(),
             question: h.question,
             response: h.response,
             error: null,
@@ -81,7 +82,7 @@ export default function Home() {
   const pending = turns.some((t) => t.pending);
 
   async function handleSubmit(question: string) {
-    const id = crypto.randomUUID();
+    const id = generateId();
     const turn: ChatTurn = {
       id,
       question,
