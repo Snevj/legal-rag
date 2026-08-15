@@ -7,21 +7,23 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
     groq_api_key: str
-    # llama-3.1-8b-instant is decommissioned by Groq on 2026-08-16; migrated
-    # to their recommended replacement. Note the free-tier ceiling drops
-    # hard: llama-3.1-8b-instant was RPD 14,400 / TPD 500K, gpt-oss-20b is
-    # RPD 1,000 / TPD 200K (same table as the expensive tier) - re-check
-    # console.groq.com/settings/limits before assuming cheap-tier headroom.
+    # Both llama-3.1-8b-instant and llama-3.3-70b-versatile are decommissioned
+    # by Groq on 2026-08-16; migrated both to their recommended gpt-oss
+    # replacements. Note the free-tier ceilings converge as a result -
+    # gpt-oss-20b and gpt-oss-120b both sit at RPD 1,000 / TPM 8,000 /
+    # TPD 200K (down from the old models' much larger, and different-sized,
+    # ceilings) - re-check console.groq.com/settings/limits before assuming
+    # headroom on either tier.
     groq_model_cheap: str = "openai/gpt-oss-20b"
-    groq_model_expensive: str = "llama-3.3-70b-versatile"
+    groq_model_expensive: str = "openai/gpt-oss-120b"
 
     # Free-tier limits per Groq's published docs (console.groq.com/docs/rate-limits).
     # These are organization-wide, not per-session - check your own account's
     # Limits page and adjust if you're on a different plan.
     rpm_limit_cheap: int = 30
-    tpm_limit_cheap: int = 6_000
+    tpm_limit_cheap: int = 8_000
     rpm_limit_expensive: int = 30
-    tpm_limit_expensive: int = 12_000
+    tpm_limit_expensive: int = 8_000
 
     max_concurrent_requests: int = 5
     concurrency_queue_timeout_seconds: float = 30.0

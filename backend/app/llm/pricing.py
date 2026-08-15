@@ -5,8 +5,9 @@
 # docs page and update if Groq changes pricing.
 PRICING_PER_MILLION_TOKENS = {
     "llama-3.1-8b-instant": {"input": 0.05, "output": 0.08},  # decommissioned by Groq 2026-08-16, kept for old cache/history entries
-    "llama-3.3-70b-versatile": {"input": 0.59, "output": 0.79},
+    "llama-3.3-70b-versatile": {"input": 0.59, "output": 0.79},  # decommissioned by Groq 2026-08-16, kept for old cache/history entries
     "openai/gpt-oss-20b": {"input": 0.075, "output": 0.30},
+    "openai/gpt-oss-120b": {"input": 0.15, "output": 0.60},
 }
 
 
